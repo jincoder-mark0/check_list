@@ -1,0 +1,9 @@
+.git
+.idea
+__pycache__
+_redacted_test
+_redacted_verification
+
+# Plan folder specific exclusions
+plan/task.md
+plan/session_summary_*.md

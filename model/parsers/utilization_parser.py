@@ -51,7 +51,7 @@ class UtilizationParser(BaseParser):
 
             # 2. Hierarchical 포맷 유무 확인 및 처리 (컬럼 수가 많음)
             # | Instance | Module | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP48 Blocks |
-            if '|' in line and line.count('|') >= 10:
+            if '|' in line and line.count('|') >= 10: # Hierarchical 포맷은 최소 10개 이상의 컬럼을 가짐
                 parts = [p.strip() for p in line.split('|')]
                 if len(parts) >= 11:
                     inst = parts[1]
