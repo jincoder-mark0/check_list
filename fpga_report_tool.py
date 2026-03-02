@@ -19,6 +19,7 @@ from core.report_finder import find_reports
 from config.config_loader import load_criteria
 from checklist.answer_generator import AnswerGenerator
 from model.report_models import ReportSummary, ParseResult
+from redactor import ReportRedactor
 
 def parse_checklist_titles() -> Dict[str, str]:
     """ checklist.md 파일에서 질문 번호별 개요(타이틀) 추출 """
@@ -101,7 +102,7 @@ def main():
     else:
         parser.print_help()
         return
-        
+
     if args.command == "checklist" or args.command == "all":
         # 1. 환경 및 설정 로드
         print(f"[*] Loading criteria...")
@@ -115,10 +116,9 @@ def main():
         # 3. 결과 저장
         titles = parse_checklist_titles()
         save_as_markdown(summary, args.output, titles)
-        print("[*] Analysed reports saved to: {args.output_dir}")
+        print("[*] Analysed reports saved to: {args.output}")
 
     if args.command == "redact" or args.command == "all":
-        from redactor import ReportRedactor
         print(f"[*] Starting redaction...")
 
         redactor = ReportRedactor(args.output_dir)

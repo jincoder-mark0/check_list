@@ -1,0 +1,7 @@
+.git
+.idea
+__pycache__
+_redacted_test
+_redacted_verification
+task.md
+session_*.md
