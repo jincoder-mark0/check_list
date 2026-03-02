@@ -1,0 +1,95 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Thu Feb 26 11:45:20 2026
+| Host         : lc-kjlee-pc running 64-bit Ubuntu 24.04.3 LTS
+| Command      : report_qor_assessment -file /home/lc-kjlee-pc/works/fpga/20260202_MLC60_FPGA_100_630A_DDR/MLC_FPGA.reports/post_route_revA_20260226_113801/04/QoR_Assessment.rpt
+| Design       : top_with_ddr3
+| Device       : xc7a100tfgg676-2
+| Speed File   : -2
+| Design State : Routed
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report QoR Assessment
+
+Table of Contents
+-----------------
+1. Overall Assessment Summary
+2. QoR Assessment Details
+3. Methodology Check Details
+
+1. Overall Assessment Summary
+-----------------------------
+
++-----------------------------+------------------------------------------------------+
+| QoR Assessment Score        | 5 - Design runs will meet timing                     |
++-----------------------------+------------------------------------------------------+
+| Methodology Status          | Failed with warnings                                 |
++-----------------------------+------------------------------------------------------+
+| ML Strategy Compatible      | Yes                                                  |
++-----------------------------+------------------------------------------------------+
+| Incremental Compatible      | Yes                                                  |
++-----------------------------+------------------------------------------------------+
+| Next Recommended Flow Stage | Run incremental implementation for improved runtimes |
++-----------------------------+------------------------------------------------------+
+
+
+2. QoR Assessment Details
+-------------------------
+
++----------------------------------------------------+-----------+--------+-------+-----------+--------+
+| Name                                               | Threshold | Actual | Used  | Available | Status |
++----------------------------------------------------+-----------+--------+-------+-----------+--------+
+| Utilization                                        |           |        |       |           |        |
+|   Registers                                        |     50.00 |  29.65 | 37601 |    126800 |     OK |
+|   LUTs                                             |     70.00 |  58.63 | 37174 |     63400 |     OK |
+|     LUT Combined                                   |     20.00 |  22.94 |  8528 |     37174 | REVIEW |
+|     Memory LUTs                                    |     25.00 |  13.37 |  2540 |     19000 |     OK |
+|   MUXF7                                            |     15.00 |   2.44 |   775 |     31700 |     OK |
+|   CARRY8                                           |     25.00 |   0.00 |     0 |         0 |     OK |
+|   RAMBs                                            |     80.00 |  79.26 |   107 |       135 |     OK |
+|   URAMs                                            |     80.00 |   0.00 |     0 |         0 |     OK |
+|   DSPs                                             |     80.00 |  55.42 |   133 |       240 |     OK |
+|   Control Sets                                     |      7.50 |   6.57 |  1042 |     15850 |     OK |
+| Clocking - (causing high skew)                     |           |        |       |           |        |
+|   Number of unbalanced inter clock pairs           |         0 |      0 |    -  |        -  |     OK |
+|   Number of inter clock pairs not using BUFGCE_DIV |         0 |      0 |    -  |        -  |     OK |
+| Constraints                                        |           |        |       |           |        |
+|   DONT_TOUCH (cells/nets)                          |         0 |  36870 |    -  |        -  | REVIEW |
+|     DONT_TOUCH because of MARK_DEBUG               |         0 |      0 |    -  |        -  |     OK |
+| Congestion                                         |           |        |       |           |        |
+|   Number of Level 5 or above regions               |           |        |       |           |        |
+|     Global                                         |         5 |        |    -  |        -  |     OK |
+|     Short                                          |         5 |        |    -  |        -  |     OK |
+|   Average Fanout for modules > 100k cells          |         4 |   0.00 |    -  |        -  |     OK |
+|   Non-FD high fanout nets > 10k loads              |         0 |      0 |    -  |        -  |     OK |
+| Timing                                             |           |        |       |           |        |
+|   WNS                                              |       0.0 |   0.09 |    -  |        -  |     OK |
+|   TNS                                              |       0.0 |   0.00 |    -  |        -  |     OK |
+|   WHS                                              |       0.0 |   0.01 |    -  |        -  |     OK |
+|   THS                                              |       0.0 |   0.00 |    -  |        -  |     OK |
+|   Number of paths above Max LUT Budgeting          |         0 |      0 |    -  |        -  |     OK |
+|   Number of paths above Max Net Budgeting          |         0 |      0 |    -  |        -  |     OK |
++----------------------------------------------------+-----------+--------+-------+-----------+--------+
+
+
+3. Methodology Check Details
+----------------------------
+
++-----------+-------------------------------------------------------------------+-------------+----------------------+
+| ID        | Description                                                       | Criticality | Number of Violations |
++-----------+-------------------------------------------------------------------+-------------+----------------------+
+| LUTAR-1   | LUT drives async reset alert                                      | Warning     | 6                    |
+| PDRC-190  | Suboptimally placed synchronized register chain                   | Warning     | 14                   |
+| SYNTH-5   | Mapped onto distributed RAM because of timing constraints         | Warning     | 256                  |
+| SYNTH-10  | Wide multiplier                                                   | Warning     | 64                   |
+| TIMING-9  | Unknown CDC Logic                                                 | Warning     | 1                    |
+| TIMING-10 | Missing property on synchronizer                                  | Warning     | 1                    |
+| TIMING-24 | Overridden Max delay datapath only                                | Warning     | 16                   |
+| TIMING-47 | False path or asynchronous clock group between synchronous clocks | Warning     | 2                    |
+| XDCB-1    | Runtime intensive exceptions                                      | Warning     | 1                    |
+| XDCB-5    | Runtime inefficient way to find pin objects                       | Warning     | 1                    |
+| REQP-1959 | connects_SERDES_RST_driver_not_FF                                 | Advisory    | 16                   |
++-----------+-------------------------------------------------------------------+-------------+----------------------+
+
+

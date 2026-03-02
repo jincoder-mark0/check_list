@@ -1,0 +1,259 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Thu Feb 26 11:44:44 2026
+| Host         : lc-kjlee-pc running 64-bit Ubuntu 24.04.3 LTS
+| Command      : check_timing -verbose -file /home/lc-kjlee-pc/works/fpga/20260202_MLC60_FPGA_100_630A_DDR/MLC_FPGA.reports/post_route_revA_20260226_113801/01/Check_Timing.rpt
+| Design       : top_with_ddr3
+| Device       : 7a100t-fgg676
+| Speed File   : -2  PRODUCTION 1.23 2018-06-13
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 56 input ports with no input delay specified. (HIGH)
+
+pin_i_fmc_addr[0]
+pin_i_fmc_addr[10]
+pin_i_fmc_addr[11]
+pin_i_fmc_addr[12]
+pin_i_fmc_addr[13]
+pin_i_fmc_addr[14]
+pin_i_fmc_addr[15]
+pin_i_fmc_addr[1]
+pin_i_fmc_addr[2]
+pin_i_fmc_addr[3]
+pin_i_fmc_addr[4]
+pin_i_fmc_addr[5]
+pin_i_fmc_addr[6]
+pin_i_fmc_addr[7]
+pin_i_fmc_addr[8]
+pin_i_fmc_addr[9]
+pin_i_fmc_adv_n
+pin_i_fmc_cs1_n
+pin_i_fmc_oe_n
+pin_i_fmc_we_n
+pin_i_fpga_parts_version[0]
+pin_i_fpga_parts_version[1]
+pin_i_fpga_parts_version[2]
+pin_i_wss_rst_n
+pin_io_fmc_data[0]
+pin_io_fmc_data[10]
+pin_io_fmc_data[11]
+pin_io_fmc_data[12]
+pin_io_fmc_data[13]
+pin_io_fmc_data[14]
+pin_io_fmc_data[15]
+pin_io_fmc_data[16]
+pin_io_fmc_data[17]
+pin_io_fmc_data[18]
+pin_io_fmc_data[19]
+pin_io_fmc_data[1]
+pin_io_fmc_data[20]
+pin_io_fmc_data[21]
+pin_io_fmc_data[22]
+pin_io_fmc_data[23]
+pin_io_fmc_data[24]
+pin_io_fmc_data[25]
+pin_io_fmc_data[26]
+pin_io_fmc_data[27]
+pin_io_fmc_data[28]
+pin_io_fmc_data[29]
+pin_io_fmc_data[2]
+pin_io_fmc_data[30]
+pin_io_fmc_data[31]
+pin_io_fmc_data[3]
+pin_io_fmc_data[4]
+pin_io_fmc_data[5]
+pin_io_fmc_data[6]
+pin_io_fmc_data[7]
+pin_io_fmc_data[8]
+pin_io_fmc_data[9]
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 102 ports with no output delay specified. (HIGH)
+
+ddr3_reset_n
+pin_io_fmc_data[0]
+pin_io_fmc_data[10]
+pin_io_fmc_data[11]
+pin_io_fmc_data[12]
+pin_io_fmc_data[13]
+pin_io_fmc_data[14]
+pin_io_fmc_data[15]
+pin_io_fmc_data[16]
+pin_io_fmc_data[17]
+pin_io_fmc_data[18]
+pin_io_fmc_data[19]
+pin_io_fmc_data[1]
+pin_io_fmc_data[20]
+pin_io_fmc_data[21]
+pin_io_fmc_data[22]
+pin_io_fmc_data[23]
+pin_io_fmc_data[24]
+pin_io_fmc_data[25]
+pin_io_fmc_data[26]
+pin_io_fmc_data[27]
+pin_io_fmc_data[28]
+pin_io_fmc_data[29]
+pin_io_fmc_data[2]
+pin_io_fmc_data[30]
+pin_io_fmc_data[31]
+pin_io_fmc_data[3]
+pin_io_fmc_data[4]
+pin_io_fmc_data[5]
+pin_io_fmc_data[6]
+pin_io_fmc_data[7]
+pin_io_fmc_data[8]
+pin_io_fmc_data[9]
+pin_o_heater
+pin_o_lcos_dac_clk_a
+pin_o_lcos_dac_clk_b
+pin_o_lcos_dac_data_a[0]
+pin_o_lcos_dac_data_a[10]
+pin_o_lcos_dac_data_a[11]
+pin_o_lcos_dac_data_a[1]
+pin_o_lcos_dac_data_a[2]
+pin_o_lcos_dac_data_a[3]
+pin_o_lcos_dac_data_a[4]
+pin_o_lcos_dac_data_a[5]
+pin_o_lcos_dac_data_a[6]
+pin_o_lcos_dac_data_a[7]
+pin_o_lcos_dac_data_a[8]
+pin_o_lcos_dac_data_a[9]
+pin_o_lcos_dac_data_b[0]
+pin_o_lcos_dac_data_b[10]
+pin_o_lcos_dac_data_b[11]
+pin_o_lcos_dac_data_b[1]
+pin_o_lcos_dac_data_b[2]
+pin_o_lcos_dac_data_b[3]
+pin_o_lcos_dac_data_b[4]
+pin_o_lcos_dac_data_b[5]
+pin_o_lcos_dac_data_b[6]
+pin_o_lcos_dac_data_b[7]
+pin_o_lcos_dac_data_b[8]
+pin_o_lcos_dac_data_b[9]
+pin_o_lcos_ito_ctl_m
+pin_o_lcos_ito_ctl_p
+pin_o_lcos_panel_cck
+pin_o_lcos_panel_cck_en
+pin_o_lcos_panel_cnt_rst
+pin_o_lcos_panel_hck
+pin_o_lcos_panel_hck_en
+pin_o_lcos_panel_k2_en
+pin_o_lcos_panel_k2_sck
+pin_o_lcos_panel_k2m
+pin_o_lcos_panel_k2p
+pin_o_lcos_panel_latch
+pin_o_lcos_panel_mode
+pin_o_lcos_panel_pde[0]
+pin_o_lcos_panel_pde[1]
+pin_o_lcos_panel_pde[2]
+pin_o_lcos_panel_pde[3]
+pin_o_lcos_panel_pde[4]
+pin_o_lcos_panel_pde[5]
+pin_o_lcos_panel_pde[6]
+pin_o_lcos_panel_pde[7]
+pin_o_lcos_panel_pde[8]
+pin_o_lcos_panel_pde[9]
+pin_o_lcos_panel_pdo[0]
+pin_o_lcos_panel_pdo[1]
+pin_o_lcos_panel_pdo[2]
+pin_o_lcos_panel_pdo[3]
+pin_o_lcos_panel_pdo[4]
+pin_o_lcos_panel_pdo[5]
+pin_o_lcos_panel_pdo[6]
+pin_o_lcos_panel_pdo[7]
+pin_o_lcos_panel_pdo[8]
+pin_o_lcos_panel_pdo[9]
+pin_o_lcos_panel_r2k
+pin_o_lcos_panel_regp
+pin_o_lcos_panel_vck1
+pin_o_lcos_panel_vck2
+pin_o_lcos_panel_vpg_img
+pin_o_lcos_panel_vst_img
+pin_o_lcos_panel_vsw_stt
+pin_o_lcos_pow_analog_en
+pin_o_lcos_pow_digital_en
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There is 1 port with no output delay but with a timing clock defined on it or propagating through it (LOW)
+
+pin_o_clk_78m
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+

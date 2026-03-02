@@ -1,0 +1,46 @@
+{
+  "tool": {
+    "known_stable_versions": [
+      "2019.2",
+      "2020.2",
+      "2022.2",
+      "2023.2"
+    ]
+  },
+  "utilization": {
+    "thresholds": {
+      "LUT": 70,
+      "FF": 50,
+      "BRAM": 80,
+      "DSP": 80,
+      "IO": 85,
+      "MMCM": 100,
+      "BUFG": 90,
+      "PLL": 90
+    }
+  },
+  "timing": {
+    "wns_warning_threshold": 0.5,
+    "whs_warning_threshold": 0.020
+  },
+  "power": {
+    "max_junction_temp": 100
+  },
+  "clocking": {
+    "jitter_max_pct": 3.0,
+    "duty_tolerance_pct": 2.0,
+    "jitter_threshold_pct": 0.1
+  },
+  "complexity": {
+    "rent_high_threshold": 0.5,
+    "rent_medium_threshold": 0.3
+  },
+  "keywords": {
+    "pr_na": [
+      "not applicable",
+      "no partial",
+      "N/A",
+      "PR not used"
+    ]
+  }
+}

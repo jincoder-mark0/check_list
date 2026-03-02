@@ -1,0 +1,22 @@
+Run Name                       : ip_blk_tdpram_16x512_impl_1
+
+Strategy                       : Vivado Implementation Defaults
+
+Place Directive                : Default
+
+Route Directive                : Default
+
+phys_opt Directive             : Default
+
+Placer Seed                    : 
+
+Router Seed                    : 
+
+More Options                   : 
+
+Max Threads                    : 8
+
+Run Status                     : Not started
+
+Vivado Version                 : 2019.2
+
