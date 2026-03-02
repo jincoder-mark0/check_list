@@ -1,0 +1,71 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Thu Feb 26 11:46:17 2026
+| Host         : lc-kjlee-pc running 64-bit Ubuntu 24.04.3 LTS
+| Command      : report_high_fanout_nets -max_nets 50 -file /home/lc-kjlee-pc/works/fpga/20260202_MLC60_FPGA_100_630A_DDR/MLC_FPGA.reports/post_route_revA_20260226_113801/04/High_Fanout.rpt
+| Design       : top_with_ddr3
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+High Fan-out Nets Information
+
+1. Summary
+----------
+
++---------------------------------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Net Name                                                                                                                              | Fanout | Driver Type |
++---------------------------------------------------------------------------------------------------------------------------------------+--------+-------------+
+| u_sys_top_with_ddr3/u_sys_power_loader/r_ff_en                                                                                        |  10000 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/r_ff_rand                                                                                      |  10000 | FDRE        |
+| r_lcos_pclk_rst_bridge[1]                                                                                                             |   1367 | FDPE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/r_dsp_en_s3                                                                                    |   1087 | FDRE        |
+| u_lcos_top/u_lcos_pg_top/u_lcos_pg_gray_sum/u_sr_o_update_busy/GEN_SHIFT_CHAIN.GEN_CE_CTRL.r_ce_reg_0                                 |    999 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/r_dsp_en_s2                                                                                    |    836 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/r_dsp_en_s1                                                                                    |    753 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/r_dsp_power[3]                                                                                 |    555 | FDRE        |
+| u_lcos_top/u_lcos_pg_top/u_lcos_pg_func_param/u_lcos_pg_func_param_table_bin_sine0/r_reg_pg_param_steer_bin_sine_og_wss_mask_reg[1]_0 |    509 | FDRE        |
+| u_lcos_top/u_lcos_pg_top/u_lcos_pg_func_param/u_lcos_pg_func_param_table_bin_sine0/E[0]                                               |    508 | LUT2        |
+| u_sys_top_with_ddr3/u_sys_power_loader/r_lut_power_s2[3]                                                                              |    411 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/r_lut_power_s2[2]                                                                              |    401 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/r_lut_power_s2[4]                                                                              |    389 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[0].r_bram_addr[6]                                                                  |    387 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[1].r_bram_addr[6]                                                                  |    387 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[2].r_bram_addr[6]                                                                  |    387 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[3].r_bram_addr[6]                                                                  |    387 | FDRE        |
+| r_sys_clk_rst_bridge[1]                                                                                                               |    372 | FDPE        |
+| u_ddr3_top/u_ddr3_arbiter/r_burst_ch_req_reg[1]_0[0]                                                                                  |    370 | FDRE        |
+| u_ddr3_top/u_ddr3_arbiter/r_burst_ch_req_reg[1]_0[1]                                                                                  |    370 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/r_lut_power_s2[5]                                                                              |    334 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/r_lut_power_s2[1]                                                                              |    332 | FDRE        |
+| r_lcos_pg_clk_rst_bridge[1]                                                                                                           |    331 | FDPE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[0].r_bram_addr[7]                                                                  |    322 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[1].r_bram_addr[7]                                                                  |    322 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[2].r_bram_addr[7]                                                                  |    322 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[3].r_bram_addr[7]                                                                  |    322 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/r_dsp_power[2]                                                                                 |    300 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/r_lut_power_s2[6]                                                                              |    290 | FDRE        |
+| u_lcos_top/u_lcos_pg_top/u_lcos_pg_reg_top/u_lcos_pg_reg_set/r_reg_pg_wss_mask_reg[1]_1                                               |    279 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[0].r_bram_addr[0]                                                                  |    263 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[1].r_bram_addr[0]                                                                  |    263 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[2].r_bram_addr[0]                                                                  |    263 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[3].r_bram_addr[0]                                                                  |    263 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[0].r_bram_addr[1]                                                                  |    262 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[1].r_bram_addr[1]                                                                  |    262 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[2].r_bram_addr[1]                                                                  |    262 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[3].r_bram_addr[1]                                                                  |    262 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[0].r_bram_addr[2]                                                                  |    261 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[1].r_bram_addr[2]                                                                  |    261 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[2].r_bram_addr[2]                                                                  |    261 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[3].r_bram_addr[2]                                                                  |    261 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[0].r_bram_addr[3]                                                                  |    260 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[1].r_bram_addr[3]                                                                  |    260 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[2].r_bram_addr[3]                                                                  |    260 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[3].r_bram_addr[3]                                                                  |    260 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[0].r_bram_addr[4]                                                                  |    259 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[1].r_bram_addr[4]                                                                  |    259 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[2].r_bram_addr[4]                                                                  |    259 | FDRE        |
+| u_sys_top_with_ddr3/u_sys_power_loader/g_bram_bank[3].r_bram_addr[4]                                                                  |    259 | FDRE        |
++---------------------------------------------------------------------------------------------------------------------------------------+--------+-------------+
+
+

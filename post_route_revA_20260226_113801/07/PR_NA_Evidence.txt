@@ -1,0 +1,6 @@
+PR N/A 증빙 스냅샷
+----------------------------------------
+Clock MUX primitives (BUFGMUX/BUFGCTRL/BUFGCE*): 0
+HD.RECONFIGURABLE==1 cells:                   0
+결론: 클럭 스위칭/PR 관련 구조 미사용(추정) -> Group 07 = N/A
+참고: BUFG* MUX류 존재만으로 PR 사용을 의미하지 않으며, HD.RECONFIGURABLE/Pblock 속성이 최우선 판단 기준입니다.

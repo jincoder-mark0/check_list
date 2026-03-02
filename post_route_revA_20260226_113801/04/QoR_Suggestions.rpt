@@ -1,0 +1,35 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Thu Feb 26 11:45:22 2026
+| Host         : lc-kjlee-pc running 64-bit Ubuntu 24.04.3 LTS
+| Command      : report_qor_suggestions -file /home/lc-kjlee-pc/works/fpga/20260202_MLC60_FPGA_100_630A_DDR/MLC_FPGA.reports/post_route_revA_20260226_113801/04/QoR_Suggestions.rpt
+| Design       : top_with_ddr3
+| Device       : xc7a100t
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report QoR Suggestions
+
+Table of Contents
+-----------------
+1. QoR Suggestions Report Summary
+2. ML Strategies
+
+1. QoR Suggestions Report Summary
+---------------------------------
+
++------+----+--------+--------------+---------------+-----------+------------------------------------------------------------------------------------------+--------+
+| Name | Id | Status | Generated At | Applicable At | Automatic |                                        Description                                       | Source |
++------+----+--------+--------------+---------------+-----------+------------------------------------------------------------------------------------------+--------+
+* No QoR suggestions are provided when the fully routed design is assessed to easily meet timing.
+
+
+2. ML Strategies
+----------------
+
++---+----+---------+---------+
+| # | Id | Command | Options |
++---+----+---------+---------+
+
+

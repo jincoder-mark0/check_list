@@ -1,0 +1,21 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Thu Feb 26 11:46:17 2026
+| Host         : lc-kjlee-pc running 64-bit Ubuntu 24.04.3 LTS
+| Design       : top_with_ddr3
+| Device       : xc7a100tfgg676-2
+| Speed File   : -2
+------------------------------------------------------------------------------------
+
+Debug Core Information
+
+Table of Contents
+-----------------
+1. Debug Cores
+
+1. Debug Cores
+--------------
+
+INFO: [Chipscope 16-244] No debug cores were found in this design.
+

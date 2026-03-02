@@ -1,0 +1,762 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Thu Feb 26 11:47:35 2026
+| Host         : lc-kjlee-pc running 64-bit Ubuntu 24.04.3 LTS
+| Command      : report_datasheet -file /home/lc-kjlee-pc/works/fpga/20260202_MLC60_FPGA_100_630A_DDR/MLC_FPGA.reports/post_route_revA_20260226_113801/05/Datasheet.rpt
+| Design       : top_with_ddr3
+| Device       : 7a100t-fgg676
+| Speed File   : -2  PRODUCTION 1.23 2018-06-13
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Data Sheet Report
+
+Input Ports Setup/Hold
+
+---------------+-----------------------------+----------------+----------+---------------+---------+---------------+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Reference      | Input                       | IO Reg         | Delay    |     Setup(ns) | Process |      Hold(ns) | Process | Internal                                                                                                                                                  |
+Clock          | Port                        | Type           | Type     | to Clk (Edge) | Corner  | to Clk (Edge) | Corner  | Clock                                                                                                                                                     |
+---------------+-----------------------------+----------------+----------+---------------+---------+---------------+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+pin_i_clk_100m | ddr3_dq[8]                  | ISERDESE2 (IO) | VARIABLE |    -0.592 (r) | SLOW    |     1.337 (r) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[8]                  | ISERDESE2 (IO) | VARIABLE |    -0.433 (f) | SLOW    |     1.337 (f) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[9]                  | ISERDESE2 (IO) | VARIABLE |    -0.618 (r) | SLOW    |     1.363 (r) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[9]                  | ISERDESE2 (IO) | VARIABLE |    -0.459 (f) | SLOW    |     1.363 (f) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[10]                 | ISERDESE2 (IO) | VARIABLE |    -0.601 (r) | SLOW    |     1.345 (r) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[10]                 | ISERDESE2 (IO) | VARIABLE |    -0.442 (f) | SLOW    |     1.345 (f) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[11]                 | ISERDESE2 (IO) | VARIABLE |    -0.587 (r) | SLOW    |     1.330 (r) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[11]                 | ISERDESE2 (IO) | VARIABLE |    -0.428 (f) | SLOW    |     1.330 (f) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[12]                 | ISERDESE2 (IO) | VARIABLE |    -0.578 (r) | SLOW    |     1.322 (r) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[12]                 | ISERDESE2 (IO) | VARIABLE |    -0.419 (f) | SLOW    |     1.322 (f) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[13]                 | ISERDESE2 (IO) | VARIABLE |    -0.606 (r) | SLOW    |     1.349 (r) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[13]                 | ISERDESE2 (IO) | VARIABLE |    -0.447 (f) | SLOW    |     1.349 (f) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[14]                 | ISERDESE2 (IO) | VARIABLE |    -0.596 (r) | SLOW    |     1.339 (r) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[14]                 | ISERDESE2 (IO) | VARIABLE |    -0.437 (f) | SLOW    |     1.339 (f) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[15]                 | ISERDESE2 (IO) | VARIABLE |    -0.620 (r) | SLOW    |     1.363 (r) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[15]                 | ISERDESE2 (IO) | VARIABLE |    -0.461 (f) | SLOW    |     1.363 (f) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[0]                  | ISERDESE2 (IO) | VARIABLE |    -0.614 (r) | SLOW    |     1.360 (r) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[0]                  | ISERDESE2 (IO) | VARIABLE |    -0.455 (f) | SLOW    |     1.360 (f) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[1]                  | ISERDESE2 (IO) | VARIABLE |    -0.647 (r) | SLOW    |     1.392 (r) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[1]                  | ISERDESE2 (IO) | VARIABLE |    -0.488 (f) | SLOW    |     1.392 (f) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[2]                  | ISERDESE2 (IO) | VARIABLE |    -0.655 (r) | SLOW    |     1.399 (r) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[2]                  | ISERDESE2 (IO) | VARIABLE |    -0.496 (f) | SLOW    |     1.399 (f) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[3]                  | ISERDESE2 (IO) | VARIABLE |    -0.627 (r) | SLOW    |     1.371 (r) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[3]                  | ISERDESE2 (IO) | VARIABLE |    -0.468 (f) | SLOW    |     1.371 (f) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[4]                  | ISERDESE2 (IO) | VARIABLE |    -0.619 (r) | SLOW    |     1.363 (r) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[4]                  | ISERDESE2 (IO) | VARIABLE |    -0.460 (f) | SLOW    |     1.363 (f) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[5]                  | ISERDESE2 (IO) | VARIABLE |    -0.650 (r) | SLOW    |     1.393 (r) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[5]                  | ISERDESE2 (IO) | VARIABLE |    -0.491 (f) | SLOW    |     1.393 (f) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[6]                  | ISERDESE2 (IO) | VARIABLE |    -0.639 (r) | SLOW    |     1.383 (r) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[6]                  | ISERDESE2 (IO) | VARIABLE |    -0.480 (f) | SLOW    |     1.383 (f) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[7]                  | ISERDESE2 (IO) | VARIABLE |    -0.641 (r) | SLOW    |     1.384 (r) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk |
+pin_i_clk_100m | ddr3_dq[7]                  | ISERDESE2 (IO) | VARIABLE |    -0.482 (f) | SLOW    |     1.384 (f) | SLOW    | u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk |
+pin_i_clk_20m  | pin_i_fpga_parts_version[0] | FDRE           | -        |     7.422 (r) | SLOW    |    -3.459 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk                                                                                                                             |
+pin_i_clk_20m  | pin_i_fpga_parts_version[1] | FDRE           | -        |     7.470 (r) | SLOW    |    -3.419 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk                                                                                                                             |
+pin_i_clk_20m  | pin_i_fpga_parts_version[2] | FDRE           | -        |     7.148 (r) | SLOW    |    -3.216 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk                                                                                                                             |
+pin_i_clk_20m  | pin_i_wss_rst_n             | FDCE           | -        |     6.576 (r) | SLOW    |    -3.037 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk                                                                                                                             |
+pin_i_fmc_clk  | pin_i_fmc_addr[0]           | FDRE           | -        |     5.030 (r) | SLOW    |    -2.328 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_i_fmc_addr[1]           | FDRE           | -        |     5.004 (r) | SLOW    |    -2.323 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_i_fmc_addr[2]           | FDRE           | -        |     4.728 (r) | SLOW    |    -2.232 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_i_fmc_addr[3]           | FDRE           | -        |     4.965 (r) | SLOW    |    -2.242 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_i_fmc_addr[4]           | FDRE           | -        |     4.957 (r) | SLOW    |    -2.269 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_i_fmc_addr[5]           | FDRE           | -        |     5.039 (r) | SLOW    |    -2.340 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_i_fmc_addr[6]           | FDRE           | -        |     5.138 (r) | SLOW    |    -2.319 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_i_fmc_addr[7]           | FDRE           | -        |     4.836 (r) | SLOW    |    -2.288 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_i_fmc_addr[8]           | FDRE           | -        |     5.207 (r) | SLOW    |    -2.468 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_i_fmc_addr[9]           | FDRE           | -        |     5.484 (r) | SLOW    |    -2.533 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_i_fmc_addr[10]          | FDRE           | -        |     5.739 (r) | SLOW    |    -2.620 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_i_fmc_addr[11]          | FDRE           | -        |     5.060 (r) | SLOW    |    -2.377 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_i_fmc_addr[12]          | FDRE           | -        |     5.916 (r) | SLOW    |    -2.815 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_i_fmc_addr[13]          | FDRE           | -        |     6.055 (r) | SLOW    |    -2.859 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_i_fmc_addr[14]          | FDRE           | -        |     5.509 (r) | SLOW    |    -2.578 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_i_fmc_addr[15]          | FDRE           | -        |     5.157 (r) | SLOW    |    -2.427 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_i_fmc_adv_n             | FDRE           | -        |     7.172 (r) | SLOW    |    -2.938 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_i_fmc_cs1_n             | FDRE           | -        |     6.010 (r) | SLOW    |    -2.461 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_i_fmc_oe_n              | FDRE           | -        |     6.206 (r) | SLOW    |    -2.556 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_i_fmc_we_n              | FDSE           | -        |     4.918 (r) | SLOW    |    -2.340 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[0]          | FDRE           | -        |     3.186 (r) | SLOW    |    -1.383 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[1]          | FDRE           | -        |     3.202 (r) | SLOW    |    -1.393 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[2]          | FDRE           | -        |     3.195 (r) | SLOW    |    -1.396 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[3]          | FDRE           | -        |     3.206 (r) | SLOW    |    -1.408 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[4]          | FDRE           | -        |     3.209 (r) | SLOW    |    -1.386 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[5]          | FDRE           | -        |     3.292 (r) | SLOW    |    -1.426 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[6]          | FDRE           | -        |     3.188 (r) | SLOW    |    -1.398 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[7]          | FDRE           | -        |     3.192 (r) | SLOW    |    -1.373 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[8]          | FDRE           | -        |     3.258 (r) | SLOW    |    -1.381 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[9]          | FDRE           | -        |     3.144 (r) | SLOW    |    -1.347 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[10]         | FDRE           | -        |     3.212 (r) | SLOW    |    -1.386 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[11]         | FDRE           | -        |     3.320 (r) | SLOW    |    -1.445 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[12]         | FDRE           | -        |     3.070 (r) | SLOW    |    -1.329 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[13]         | FDRE           | -        |     3.193 (r) | SLOW    |    -1.377 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[14]         | FDRE           | -        |     3.179 (r) | SLOW    |    -1.376 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[15]         | FDRE           | -        |     3.075 (r) | SLOW    |    -1.333 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[16]         | FDRE           | -        |     4.034 (r) | SLOW    |    -1.766 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[17]         | FDRE           | -        |     3.818 (r) | SLOW    |    -1.688 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[18]         | FDRE           | -        |     3.247 (r) | SLOW    |    -1.371 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[19]         | FDRE           | -        |     4.028 (r) | SLOW    |    -1.759 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[20]         | FDRE           | -        |     3.777 (r) | SLOW    |    -1.665 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[21]         | FDRE           | -        |     4.360 (r) | SLOW    |    -1.951 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[22]         | FDRE           | -        |     3.888 (r) | SLOW    |    -1.727 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[23]         | FDRE           | -        |     4.028 (r) | SLOW    |    -1.784 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[24]         | FDRE           | -        |     4.372 (r) | SLOW    |    -1.965 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[25]         | FDRE           | -        |     4.103 (r) | SLOW    |    -1.834 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[26]         | FDRE           | -        |     4.180 (r) | SLOW    |    -1.846 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[27]         | FDRE           | -        |     4.373 (r) | SLOW    |    -1.951 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[28]         | FDRE           | -        |     4.155 (r) | SLOW    |    -1.836 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[29]         | FDRE           | -        |     3.803 (r) | SLOW    |    -1.665 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[30]         | FDRE           | -        |     3.832 (r) | SLOW    |    -1.693 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+pin_i_fmc_clk  | pin_io_fmc_data[31]         | FDRE           | -        |     3.842 (r) | SLOW    |    -1.689 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk                                                                                                                               |
+---------------+-----------------------------+----------------+----------+---------------+---------+---------------+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+Output Ports Clock-to-out
+
+---------------+---------------------------+----------------+-------+----------------+---------+----------------+---------+---------------------------------+
+Reference      | Output                    | IO Reg         | Delay | Max Clk (Edge) | Process | Min Clk (Edge) | Process | Internal                        |
+Clock          | Port                      | Type           | Type  |    to port(ns) | Corner  |    to port(ns) | Corner  | Clock                           |
+---------------+---------------------------+----------------+-------+----------------+---------+----------------+---------+---------------------------------+
+pin_i_clk_100m | ddr3_reset_n              | FDRE           | -     |      7.380 (r) | SLOW    |      1.553 (r) | FAST    | clk_pll_i                       |
+pin_i_clk_100m | ddr3_cke                  | OSERDESE2 (IO) | -     |      5.149 (r) | SLOW    |      2.710 (r) | FAST    | oserdes_clk                     |
+pin_i_clk_100m | ddr3_cs_n                 | OSERDESE2 (IO) | -     |      5.144 (r) | SLOW    |      2.704 (r) | FAST    | oserdes_clk                     |
+pin_i_clk_100m | ddr3_addr[9]              | OSERDESE2 (IO) | -     |      5.109 (r) | SLOW    |      2.668 (r) | FAST    | oserdes_clk_1                   |
+pin_i_clk_100m | ddr3_addr[10]             | OSERDESE2 (IO) | -     |      5.104 (r) | SLOW    |      2.664 (r) | FAST    | oserdes_clk_1                   |
+pin_i_clk_100m | ddr3_addr[11]             | OSERDESE2 (IO) | -     |      5.108 (r) | SLOW    |      2.668 (r) | FAST    | oserdes_clk_1                   |
+pin_i_clk_100m | ddr3_addr[12]             | OSERDESE2 (IO) | -     |      5.105 (r) | SLOW    |      2.665 (r) | FAST    | oserdes_clk_1                   |
+pin_i_clk_100m | ddr3_addr[13]             | OSERDESE2 (IO) | -     |      5.116 (r) | SLOW    |      2.676 (r) | FAST    | oserdes_clk_1                   |
+pin_i_clk_100m | ddr3_ba[0]                | OSERDESE2 (IO) | -     |      5.117 (r) | SLOW    |      2.678 (r) | FAST    | oserdes_clk_1                   |
+pin_i_clk_100m | ddr3_ba[1]                | OSERDESE2 (IO) | -     |      5.091 (r) | SLOW    |      2.652 (r) | FAST    | oserdes_clk_1                   |
+pin_i_clk_100m | ddr3_ba[2]                | OSERDESE2 (IO) | -     |      5.091 (r) | SLOW    |      2.652 (r) | FAST    | oserdes_clk_1                   |
+pin_i_clk_100m | ddr3_cas_n                | OSERDESE2 (IO) | -     |      5.134 (r) | SLOW    |      2.694 (r) | FAST    | oserdes_clk_1                   |
+pin_i_clk_100m | ddr3_odt                  | OSERDESE2 (IO) | -     |      5.138 (r) | SLOW    |      2.696 (r) | FAST    | oserdes_clk_1                   |
+pin_i_clk_100m | ddr3_ras_n                | OSERDESE2 (IO) | -     |      5.145 (r) | SLOW    |      2.705 (r) | FAST    | oserdes_clk_1                   |
+pin_i_clk_100m | ddr3_we_n                 | OSERDESE2 (IO) | -     |      5.135 (r) | SLOW    |      2.693 (r) | FAST    | oserdes_clk_1                   |
+pin_i_clk_100m | ddr3_addr[0]              | OSERDESE2 (IO) | -     |      5.121 (r) | SLOW    |      2.674 (r) | FAST    | oserdes_clk_2                   |
+pin_i_clk_100m | ddr3_addr[1]              | OSERDESE2 (IO) | -     |      5.142 (r) | SLOW    |      2.695 (r) | FAST    | oserdes_clk_2                   |
+pin_i_clk_100m | ddr3_addr[2]              | OSERDESE2 (IO) | -     |      5.090 (r) | SLOW    |      2.644 (r) | FAST    | oserdes_clk_2                   |
+pin_i_clk_100m | ddr3_addr[3]              | OSERDESE2 (IO) | -     |      5.102 (r) | SLOW    |      2.656 (r) | FAST    | oserdes_clk_2                   |
+pin_i_clk_100m | ddr3_addr[4]              | OSERDESE2 (IO) | -     |      5.125 (r) | SLOW    |      2.679 (r) | FAST    | oserdes_clk_2                   |
+pin_i_clk_100m | ddr3_addr[5]              | OSERDESE2 (IO) | -     |      5.118 (r) | SLOW    |      2.672 (r) | FAST    | oserdes_clk_2                   |
+pin_i_clk_100m | ddr3_addr[6]              | OSERDESE2 (IO) | -     |      5.120 (r) | SLOW    |      2.674 (r) | FAST    | oserdes_clk_2                   |
+pin_i_clk_100m | ddr3_addr[7]              | OSERDESE2 (IO) | -     |      5.119 (r) | SLOW    |      2.674 (r) | FAST    | oserdes_clk_2                   |
+pin_i_clk_100m | ddr3_addr[8]              | OSERDESE2 (IO) | -     |      5.103 (r) | SLOW    |      2.656 (r) | FAST    | oserdes_clk_2                   |
+pin_i_clk_100m | ddr3_ck_n                 | ODDR (IO)      | -     |      5.184 (r) | SLOW    |      2.660 (r) | FAST    | oserdes_clk_2                   |
+pin_i_clk_100m | ddr3_ck_n                 | ODDR (IO)      | -     |      5.184 (f) | SLOW    |      2.660 (f) | FAST    | oserdes_clk_2                   |
+pin_i_clk_100m | ddr3_ck_p                 | ODDR (IO)      | -     |      5.183 (r) | SLOW    |      2.658 (r) | FAST    | oserdes_clk_2                   |
+pin_i_clk_100m | ddr3_ck_p                 | ODDR (IO)      | -     |      5.183 (f) | SLOW    |      2.658 (f) | FAST    | oserdes_clk_2                   |
+pin_i_clk_100m | ddr3_dm[1]                | OSERDESE2 (IO) | -     |      6.291 (r) | SLOW    |      2.503 (r) | FAST    | oserdes_clk_3                   |
+pin_i_clk_100m | ddr3_dq[8]                | PHASER_OUT_PHY | -     |      6.290 (r) | SLOW    |      2.509 (r) | FAST    | oserdes_clk_3                   |
+pin_i_clk_100m | ddr3_dq[9]                | OSERDESE2 (IO) | -     |      6.290 (r) | SLOW    |      2.484 (r) | FAST    | oserdes_clk_3                   |
+pin_i_clk_100m | ddr3_dq[10]               | OSERDESE2 (IO) | -     |      6.289 (r) | SLOW    |      2.499 (r) | FAST    | oserdes_clk_3                   |
+pin_i_clk_100m | ddr3_dq[11]               | OSERDESE2 (IO) | -     |      6.286 (r) | SLOW    |      2.509 (r) | FAST    | oserdes_clk_3                   |
+pin_i_clk_100m | ddr3_dq[12]               | OSERDESE2 (IO) | -     |      6.286 (r) | SLOW    |      2.517 (r) | FAST    | oserdes_clk_3                   |
+pin_i_clk_100m | ddr3_dq[13]               | OSERDESE2 (IO) | -     |      6.287 (r) | SLOW    |      2.491 (r) | FAST    | oserdes_clk_3                   |
+pin_i_clk_100m | ddr3_dq[14]               | OSERDESE2 (IO) | -     |      6.287 (r) | SLOW    |      2.500 (r) | FAST    | oserdes_clk_3                   |
+pin_i_clk_100m | ddr3_dq[15]               | OSERDESE2 (IO) | -     |      6.289 (r) | SLOW    |      2.478 (r) | FAST    | oserdes_clk_3                   |
+pin_i_clk_100m | ddr3_dqs_n[1]             | ODDR (IO)      | -     |      7.080 (r) | SLOW    |      3.144 (r) | FAST    | oserdes_clk_3                   |
+pin_i_clk_100m | ddr3_dqs_n[1]             | ODDR (IO)      | -     |      7.080 (f) | SLOW    |      3.144 (f) | FAST    | oserdes_clk_3                   |
+pin_i_clk_100m | ddr3_dqs_p[1]             | ODDR (IO)      | -     |      7.081 (r) | SLOW    |      3.143 (r) | FAST    | oserdes_clk_3                   |
+pin_i_clk_100m | ddr3_dqs_p[1]             | ODDR (IO)      | -     |      7.081 (f) | SLOW    |      3.143 (f) | FAST    | oserdes_clk_3                   |
+pin_i_clk_100m | ddr3_dm[0]                | OSERDESE2 (IO) | -     |      6.295 (r) | SLOW    |      2.481 (r) | FAST    | oserdes_clk_4                   |
+pin_i_clk_100m | ddr3_dq[0]                | OSERDESE2 (IO) | -     |      6.294 (r) | SLOW    |      2.492 (r) | FAST    | oserdes_clk_4                   |
+pin_i_clk_100m | ddr3_dq[1]                | OSERDESE2 (IO) | -     |      6.294 (r) | SLOW    |      2.459 (r) | FAST    | oserdes_clk_4                   |
+pin_i_clk_100m | ddr3_dq[2]                | OSERDESE2 (IO) | -     |      6.293 (r) | SLOW    |      2.449 (r) | FAST    | oserdes_clk_4                   |
+pin_i_clk_100m | ddr3_dq[3]                | OSERDESE2 (IO) | -     |      6.290 (r) | SLOW    |      2.473 (r) | FAST    | oserdes_clk_4                   |
+pin_i_clk_100m | ddr3_dq[4]                | OSERDESE2 (IO) | -     |      6.290 (r) | SLOW    |      2.481 (r) | FAST    | oserdes_clk_4                   |
+pin_i_clk_100m | ddr3_dq[5]                | OSERDESE2 (IO) | -     |      6.291 (r) | SLOW    |      2.451 (r) | FAST    | oserdes_clk_4                   |
+pin_i_clk_100m | ddr3_dq[6]                | OSERDESE2 (IO) | -     |      6.291 (r) | SLOW    |      2.462 (r) | FAST    | oserdes_clk_4                   |
+pin_i_clk_100m | ddr3_dq[7]                | OSERDESE2 (IO) | -     |      6.293 (r) | SLOW    |      2.461 (r) | FAST    | oserdes_clk_4                   |
+pin_i_clk_100m | ddr3_dqs_n[0]             | ODDR (IO)      | -     |      7.084 (r) | SLOW    |      3.119 (r) | FAST    | oserdes_clk_4                   |
+pin_i_clk_100m | ddr3_dqs_n[0]             | ODDR (IO)      | -     |      7.084 (f) | SLOW    |      3.119 (f) | FAST    | oserdes_clk_4                   |
+pin_i_clk_100m | ddr3_dqs_p[0]             | ODDR (IO)      | -     |      7.085 (r) | SLOW    |      3.109 (r) | FAST    | oserdes_clk_4                   |
+pin_i_clk_100m | ddr3_dqs_p[0]             | ODDR (IO)      | -     |      7.085 (f) | SLOW    |      3.109 (f) | FAST    | oserdes_clk_4                   |
+pin_i_clk_20m  | pin_o_heater              | FDRE           | -     |      6.857 (r) | SLOW    |      1.624 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_ito_ctl_m      | FDCE           | -     |      7.693 (r) | SLOW    |      1.905 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_ito_ctl_p      | FDCE           | -     |      8.241 (r) | SLOW    |      1.880 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_latch    | FDRE           | -     |      7.147 (r) | SLOW    |      2.194 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_mode     | FDRE           | -     |      8.463 (r) | SLOW    |      2.266 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pde[0]   | FDRE           | -     |      6.372 (r) | SLOW    |      1.503 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pde[1]   | FDRE           | -     |      6.124 (r) | SLOW    |      1.137 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pde[2]   | FDCE           | -     |      5.838 (r) | SLOW    |      1.354 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pde[3]   | FDRE           | -     |      5.940 (r) | SLOW    |      1.362 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pde[4]   | FDRE           | -     |      5.880 (r) | SLOW    |      1.232 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pde[5]   | FDRE           | -     |      5.402 (r) | SLOW    |      1.165 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pde[6]   | FDCE           | -     |      6.041 (r) | SLOW    |      1.492 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pde[7]   | FDCE           | -     |      5.796 (r) | SLOW    |      1.198 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pde[8]   | FDCE           | -     |      6.138 (r) | SLOW    |      1.316 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pde[9]   | FDRE           | -     |      5.312 (r) | SLOW    |      1.104 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pdo[0]   | FDCE           | -     |      5.341 (r) | SLOW    |      1.145 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pdo[1]   | FDRE           | -     |      5.759 (r) | SLOW    |      1.325 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pdo[2]   | FDRE           | -     |      5.998 (r) | SLOW    |      1.425 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pdo[3]   | FDCE           | -     |      4.985 (r) | SLOW    |      0.830 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pdo[4]   | FDCE           | -     |      5.833 (r) | SLOW    |      1.228 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pdo[5]   | FDRE           | -     |      6.031 (r) | SLOW    |      1.321 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pdo[6]   | FDRE           | -     |      5.787 (r) | SLOW    |      1.207 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pdo[7]   | FDRE           | -     |      5.754 (r) | SLOW    |      1.012 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pdo[8]   | FDRE           | -     |      6.134 (r) | SLOW    |      1.300 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_pdo[9]   | FDRE           | -     |      5.464 (r) | SLOW    |      1.173 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_regp     | FDRE           | -     |      7.585 (r) | SLOW    |      2.104 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_vck1     | FDRE           | -     |      7.911 (r) | SLOW    |      2.349 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_vck2     | FDRE           | -     |      7.805 (r) | SLOW    |      2.391 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_vst_img  | FDRE           | -     |      7.398 (r) | SLOW    |      2.203 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_vsw_stt  | FDRE           | -     |      7.501 (r) | SLOW    |      2.268 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_pow_analog_en  | FDRE           | -     |      6.142 (r) | SLOW    |      1.350 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_pow_digital_en | FDRE           | -     |      6.472 (r) | SLOW    |      1.495 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_hck      | ODDR (IO)      | -     |      8.358 (r) | SLOW    |      6.157 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_hck      | ODDR (IO)      | -     |      8.358 (f) | SLOW    |      6.157 (f) | FAST    | clk_out2_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_lcos_panel_hck_en   | FDCE           | -     |     13.529 (r) | SLOW    |      8.217 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_clk_78m             | ODDR (IO)      | -     |      2.442 (r) | SLOW    |      0.094 (r) | FAST    | clk_out4_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_20m  | pin_o_clk_78m             | ODDR (IO)      | -     |      2.442 (f) | SLOW    |      0.094 (f) | FAST    | clk_out4_ip_clk_wiz_lcos_pclk   |
+pin_i_clk_78m  | pin_o_lcos_ito_ctl_m      | FDCE           | -     |      6.696 (r) | SLOW    |      1.928 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_ito_ctl_p      | FDCE           | -     |      7.587 (r) | SLOW    |      2.319 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_panel_k2_en    | FDCE           | -     |      6.115 (r) | SLOW    |      1.952 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_panel_k2_sck   | ODDR (IO)      | -     |      1.810 (r) | SLOW    |      0.226 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_panel_k2_sck   | ODDR (IO)      | -     |      1.810 (f) | SLOW    |      0.226 (f) | FAST    | clk_out1_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_panel_k2m      | FDCE           | -     |      6.757 (r) | SLOW    |      1.971 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_panel_k2p      | FDCE           | -     |      6.753 (r) | SLOW    |      2.001 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_panel_r2k      | FDCE           | -     |      6.790 (r) | SLOW    |      2.070 (r) | FAST    | clk_out1_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_clk_a      | ODDR (IO)      | -     |      3.073 (r) | SLOW    |      0.500 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_clk_a      | ODDR (IO)      | -     |      3.073 (f) | SLOW    |      0.500 (f) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_clk_b      | ODDR (IO)      | -     |      3.079 (r) | SLOW    |      0.504 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_clk_b      | ODDR (IO)      | -     |      3.079 (f) | SLOW    |      0.504 (f) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_a[0]  | FDCE           | -     |      5.534 (r) | SLOW    |      1.392 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_a[1]  | FDCE           | -     |      6.533 (r) | SLOW    |      1.960 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_a[2]  | FDCE           | -     |      6.367 (r) | SLOW    |      1.946 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_a[3]  | FDCE           | -     |      6.192 (r) | SLOW    |      1.799 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_a[4]  | FDCE           | -     |      6.476 (r) | SLOW    |      1.977 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_a[5]  | FDCE           | -     |      6.229 (r) | SLOW    |      1.848 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_a[6]  | FDCE           | -     |      5.962 (r) | SLOW    |      1.708 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_a[7]  | FDCE           | -     |      6.614 (r) | SLOW    |      2.043 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_a[8]  | FDCE           | -     |      6.081 (r) | SLOW    |      1.782 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_a[9]  | FDCE           | -     |      5.738 (r) | SLOW    |      1.527 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_a[10] | FDCE           | -     |      5.653 (r) | SLOW    |      1.495 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_a[11] | FDCE           | -     |      6.102 (r) | SLOW    |      1.793 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_b[0]  | FDCE           | -     |      6.078 (r) | SLOW    |      1.736 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_b[1]  | FDCE           | -     |      5.878 (r) | SLOW    |      1.645 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_b[2]  | FDCE           | -     |      5.681 (r) | SLOW    |      1.539 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_b[3]  | FDCE           | -     |      5.741 (r) | SLOW    |      1.529 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_b[4]  | FDCE           | -     |      5.903 (r) | SLOW    |      1.671 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_b[5]  | FDCE           | -     |      6.160 (r) | SLOW    |      1.801 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_b[6]  | FDCE           | -     |      6.074 (r) | SLOW    |      1.759 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_b[7]  | FDCE           | -     |      5.924 (r) | SLOW    |      1.696 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_b[8]  | FDCE           | -     |      6.614 (r) | SLOW    |      2.024 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_b[9]  | FDCE           | -     |      6.025 (r) | SLOW    |      1.734 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_b[10] | FDCE           | -     |      6.114 (r) | SLOW    |      1.764 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_dac_data_b[11] | FDCE           | -     |      6.176 (r) | SLOW    |      1.775 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_panel_cck      | ODDR (IO)      | -     |      1.249 (r) | SLOW    |     -0.160 (r) | SLOW    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_panel_cck      | ODDR (IO)      | -     |      1.249 (f) | SLOW    |     -0.160 (f) | SLOW    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_panel_cck_en   | FDCE           | -     |      6.044 (r) | SLOW    |      1.851 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_panel_cnt_rst  | FDPE           | -     |      6.922 (r) | SLOW    |      2.110 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_clk_78m  | pin_o_lcos_panel_vpg_img  | FDCE           | -     |      6.134 (r) | SLOW    |      1.730 (r) | FAST    | clk_out2_ip_clk_wiz_lcos_sftcck |
+pin_i_fmc_clk  | pin_io_fmc_data[0]        | FDRE           | -     |     11.986 (r) | SLOW    |      2.045 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[1]        | FDRE           | -     |     12.214 (r) | SLOW    |      2.045 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[2]        | FDRE           | -     |     12.189 (r) | SLOW    |      1.940 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[3]        | FDRE           | -     |     13.023 (r) | SLOW    |      2.254 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[4]        | FDRE           | -     |     12.498 (r) | SLOW    |      1.963 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[5]        | FDRE           | -     |     12.781 (r) | SLOW    |      2.100 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[6]        | FDRE           | -     |     13.203 (r) | SLOW    |      2.248 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[7]        | FDRE           | -     |     12.630 (r) | SLOW    |      2.334 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[8]        | FDRE           | -     |     13.456 (r) | SLOW    |      2.357 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[9]        | FDRE           | -     |     13.846 (r) | SLOW    |      2.147 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[10]       | FDRE           | -     |     12.678 (r) | SLOW    |      2.265 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[11]       | FDRE           | -     |     11.847 (r) | SLOW    |      1.792 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[12]       | FDRE           | -     |     13.075 (r) | SLOW    |      2.243 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[13]       | FDRE           | -     |     12.837 (r) | SLOW    |      2.340 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[14]       | FDRE           | -     |     12.736 (r) | SLOW    |      2.123 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[15]       | FDRE           | -     |     12.890 (r) | SLOW    |      2.222 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[16]       | FDRE           | -     |     13.425 (r) | SLOW    |      2.618 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[17]       | FDRE           | -     |     12.655 (r) | SLOW    |      2.316 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[18]       | FDRE           | -     |     12.013 (r) | SLOW    |      2.003 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[19]       | FDRE           | -     |     12.550 (r) | SLOW    |      2.645 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[20]       | FDRE           | -     |     13.818 (r) | SLOW    |      2.525 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[21]       | FDRE           | -     |     14.099 (r) | SLOW    |      2.600 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[22]       | FDRE           | -     |     13.762 (r) | SLOW    |      2.466 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[23]       | FDRE           | -     |     14.027 (r) | SLOW    |      2.478 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[24]       | FDRE           | -     |     12.848 (r) | SLOW    |      2.463 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[25]       | FDRE           | -     |     13.859 (r) | SLOW    |      2.649 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[26]       | FDRE           | -     |     13.727 (r) | SLOW    |      2.386 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[27]       | FDRE           | -     |     13.458 (r) | SLOW    |      2.740 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[28]       | FDRE           | -     |     13.660 (r) | SLOW    |      2.369 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[29]       | FDRE           | -     |     14.021 (r) | SLOW    |      2.444 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[30]       | FDRE           | -     |     13.961 (r) | SLOW    |      2.478 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+pin_i_fmc_clk  | pin_io_fmc_data[31]       | FDRE           | -     |     14.096 (r) | SLOW    |      2.658 (r) | FAST    | clk_out1_ip_clk_wiz_fmc_clk     |
+---------------+---------------------------+----------------+-------+----------------+---------+----------------+---------+---------------------------------+
+
+
+Combinational Delays
+
+----------------+---------------------+-----------+---------+-----------+---------+
+From            | To                  |   Max     | Process |   Min     | Process |
+Port            | Port                | Delay(ns) | Corner  | Delay(ns) | Corner  |
+----------------+---------------------+-----------+---------+-----------+---------+
+pin_i_fmc_cs1_n | pin_io_fmc_data[0]  |     9.558 | SLOW    |     3.422 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[1]  |     9.812 | SLOW    |     3.543 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[2]  |     9.701 | SLOW    |     3.482 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[3]  |     9.353 | SLOW    |     3.300 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[4]  |     9.104 | SLOW    |     3.178 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[5]  |     8.977 | SLOW    |     3.117 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[6]  |     9.231 | SLOW    |     3.239 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[7]  |     8.851 | SLOW    |     3.056 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[8]  |     8.471 | SLOW    |     2.874 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[9]  |     8.594 | SLOW    |     2.935 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[10] |     8.839 | SLOW    |     3.059 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[11] |     9.901 | SLOW    |     3.604 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[12] |     9.441 | SLOW    |     3.361 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[13] |     8.737 | SLOW    |     2.996 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[14] |     8.728 | SLOW    |     2.996 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[15] |    10.036 | SLOW    |     3.665 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[16] |    11.036 | SLOW    |     4.255 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[17] |     9.770 | SLOW    |     3.563 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[18] |    10.052 | SLOW    |     3.717 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[19] |    10.381 | SLOW    |     3.887 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[20] |     9.411 | SLOW    |     3.375 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[21] |    11.000 | SLOW    |     4.201 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[22] |    10.154 | SLOW    |     3.761 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[23] |    10.030 | SLOW    |     3.694 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[24] |    10.761 | SLOW    |     4.075 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[25] |    10.287 | SLOW    |     3.824 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[26] |    10.621 | SLOW    |     4.012 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[27] |    10.879 | SLOW    |     4.138 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[28] |    10.514 | SLOW    |     3.950 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[29] |     9.855 | SLOW    |     3.626 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[30] |     9.530 | SLOW    |     3.438 | FAST    |
+pin_i_fmc_cs1_n | pin_io_fmc_data[31] |     9.655 | SLOW    |     3.501 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[0]  |     9.738 | SLOW    |     3.504 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[1]  |     9.993 | SLOW    |     3.626 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[2]  |     9.881 | SLOW    |     3.565 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[3]  |     9.533 | SLOW    |     3.382 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[4]  |     9.284 | SLOW    |     3.261 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[5]  |     9.157 | SLOW    |     3.200 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[6]  |     9.411 | SLOW    |     3.321 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[7]  |     9.032 | SLOW    |     3.139 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[8]  |     8.651 | SLOW    |     2.956 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[9]  |     8.774 | SLOW    |     3.017 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[10] |     9.019 | SLOW    |     3.141 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[11] |    10.081 | SLOW    |     3.686 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[12] |     9.621 | SLOW    |     3.443 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[13] |     8.917 | SLOW    |     3.078 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[14] |     8.908 | SLOW    |     3.078 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[15] |    10.216 | SLOW    |     3.747 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[16] |    11.216 | SLOW    |     4.337 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[17] |     9.950 | SLOW    |     3.646 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[18] |    10.232 | SLOW    |     3.799 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[19] |    10.561 | SLOW    |     3.969 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[20] |     9.591 | SLOW    |     3.457 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[21] |    11.180 | SLOW    |     4.283 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[22] |    10.334 | SLOW    |     3.843 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[23] |    10.210 | SLOW    |     3.776 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[24] |    10.941 | SLOW    |     4.158 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[25] |    10.467 | SLOW    |     3.906 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[26] |    10.801 | SLOW    |     4.095 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[27] |    11.060 | SLOW    |     4.220 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[28] |    10.694 | SLOW    |     4.032 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[29] |    10.035 | SLOW    |     3.709 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[30] |     9.710 | SLOW    |     3.520 | FAST    |
+pin_i_fmc_oe_n  | pin_io_fmc_data[31] |     9.835 | SLOW    |     3.583 | FAST    |
+----------------+---------------------+-----------+---------+-----------+---------+
+
+
+Setup between Clocks
+
+---------------+----------------+---------------+---------+---------------+---------+---------------+---------+---------------+---------+
+Source         | Destination    |  Src:Rise     | Process |  Src:Rise     | Process |  Src:Fall     | Process |  Src:Fall     | Process |
+Clock          | Clock          | Dest:Rise(ns) | Corner  | Dest:Fall(ns) | Corner  | Dest:Rise(ns) | Corner  | Dest:Fall(ns) | Corner  |
+---------------+----------------+---------------+---------+---------------+---------+---------------+---------+---------------+---------+
+pin_i_clk_100m | pin_i_clk_100m |         7.763 | SLOW    |         5.553 | SLOW    |         0.444 | SLOW    |               |         |
+pin_i_clk_20m  | pin_i_clk_100m |         2.383 | SLOW    |               |         |               |         |               |         |
+pin_i_clk_100m | pin_i_clk_20m  |         4.938 | SLOW    |               |         |               |         |               |         |
+pin_i_clk_20m  | pin_i_clk_20m  |        17.740 | SLOW    |         3.105 | SLOW    |         1.229 | SLOW    |         1.182 | SLOW    |
+pin_i_fmc_clk  | pin_i_clk_20m  |         2.848 | SLOW    |               |         |               |         |               |         |
+pin_i_clk_20m  | pin_i_clk_78m  |         7.210 | SLOW    |         5.028 | SLOW    |               |         |               |         |
+pin_i_clk_78m  | pin_i_clk_78m  |         5.254 | SLOW    |         3.915 | SLOW    |               |         |               |         |
+pin_i_clk_20m  | pin_i_fmc_clk  |         2.941 | SLOW    |               |         |               |         |               |         |
+pin_i_fmc_clk  | pin_i_fmc_clk  |         5.662 | SLOW    |               |         |               |         |               |         |
+---------------+----------------+---------------+---------+---------------+---------+---------------+---------+---------------+---------+
+
+
+Setup / Hold times for input bus
+Clocked by: pin_i_clk_100m
+Worst Case Data Window: 0.980 ns
+Ideal Clock Offset to Actual Clock: 0.909 ns
+-------------------+------------+---------+-------------+---------+-----------+-----------+---------------+
+                   |            | Process |             | Process | Setup     |  Hold     | Source Offset |
+Source             |  Setup(ns) | Corner  |    Hold(ns) | Corner  | Slack(ns) | Slack(ns) | to Center(ns) |
+-------------------+------------+---------+-------------+---------+-----------+-----------+---------------+
+ddr3_dq[0]         | -0.614 (r) | SLOW    |   1.360 (r) | SLOW    |       inf |       inf |             - |
+ddr3_dq[0]         | -0.455 (f) | SLOW    |   1.360 (f) | SLOW    |       inf |       inf |             - |
+ddr3_dq[1]         | -0.647 (r) | SLOW    |   1.392 (r) | SLOW    |       inf |       inf |             - |
+ddr3_dq[1]         | -0.488 (f) | SLOW    |   1.392 (f) | SLOW    |       inf |       inf |             - |
+ddr3_dq[2]         | -0.655 (r) | SLOW    |   1.399 (r) | SLOW    |       inf |       inf |             - |
+ddr3_dq[2]         | -0.496 (f) | SLOW    |   1.399 (f) | SLOW    |       inf |       inf |             - |
+ddr3_dq[3]         | -0.627 (r) | SLOW    |   1.371 (r) | SLOW    |       inf |       inf |             - |
+ddr3_dq[3]         | -0.468 (f) | SLOW    |   1.371 (f) | SLOW    |       inf |       inf |             - |
+ddr3_dq[4]         | -0.619 (r) | SLOW    |   1.363 (r) | SLOW    |       inf |       inf |             - |
+ddr3_dq[4]         | -0.460 (f) | SLOW    |   1.363 (f) | SLOW    |       inf |       inf |             - |
+ddr3_dq[5]         | -0.650 (r) | SLOW    |   1.393 (r) | SLOW    |       inf |       inf |             - |
+ddr3_dq[5]         | -0.491 (f) | SLOW    |   1.393 (f) | SLOW    |       inf |       inf |             - |
+ddr3_dq[6]         | -0.639 (r) | SLOW    |   1.383 (r) | SLOW    |       inf |       inf |             - |
+ddr3_dq[6]         | -0.480 (f) | SLOW    |   1.383 (f) | SLOW    |       inf |       inf |             - |
+ddr3_dq[7]         | -0.641 (r) | SLOW    |   1.384 (r) | SLOW    |       inf |       inf |             - |
+ddr3_dq[7]         | -0.482 (f) | SLOW    |   1.384 (f) | SLOW    |       inf |       inf |             - |
+ddr3_dq[8]         | -0.592 (r) | SLOW    |   1.337 (r) | SLOW    |       inf |       inf |             - |
+ddr3_dq[8]         | -0.433 (f) | SLOW    |   1.337 (f) | SLOW    |       inf |       inf |             - |
+ddr3_dq[9]         | -0.618 (r) | SLOW    |   1.363 (r) | SLOW    |       inf |       inf |             - |
+ddr3_dq[9]         | -0.459 (f) | SLOW    |   1.363 (f) | SLOW    |       inf |       inf |             - |
+ddr3_dq[10]        | -0.601 (r) | SLOW    |   1.345 (r) | SLOW    |       inf |       inf |             - |
+ddr3_dq[10]        | -0.442 (f) | SLOW    |   1.345 (f) | SLOW    |       inf |       inf |             - |
+ddr3_dq[11]        | -0.587 (r) | SLOW    |   1.330 (r) | SLOW    |       inf |       inf |             - |
+ddr3_dq[11]        | -0.428 (f) | SLOW    |   1.330 (f) | SLOW    |       inf |       inf |             - |
+ddr3_dq[12]        | -0.578 (r) | SLOW    |   1.322 (r) | SLOW    |       inf |       inf |             - |
+ddr3_dq[12]        | -0.419 (f) | SLOW    |   1.322 (f) | SLOW    |       inf |       inf |             - |
+ddr3_dq[13]        | -0.606 (r) | SLOW    |   1.349 (r) | SLOW    |       inf |       inf |             - |
+ddr3_dq[13]        | -0.447 (f) | SLOW    |   1.349 (f) | SLOW    |       inf |       inf |             - |
+ddr3_dq[14]        | -0.596 (r) | SLOW    |   1.339 (r) | SLOW    |       inf |       inf |             - |
+ddr3_dq[14]        | -0.437 (f) | SLOW    |   1.339 (f) | SLOW    |       inf |       inf |             - |
+ddr3_dq[15]        | -0.620 (r) | SLOW    |   1.363 (r) | SLOW    |       inf |       inf |             - |
+ddr3_dq[15]        | -0.461 (f) | SLOW    |   1.363 (f) | SLOW    |       inf |       inf |             - |
+-------------------+------------+---------+-------------+---------+-----------+-----------+---------------+
+Worst Case Summary | -0.419 (f) | SLOW    |   1.399 (r) | SLOW    |       inf |       inf |             - |
+-------------------+------------+---------+-------------+---------+-----------+-----------+---------------+
+
+
+
+Setup / Hold times for input bus
+Clocked by: pin_i_fmc_clk
+Worst Case Data Window: 3.823 ns
+Ideal Clock Offset to Actual Clock: -4.143 ns
+-------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+                   |             | Process |             | Process | Setup     |  Hold     | Source Offset |
+Source             |   Setup(ns) | Corner  |    Hold(ns) | Corner  | Slack(ns) | Slack(ns) | to Center(ns) |
+-------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+pin_i_fmc_addr[0]  |   5.030 (r) | SLOW    |  -2.328 (r) | FAST    |       inf |       inf |             - |
+pin_i_fmc_addr[1]  |   5.004 (r) | SLOW    |  -2.323 (r) | FAST    |       inf |       inf |             - |
+pin_i_fmc_addr[2]  |   4.728 (r) | SLOW    |  -2.232 (r) | FAST    |       inf |       inf |             - |
+pin_i_fmc_addr[3]  |   4.965 (r) | SLOW    |  -2.242 (r) | FAST    |       inf |       inf |             - |
+pin_i_fmc_addr[4]  |   4.957 (r) | SLOW    |  -2.269 (r) | FAST    |       inf |       inf |             - |
+pin_i_fmc_addr[5]  |   5.039 (r) | SLOW    |  -2.340 (r) | FAST    |       inf |       inf |             - |
+pin_i_fmc_addr[6]  |   5.138 (r) | SLOW    |  -2.319 (r) | FAST    |       inf |       inf |             - |
+pin_i_fmc_addr[7]  |   4.836 (r) | SLOW    |  -2.288 (r) | FAST    |       inf |       inf |             - |
+pin_i_fmc_addr[8]  |   5.207 (r) | SLOW    |  -2.468 (r) | FAST    |       inf |       inf |             - |
+pin_i_fmc_addr[9]  |   5.484 (r) | SLOW    |  -2.533 (r) | FAST    |       inf |       inf |             - |
+pin_i_fmc_addr[10] |   5.739 (r) | SLOW    |  -2.620 (r) | FAST    |       inf |       inf |             - |
+pin_i_fmc_addr[11] |   5.060 (r) | SLOW    |  -2.377 (r) | FAST    |       inf |       inf |             - |
+pin_i_fmc_addr[12] |   5.916 (r) | SLOW    |  -2.815 (r) | FAST    |       inf |       inf |             - |
+pin_i_fmc_addr[13] |   6.055 (r) | SLOW    |  -2.859 (r) | FAST    |       inf |       inf |             - |
+pin_i_fmc_addr[14] |   5.509 (r) | SLOW    |  -2.578 (r) | FAST    |       inf |       inf |             - |
+pin_i_fmc_addr[15] |   5.157 (r) | SLOW    |  -2.427 (r) | FAST    |       inf |       inf |             - |
+-------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+Worst Case Summary |   6.055 (r) | SLOW    |  -2.232 (r) | FAST    |       inf |       inf |             - |
+-------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+
+
+
+Setup / Hold times for input bus
+Clocked by: pin_i_clk_20m
+Worst Case Data Window: 4.254 ns
+Ideal Clock Offset to Actual Clock: -5.343 ns
+----------------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+                            |             | Process |             | Process | Setup     |  Hold     | Source Offset |
+Source                      |   Setup(ns) | Corner  |    Hold(ns) | Corner  | Slack(ns) | Slack(ns) | to Center(ns) |
+----------------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+pin_i_fpga_parts_version[0] |   7.422 (r) | SLOW    |  -3.459 (r) | FAST    |       inf |       inf |             - |
+pin_i_fpga_parts_version[1] |   7.470 (r) | SLOW    |  -3.419 (r) | FAST    |       inf |       inf |             - |
+pin_i_fpga_parts_version[2] |   7.148 (r) | SLOW    |  -3.216 (r) | FAST    |       inf |       inf |             - |
+----------------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+Worst Case Summary          |   7.470 (r) | SLOW    |  -3.216 (r) | FAST    |       inf |       inf |             - |
+----------------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+
+
+
+Setup / Hold times for input bus
+Clocked by: pin_i_fmc_clk
+Worst Case Data Window: 3.043 ns
+Ideal Clock Offset to Actual Clock: -2.851 ns
+--------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+                    |             | Process |             | Process | Setup     |  Hold     | Source Offset |
+Source              |   Setup(ns) | Corner  |    Hold(ns) | Corner  | Slack(ns) | Slack(ns) | to Center(ns) |
+--------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+pin_io_fmc_data[0]  |   3.186 (r) | SLOW    |  -1.383 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[1]  |   3.202 (r) | SLOW    |  -1.393 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[2]  |   3.195 (r) | SLOW    |  -1.396 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[3]  |   3.206 (r) | SLOW    |  -1.408 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[4]  |   3.209 (r) | SLOW    |  -1.386 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[5]  |   3.292 (r) | SLOW    |  -1.426 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[6]  |   3.188 (r) | SLOW    |  -1.398 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[7]  |   3.192 (r) | SLOW    |  -1.373 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[8]  |   3.258 (r) | SLOW    |  -1.381 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[9]  |   3.144 (r) | SLOW    |  -1.347 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[10] |   3.212 (r) | SLOW    |  -1.386 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[11] |   3.320 (r) | SLOW    |  -1.445 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[12] |   3.070 (r) | SLOW    |  -1.329 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[13] |   3.193 (r) | SLOW    |  -1.377 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[14] |   3.179 (r) | SLOW    |  -1.376 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[15] |   3.075 (r) | SLOW    |  -1.333 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[16] |   4.034 (r) | SLOW    |  -1.766 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[17] |   3.818 (r) | SLOW    |  -1.688 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[18] |   3.247 (r) | SLOW    |  -1.371 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[19] |   4.028 (r) | SLOW    |  -1.759 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[20] |   3.777 (r) | SLOW    |  -1.665 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[21] |   4.360 (r) | SLOW    |  -1.951 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[22] |   3.888 (r) | SLOW    |  -1.727 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[23] |   4.028 (r) | SLOW    |  -1.784 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[24] |   4.372 (r) | SLOW    |  -1.965 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[25] |   4.103 (r) | SLOW    |  -1.834 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[26] |   4.180 (r) | SLOW    |  -1.846 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[27] |   4.373 (r) | SLOW    |  -1.951 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[28] |   4.155 (r) | SLOW    |  -1.836 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[29] |   3.803 (r) | SLOW    |  -1.665 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[30] |   3.832 (r) | SLOW    |  -1.693 (r) | FAST    |       inf |       inf |             - |
+pin_io_fmc_data[31] |   3.842 (r) | SLOW    |  -1.689 (r) | FAST    |       inf |       inf |             - |
+--------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+Worst Case Summary  |   4.373 (r) | SLOW    |  -1.329 (r) | FAST    |       inf |       inf |             - |
+--------------------+-------------+---------+-------------+---------+-----------+-----------+---------------+
+
+
+
+Max / Min delays for output bus
+Clocked by: pin_i_clk_100m
+Bus Skew: 0.052 ns
+-------------------+-------------+---------+-------------+---------+----------+
+                   |     Max     | Process |     Min     | Process | Edge     |
+Pad                |   Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+-------------------+-------------+---------+-------------+---------+----------+
+ddr3_addr[0]       |   5.121 (r) | SLOW    |   2.674 (r) | FAST    |    0.031 |
+ddr3_addr[1]       |   5.142 (r) | SLOW    |   2.695 (r) | FAST    |    0.052 |
+ddr3_addr[2]       |   5.090 (r) | SLOW    |   2.644 (r) | FAST    |    0.000 |
+ddr3_addr[3]       |   5.102 (r) | SLOW    |   2.656 (r) | FAST    |    0.013 |
+ddr3_addr[4]       |   5.125 (r) | SLOW    |   2.679 (r) | FAST    |    0.036 |
+ddr3_addr[5]       |   5.118 (r) | SLOW    |   2.672 (r) | FAST    |    0.029 |
+ddr3_addr[6]       |   5.120 (r) | SLOW    |   2.674 (r) | FAST    |    0.031 |
+ddr3_addr[7]       |   5.119 (r) | SLOW    |   2.674 (r) | FAST    |    0.030 |
+ddr3_addr[8]       |   5.103 (r) | SLOW    |   2.656 (r) | FAST    |    0.013 |
+ddr3_addr[9]       |   5.109 (r) | SLOW    |   2.668 (r) | FAST    |    0.024 |
+ddr3_addr[10]      |   5.104 (r) | SLOW    |   2.664 (r) | FAST    |    0.020 |
+ddr3_addr[11]      |   5.108 (r) | SLOW    |   2.668 (r) | FAST    |    0.024 |
+ddr3_addr[12]      |   5.105 (r) | SLOW    |   2.665 (r) | FAST    |    0.021 |
+ddr3_addr[13]      |   5.116 (r) | SLOW    |   2.676 (r) | FAST    |    0.033 |
+-------------------+-------------+---------+-------------+---------+----------+
+Worst Case Summary |   5.142 (r) | SLOW    |   2.644 (r) | FAST    |    0.052 |
+-------------------+-------------+---------+-------------+---------+----------+
+
+
+
+Max / Min delays for output bus
+Clocked by: pin_i_clk_100m
+Bus Skew: 0.027 ns
+-------------------+-------------+---------+-------------+---------+----------+
+                   |     Max     | Process |     Min     | Process | Edge     |
+Pad                |   Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+-------------------+-------------+---------+-------------+---------+----------+
+ddr3_ba[0]         |   5.117 (r) | SLOW    |   2.678 (r) | FAST    |    0.027 |
+ddr3_ba[1]         |   5.091 (r) | SLOW    |   2.652 (r) | FAST    |    0.001 |
+ddr3_ba[2]         |   5.091 (r) | SLOW    |   2.652 (r) | FAST    |    0.000 |
+-------------------+-------------+---------+-------------+---------+----------+
+Worst Case Summary |   5.117 (r) | SLOW    |   2.652 (r) | FAST    |    0.027 |
+-------------------+-------------+---------+-------------+---------+----------+
+
+
+
+Max / Min delays for output bus
+Clocked by: pin_i_clk_100m
+Bus Skew: 0.022 ns
+-------------------+-------------+---------+-------------+---------+----------+
+                   |     Max     | Process |     Min     | Process | Edge     |
+Pad                |   Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+-------------------+-------------+---------+-------------+---------+----------+
+ddr3_dm[0]         |   6.295 (r) | SLOW    |   2.481 (r) | FAST    |    0.004 |
+ddr3_dm[1]         |   6.291 (r) | SLOW    |   2.503 (r) | FAST    |    0.022 |
+-------------------+-------------+---------+-------------+---------+----------+
+Worst Case Summary |   6.295 (r) | SLOW    |   2.481 (r) | FAST    |    0.022 |
+-------------------+-------------+---------+-------------+---------+----------+
+
+
+
+Max / Min delays for output bus
+Clocked by: pin_i_clk_100m
+Bus Skew: 0.068 ns
+-------------------+-------------+---------+-------------+---------+----------+
+                   |     Max     | Process |     Min     | Process | Edge     |
+Pad                |   Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+-------------------+-------------+---------+-------------+---------+----------+
+ddr3_dq[0]         |   6.294 (r) | SLOW    |   2.492 (r) | FAST    |    0.042 |
+ddr3_dq[1]         |   6.294 (r) | SLOW    |   2.459 (r) | FAST    |    0.010 |
+ddr3_dq[2]         |   6.293 (r) | SLOW    |   2.449 (r) | FAST    |    0.007 |
+ddr3_dq[3]         |   6.290 (r) | SLOW    |   2.473 (r) | FAST    |    0.024 |
+ddr3_dq[4]         |   6.290 (r) | SLOW    |   2.481 (r) | FAST    |    0.031 |
+ddr3_dq[5]         |   6.291 (r) | SLOW    |   2.451 (r) | FAST    |    0.005 |
+ddr3_dq[6]         |   6.291 (r) | SLOW    |   2.462 (r) | FAST    |    0.013 |
+ddr3_dq[7]         |   6.293 (r) | SLOW    |   2.461 (r) | FAST    |    0.012 |
+ddr3_dq[8]         |   6.290 (r) | SLOW    |   2.509 (r) | FAST    |    0.060 |
+ddr3_dq[9]         |   6.290 (r) | SLOW    |   2.484 (r) | FAST    |    0.034 |
+ddr3_dq[10]        |   6.289 (r) | SLOW    |   2.499 (r) | FAST    |    0.049 |
+ddr3_dq[11]        |   6.286 (r) | SLOW    |   2.509 (r) | FAST    |    0.059 |
+ddr3_dq[12]        |   6.286 (r) | SLOW    |   2.517 (r) | FAST    |    0.068 |
+ddr3_dq[13]        |   6.287 (r) | SLOW    |   2.491 (r) | FAST    |    0.042 |
+ddr3_dq[14]        |   6.287 (r) | SLOW    |   2.500 (r) | FAST    |    0.051 |
+ddr3_dq[15]        |   6.289 (r) | SLOW    |   2.478 (r) | FAST    |    0.029 |
+-------------------+-------------+---------+-------------+---------+----------+
+Worst Case Summary |   6.294 (r) | SLOW    |   2.449 (r) | FAST    |    0.068 |
+-------------------+-------------+---------+-------------+---------+----------+
+
+
+
+Max / Min delays for output bus
+Clocked by: pin_i_clk_100m
+Bus Skew: 0.034 ns
+-------------------+-------------+---------+-------------+---------+----------+
+                   |     Max     | Process |     Min     | Process | Edge     |
+Pad                |   Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+-------------------+-------------+---------+-------------+---------+----------+
+ddr3_dqs_n[0]      |   7.084 (r) | SLOW    |   3.119 (r) | FAST    |    0.010 |
+ddr3_dqs_n[0]      |   7.084 (f) | SLOW    |   3.119 (f) | FAST    |    0.010 |
+ddr3_dqs_n[1]      |   7.080 (r) | SLOW    |   3.144 (r) | FAST    |    0.034 |
+ddr3_dqs_n[1]      |   7.080 (f) | SLOW    |   3.144 (f) | FAST    |    0.034 |
+ddr3_dqs_p[0]      |   7.085 (r) | SLOW    |   3.109 (r) | FAST    |    0.005 |
+ddr3_dqs_p[0]      |   7.085 (f) | SLOW    |   3.109 (f) | FAST    |    0.005 |
+ddr3_dqs_p[1]      |   7.081 (r) | SLOW    |   3.143 (r) | FAST    |    0.034 |
+ddr3_dqs_p[1]      |   7.081 (f) | SLOW    |   3.143 (f) | FAST    |    0.034 |
+-------------------+-------------+---------+-------------+---------+----------+
+Worst Case Summary |   7.085 (r) | SLOW    |   3.109 (r) | FAST    |    0.034 |
+-------------------+-------------+---------+-------------+---------+----------+
+
+
+
+Max / Min delays for output bus
+Clocked by: pin_i_fmc_clk
+Bus Skew: 2.252 ns
+--------------------+--------------+---------+-------------+---------+----------+
+                    |      Max     | Process |     Min     | Process | Edge     |
+Pad                 |    Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+--------------------+--------------+---------+-------------+---------+----------+
+pin_io_fmc_data[0]  |   11.986 (r) | SLOW    |   2.045 (r) | FAST    |    0.253 |
+pin_io_fmc_data[1]  |   12.214 (r) | SLOW    |   2.045 (r) | FAST    |    0.368 |
+pin_io_fmc_data[2]  |   12.189 (r) | SLOW    |   1.940 (r) | FAST    |    0.342 |
+pin_io_fmc_data[3]  |   13.023 (r) | SLOW    |   2.254 (r) | FAST    |    1.176 |
+pin_io_fmc_data[4]  |   12.498 (r) | SLOW    |   1.963 (r) | FAST    |    0.651 |
+pin_io_fmc_data[5]  |   12.781 (r) | SLOW    |   2.100 (r) | FAST    |    0.935 |
+pin_io_fmc_data[6]  |   13.203 (r) | SLOW    |   2.248 (r) | FAST    |    1.356 |
+pin_io_fmc_data[7]  |   12.630 (r) | SLOW    |   2.334 (r) | FAST    |    0.783 |
+pin_io_fmc_data[8]  |   13.456 (r) | SLOW    |   2.357 (r) | FAST    |    1.609 |
+pin_io_fmc_data[9]  |   13.846 (r) | SLOW    |   2.147 (r) | FAST    |    1.999 |
+pin_io_fmc_data[10] |   12.678 (r) | SLOW    |   2.265 (r) | FAST    |    0.831 |
+pin_io_fmc_data[11] |   11.847 (r) | SLOW    |   1.792 (r) | FAST    |    0.000 |
+pin_io_fmc_data[12] |   13.075 (r) | SLOW    |   2.243 (r) | FAST    |    1.228 |
+pin_io_fmc_data[13] |   12.837 (r) | SLOW    |   2.340 (r) | FAST    |    0.990 |
+pin_io_fmc_data[14] |   12.736 (r) | SLOW    |   2.123 (r) | FAST    |    0.889 |
+pin_io_fmc_data[15] |   12.890 (r) | SLOW    |   2.222 (r) | FAST    |    1.043 |
+pin_io_fmc_data[16] |   13.425 (r) | SLOW    |   2.618 (r) | FAST    |    1.578 |
+pin_io_fmc_data[17] |   12.655 (r) | SLOW    |   2.316 (r) | FAST    |    0.808 |
+pin_io_fmc_data[18] |   12.013 (r) | SLOW    |   2.003 (r) | FAST    |    0.212 |
+pin_io_fmc_data[19] |   12.550 (r) | SLOW    |   2.645 (r) | FAST    |    0.853 |
+pin_io_fmc_data[20] |   13.818 (r) | SLOW    |   2.525 (r) | FAST    |    1.971 |
+pin_io_fmc_data[21] |   14.099 (r) | SLOW    |   2.600 (r) | FAST    |    2.252 |
+pin_io_fmc_data[22] |   13.762 (r) | SLOW    |   2.466 (r) | FAST    |    1.915 |
+pin_io_fmc_data[23] |   14.027 (r) | SLOW    |   2.478 (r) | FAST    |    2.180 |
+pin_io_fmc_data[24] |   12.848 (r) | SLOW    |   2.463 (r) | FAST    |    1.001 |
+pin_io_fmc_data[25] |   13.859 (r) | SLOW    |   2.649 (r) | FAST    |    2.012 |
+pin_io_fmc_data[26] |   13.727 (r) | SLOW    |   2.386 (r) | FAST    |    1.880 |
+pin_io_fmc_data[27] |   13.458 (r) | SLOW    |   2.740 (r) | FAST    |    1.611 |
+pin_io_fmc_data[28] |   13.660 (r) | SLOW    |   2.369 (r) | FAST    |    1.813 |
+pin_io_fmc_data[29] |   14.021 (r) | SLOW    |   2.444 (r) | FAST    |    2.174 |
+pin_io_fmc_data[30] |   13.961 (r) | SLOW    |   2.478 (r) | FAST    |    2.114 |
+pin_io_fmc_data[31] |   14.096 (r) | SLOW    |   2.658 (r) | FAST    |    2.249 |
+--------------------+--------------+---------+-------------+---------+----------+
+Worst Case Summary  |   14.099 (r) | SLOW    |   1.792 (r) | FAST    |    2.252 |
+--------------------+--------------+---------+-------------+---------+----------+
+
+
+
+Max / Min delays for output bus
+Clocked by: pin_i_clk_78m
+Bus Skew: 1.080 ns
+--------------------------+-------------+---------+-------------+---------+----------+
+                          |     Max     | Process |     Min     | Process | Edge     |
+Pad                       |   Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+--------------------------+-------------+---------+-------------+---------+----------+
+pin_o_lcos_dac_data_a[0]  |   5.534 (r) | SLOW    |   1.392 (r) | FAST    |    0.000 |
+pin_o_lcos_dac_data_a[1]  |   6.533 (r) | SLOW    |   1.960 (r) | FAST    |    0.999 |
+pin_o_lcos_dac_data_a[2]  |   6.367 (r) | SLOW    |   1.946 (r) | FAST    |    0.834 |
+pin_o_lcos_dac_data_a[3]  |   6.192 (r) | SLOW    |   1.799 (r) | FAST    |    0.658 |
+pin_o_lcos_dac_data_a[4]  |   6.476 (r) | SLOW    |   1.977 (r) | FAST    |    0.943 |
+pin_o_lcos_dac_data_a[5]  |   6.229 (r) | SLOW    |   1.848 (r) | FAST    |    0.695 |
+pin_o_lcos_dac_data_a[6]  |   5.962 (r) | SLOW    |   1.708 (r) | FAST    |    0.429 |
+pin_o_lcos_dac_data_a[7]  |   6.614 (r) | SLOW    |   2.043 (r) | FAST    |    1.080 |
+pin_o_lcos_dac_data_a[8]  |   6.081 (r) | SLOW    |   1.782 (r) | FAST    |    0.547 |
+pin_o_lcos_dac_data_a[9]  |   5.738 (r) | SLOW    |   1.527 (r) | FAST    |    0.204 |
+pin_o_lcos_dac_data_a[10] |   5.653 (r) | SLOW    |   1.495 (r) | FAST    |    0.119 |
+pin_o_lcos_dac_data_a[11] |   6.102 (r) | SLOW    |   1.793 (r) | FAST    |    0.568 |
+--------------------------+-------------+---------+-------------+---------+----------+
+Worst Case Summary        |   6.614 (r) | SLOW    |   1.392 (r) | FAST    |    1.080 |
+--------------------------+-------------+---------+-------------+---------+----------+
+
+
+
+Max / Min delays for output bus
+Clocked by: pin_i_clk_78m
+Bus Skew: 0.933 ns
+--------------------------+-------------+---------+-------------+---------+----------+
+                          |     Max     | Process |     Min     | Process | Edge     |
+Pad                       |   Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+--------------------------+-------------+---------+-------------+---------+----------+
+pin_o_lcos_dac_data_b[0]  |   6.078 (r) | SLOW    |   1.736 (r) | FAST    |    0.397 |
+pin_o_lcos_dac_data_b[1]  |   5.878 (r) | SLOW    |   1.645 (r) | FAST    |    0.197 |
+pin_o_lcos_dac_data_b[2]  |   5.681 (r) | SLOW    |   1.539 (r) | FAST    |    0.010 |
+pin_o_lcos_dac_data_b[3]  |   5.741 (r) | SLOW    |   1.529 (r) | FAST    |    0.060 |
+pin_o_lcos_dac_data_b[4]  |   5.903 (r) | SLOW    |   1.671 (r) | FAST    |    0.222 |
+pin_o_lcos_dac_data_b[5]  |   6.160 (r) | SLOW    |   1.801 (r) | FAST    |    0.479 |
+pin_o_lcos_dac_data_b[6]  |   6.074 (r) | SLOW    |   1.759 (r) | FAST    |    0.393 |
+pin_o_lcos_dac_data_b[7]  |   5.924 (r) | SLOW    |   1.696 (r) | FAST    |    0.243 |
+pin_o_lcos_dac_data_b[8]  |   6.614 (r) | SLOW    |   2.024 (r) | FAST    |    0.933 |
+pin_o_lcos_dac_data_b[9]  |   6.025 (r) | SLOW    |   1.734 (r) | FAST    |    0.344 |
+pin_o_lcos_dac_data_b[10] |   6.114 (r) | SLOW    |   1.764 (r) | FAST    |    0.433 |
+pin_o_lcos_dac_data_b[11] |   6.176 (r) | SLOW    |   1.775 (r) | FAST    |    0.495 |
+--------------------------+-------------+---------+-------------+---------+----------+
+Worst Case Summary        |   6.614 (r) | SLOW    |   1.529 (r) | FAST    |    0.933 |
+--------------------------+-------------+---------+-------------+---------+----------+
+
+
+
+Max / Min delays for output bus
+Clocked by: pin_i_clk_20m
+Bus Skew: 1.061 ns
+------------------------+-------------+---------+-------------+---------+----------+
+                        |     Max     | Process |     Min     | Process | Edge     |
+Pad                     |   Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+------------------------+-------------+---------+-------------+---------+----------+
+pin_o_lcos_panel_pde[0] |   6.372 (r) | SLOW    |   1.503 (r) | FAST    |    1.061 |
+pin_o_lcos_panel_pde[1] |   6.124 (r) | SLOW    |   1.137 (r) | FAST    |    0.813 |
+pin_o_lcos_panel_pde[2] |   5.838 (r) | SLOW    |   1.354 (r) | FAST    |    0.526 |
+pin_o_lcos_panel_pde[3] |   5.940 (r) | SLOW    |   1.362 (r) | FAST    |    0.628 |
+pin_o_lcos_panel_pde[4] |   5.880 (r) | SLOW    |   1.232 (r) | FAST    |    0.568 |
+pin_o_lcos_panel_pde[5] |   5.402 (r) | SLOW    |   1.165 (r) | FAST    |    0.090 |
+pin_o_lcos_panel_pde[6] |   6.041 (r) | SLOW    |   1.492 (r) | FAST    |    0.729 |
+pin_o_lcos_panel_pde[7] |   5.796 (r) | SLOW    |   1.198 (r) | FAST    |    0.485 |
+pin_o_lcos_panel_pde[8] |   6.138 (r) | SLOW    |   1.316 (r) | FAST    |    0.827 |
+pin_o_lcos_panel_pde[9] |   5.312 (r) | SLOW    |   1.104 (r) | FAST    |    0.000 |
+------------------------+-------------+---------+-------------+---------+----------+
+Worst Case Summary      |   6.372 (r) | SLOW    |   1.104 (r) | FAST    |    1.061 |
+------------------------+-------------+---------+-------------+---------+----------+
+
+
+
+Max / Min delays for output bus
+Clocked by: pin_i_clk_20m
+Bus Skew: 1.148 ns
+------------------------+-------------+---------+-------------+---------+----------+
+                        |     Max     | Process |     Min     | Process | Edge     |
+Pad                     |   Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+------------------------+-------------+---------+-------------+---------+----------+
+pin_o_lcos_panel_pdo[0] |   5.341 (r) | SLOW    |   1.145 (r) | FAST    |    0.355 |
+pin_o_lcos_panel_pdo[1] |   5.759 (r) | SLOW    |   1.325 (r) | FAST    |    0.773 |
+pin_o_lcos_panel_pdo[2] |   5.998 (r) | SLOW    |   1.425 (r) | FAST    |    1.013 |
+pin_o_lcos_panel_pdo[3] |   4.985 (r) | SLOW    |   0.830 (r) | FAST    |    0.000 |
+pin_o_lcos_panel_pdo[4] |   5.833 (r) | SLOW    |   1.228 (r) | FAST    |    0.848 |
+pin_o_lcos_panel_pdo[5] |   6.031 (r) | SLOW    |   1.321 (r) | FAST    |    1.045 |
+pin_o_lcos_panel_pdo[6] |   5.787 (r) | SLOW    |   1.207 (r) | FAST    |    0.802 |
+pin_o_lcos_panel_pdo[7] |   5.754 (r) | SLOW    |   1.012 (r) | FAST    |    0.768 |
+pin_o_lcos_panel_pdo[8] |   6.134 (r) | SLOW    |   1.300 (r) | FAST    |    1.148 |
+pin_o_lcos_panel_pdo[9] |   5.464 (r) | SLOW    |   1.173 (r) | FAST    |    0.479 |
+------------------------+-------------+---------+-------------+---------+----------+
+Worst Case Summary      |   6.134 (r) | SLOW    |   0.830 (r) | FAST    |    1.148 |
+------------------------+-------------+---------+-------------+---------+----------+
+
+
+
