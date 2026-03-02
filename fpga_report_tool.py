@@ -116,7 +116,7 @@ def main():
         # 3. 결과 저장
         titles = parse_checklist_titles()
         save_as_markdown(summary, args.output, titles)
-        print("[*] Analysed reports saved to: {args.output}")
+        print(f"[*] Analysed reports saved to: {args.output}")
 
     if args.command == "redact" or args.command == "all":
         print(f"[*] Starting redaction...")
