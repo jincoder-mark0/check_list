@@ -44,15 +44,15 @@
 - **파일명은 단순 BaseName만 사용하며,**
 - **STAGE/REV/DATETIME은 상위 ‘Run Snapshot 폴더명’에 적용합니다.**
 
-| 폴더명 | 포함 리포트 (파일명) | 체크리스트 대응 핵심 항목 |
-| :--- | :--- | :--- |
-| **01_Timing_CDC** | `Timing_Summary.rpt`, `Setup_Critical.rpt`, `Hold_Critical.rpt`, `CDC_Report.rpt`, `CDC_Critical.rpt`, `CDC_Unsafe.rpt`, `Timing_Exceptions.rpt`, `CDC_Interaction.rpt`, `Check_Timing.rpt`, `Bus_Skew.rpt`, `Pulse_Width.rpt`, `Clock_Utilization.rpt`, `Clock_Networks.rpt` | 12, 32~45, 59, 61~65 |
-| **02_Power_Thermal** | `Power_Data.xpe`, `Power_Report.rpt`, `Power_Opt.rpt`, `Switching_Activity.rpt`, `SSN_Report.rpt`, `Operating_Cond.rpt` | 13, 14, 25, 52, 53 |
-| **03_Resources_DRC** | `Utilization.rpt`, `RAM_Utilization.rpt`, `Methodology.rpt`, `DRC_Report.rpt`, `Waiver.rpt`, `Control_Sets.rpt`, `IO_Report.rpt` | 11, 22, 30, 47, 48, 66, 67, 68 |
-| **04_Design_Analysis** | `Design_Analysis.rpt`, `QoR_Assessment.rpt`, `QoR_Suggestions.rpt`, `Pipeline_Analysis.rpt`, `High_Fanout.rpt`, `Debug_Core.rpt` | 15, 16~18, 50, 51, 57 |
-| **05_Environment_IP** | `IP_Status.rpt`, `Environment.rpt`, `Datasheet.rpt`, `Compile_Order.rpt`, `Property_Check.rpt`, `Clocks_Summary.rpt`, `Config_Impl.rpt` | 1~10, 19, 27, 28, 69 |
-| **06_Verification** | `Coverage_Report.html`, `Coverage_Report.txt`, `Sim_Log.log`, `Testbench_Arch.pdf`, `Testcase_Index.xlsx`, `Req_Test_Traceability.xlsx`, `Assertions_Report.rpt`, `Regression_Summary.csv`, `Waveforms/`, `Sim_Config.txt` | 55, 56, 58, 59, 60 |
-| **07_PR_Evidence** | `PR_DFX_Detection.txt`, `PR_NA_Evidence.txt`, `PR_Verify_Report.rpt`, `PR_DRC_Report.rpt`, `PR_PBLOCK_Utilization.rpt`, `Partial_Bit_Config_Summary.rpt` | 11, 15, 18, 26~28 |
+| 폴더명 | 포함 리포트 (파일명)                                                                                                                                                                                                                                                | 체크리스트 대응 핵심 항목 |
+| :--- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| :--- |
+| **01_Timing_CDC** | `Timing_Summary.rpt`, `Setup_Critical.rpt`, `Hold_Critical.rpt`, `CDC_Report.rpt`, `CDC_Critical.rpt`, `Timing_Exceptions.rpt`, `CDC_Interaction.rpt`, `Check_Timing.rpt`, `Bus_Skew.rpt`, `Pulse_Width.rpt`, `Clock_Utilization.rpt`, `Clock_Networks.rpt` | 12, 32~45, 59, 61~65 |
+| **02_Power_Thermal** | `Power_Data.xpe`, `Power_Report.rpt`, `Power_Opt.rpt`, `Switching_Activity.rpt`, `SSN_Report.rpt`, `Operating_Cond.rpt`                                                                                                                                     | 13, 14, 25, 52, 53 |
+| **03_Resources_DRC** | `Utilization.rpt`, `RAM_Utilization.rpt`, `Methodology.rpt`, `DRC_Report.rpt`, `Waiver.rpt`, `Control_Sets.rpt`, `IO_Report.rpt`                                                                                                                            | 11, 22, 30, 47, 48, 66, 67, 68 |
+| **04_Design_Analysis** | `Design_Analysis.rpt`, `QoR_Assessment.rpt`, `QoR_Suggestions.rpt`, `Pipeline_Analysis.rpt`, `High_Fanout.rpt`, `Debug_Core.rpt`                                                                                                                            | 15, 16~18, 50, 51, 57 |
+| **05_Environment_IP** | `IP_Status.rpt`, `Environment.rpt`, `Datasheet.rpt`, `Compile_Order.rpt`, `Property_Check.rpt`, `Clocks_Summary.rpt`, `Config_Impl.rpt`                                                                                                                     | 1~10, 19, 27, 28, 69 |
+| **06_Verification** | `Coverage_Report.html`, `Coverage_Report.txt`                                                                                                                                                                                                               | 55, 56, 58, 59, 60 |
+| **07_PR_Evidence** | `PR_DFX_Detection.txt`, `PR_NA_Evidence.txt`, `PR_Verify_Report.rpt`, `PR_DRC_Report.rpt`, `PR_PBLOCK_Utilization.rpt`, `Partial_Bit_Config_Summary.rpt`                                                                                                    | 11, 15, 18, 26~28 |
 
 ### **공통 생성 타이밍 (기본 원칙)**
 
@@ -86,7 +86,7 @@
     - Junction Temperature 목표 이내
     - SSN Noise <= Vendor 가이드라인
     - AC Coupling 필요 신호 정상 처리
-  - **생성 지침:** XPE 데이터는 `write_xpe`(우선) 사용 + `catch` 가드
+  - **생성 지침:** XPE 데이터는 `report_power -xpe`(우선) 사용 + `catch` 가드
 
 - **03_Resources_DRC** - *Checklist: 11, 22, 30, 47, 48, 66, 67, 68*
   - **목적:** 자원 사용률, RAM/DPRAM 구성, DRC/Methodology, Control-set/IO 검증
@@ -566,13 +566,12 @@ report_timing -delay_type min -path_type full_clock -max_paths 10 \
 # CDC 상세 분석 (전체/세부 분리 저장: Critical/Unsafe/All)
 report_cdc -details                              -name cdc_all      -file [outfile 01 CDC_Report    rpt]
 catch { report_cdc -details -severity critical   -name cdc_critical -file [outfile 01 CDC_Critical rpt] }
-catch { report_cdc -details -severity unsafe     -name cdc_unsafe   -file [outfile 01 CDC_Unsafe   rpt] }
 
 # 타이밍 예외 상세 (MCP/FP 등 확인)
 report_exceptions -verbose -file [outfile 01 Timing_Exceptions rpt]
 
 # clock 도메인 상호작용 (async 경로 가시화, 노이즈 저감 옵션)
-catch { report_clock_interaction -delay_type max -significant -file [outfile 01 CDC_Interaction rpt] }
+catch { report_clock_interaction -file [outfile 01 CDC_Interaction rpt] }
 ```
 - **주요 확인 사항:** Critical/Unsafe/Unknown=0, 멀티비트 handshake/Gray/FIFO, async 경로 <-> 예외 일치.
 - **대응(조치):** 2/3-FF Sync 삽입, handshake/Gray/FIFO 적용, 잘못된 False/MCP 수정.
@@ -638,13 +637,13 @@ report_clock_networks -file [outfile 01 Clock_Networks rpt]
 - **그룹 핵심:** 레일별 전류/열/SSN 영향 평가.
 - **체크리스트 대응:** *13, 14, 25, 52, 53*
 
-#### **① 전력 리포트 (report_power / write_xpe)**
+#### **① 전력 리포트 (report_power)**
 - **핵심:** worst-case 전력/열 예측으로 PSU/열설계 검증.
 - **체크리스트 대응:** *13(최대 전력), 14(전압별 전류), 25(초기화 환경 일치)*
 - **Tcl 명령:**
 ```tcl
-# XPE 형식 요약 (2019.2 호환: write_xpe 우선, catch 가드)
-catch { write_xpe -force [outfile 02 Power_Data xpe] }
+# XPE 형식 요약 (2019.2 호환: report_power -xpe 우선, catch 가드)
+catch { report_power -xpe [outfile 02 Power_Data xpe] }
 
 # 상세 전력/열 리포트 (advisory 포함)
 report_power -advisory -file [outfile 02 Power_Report rpt]
@@ -1611,11 +1610,10 @@ report_timing -delay_type min -path_type full_clock -max_paths 10 \
 # CDC 상세 분석 (전체/세부 분리 저장: Critical/Unsafe/All)
 report_cdc -details                              -name cdc_all     -file [outfile 01 CDC_Report    rpt]
 catch { report_cdc -details -severity critical   -name cdc_critical -file [outfile 01 CDC_Critical rpt] }
-catch { report_cdc -details -severity unsafe     -name cdc_unsafe   -file [outfile 01 CDC_Unsafe   rpt] }
 # 타이밍 예외 상세 (MCP/FP 등 확인)
 report_exceptions -verbose -file [outfile 01 Timing_Exceptions rpt]
 # clock 도메인 상호작용 (async 경로 가시화, 노이즈 저감 옵션)
-catch { report_clock_interaction -delay_type max -significant -file [outfile 01 CDC_Interaction rpt] }
+catch { report_clock_interaction -file [outfile 01 CDC_Interaction rpt] }
 # 제약 누락/불일치 점검 (generated clock, I/O delay 등)
 check_timing -verbose -file [outfile 01 Check_Timing rpt]
 # Bus Skew Report (required when set_bus_skew constraints exist)
@@ -1628,8 +1626,8 @@ report_clock_utilization -file [outfile 01 Clock_Utilization rpt]
 report_clock_networks -file [outfile 01 Clock_Networks rpt]
 
 ### **[Group 02] 전력 및 동작 환경 분석**
-# XPE 형식 요약 (2019.2 호환: write_xpe 우선, catch 가드)
-catch { write_xpe -force [outfile 02 Power_Data xpe] }
+# XPE 형식 요약 (2019.2 호환: report_power -xpe 우선, catch 가드)
+catch { report_power -xpe [outfile 02 Power_Data xpe] }
 # 상세 전력/열 리포트 (advisory 포함)
 report_power -advisory -file [outfile 02 Power_Report rpt]
 # 전력 최적화 결과 보고 (버전/라이선스 조건에 따라 지원 상이)

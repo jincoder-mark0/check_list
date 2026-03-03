@@ -32,8 +32,8 @@
 | Q36 | 다중 리셋 분리 | ✅ | Medium | Yes | CDC_Report |
 | Q37 | 클럭 네트워크 리소스 | ✅ | High | Yes | Clock_Utilization, Timing_Exceptions, Clock_Networks |
 | Q38 | 클럭 전환 전후 타이밍 | ✅ | Medium | Yes | Bus_Skew, Timing_Exceptions |
-| Q39 | CDC Critical 이슈 | ✅ | High | Yes | CDC_Report, CDC_Critical, CDC_Unsafe, CDC_Interaction, Timing_Exceptions |
-| Q40 | CDC Unsafe 경로 | ✅ | High | Yes | CDC_Report, CDC_Critical, CDC_Unsafe, CDC_Interaction, Timing_Exceptions |
+| Q39 | CDC Critical 이슈 | ✅ | High | Yes | CDC_Report, CDC_Critical, CDC_Interaction, Timing_Exceptions |
+| Q40 | CDC Unsafe 경로 | ✅ | High | Yes | CDC_Report, CDC_Critical, CDC_Interaction, Timing_Exceptions |
 | Q41 | 클럭 전환 글리치 방지 | ✅ | Medium | Yes | CDC_Report (5종), Timing_Exceptions, Clock_Networks, Clock_Utilization |
 | Q42 | 호스트-모듈 간 CDC 회로 | ✅ | Medium | Yes | CDC_Report (5종) |
 | Q43 | 비동기 RAM W/R 위상 보장 | ✅ | Medium | Yes | CDC_Report (5종) |

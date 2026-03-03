@@ -11,9 +11,9 @@
 
 ---
 
-## 2. 리포트 전체 현황 (38개 파일, 7개 그룹)
+## 2. 리포트 전체 현황 (45개 파일, 7개 그룹)
 
-### Group 01 — Timing/Clock/CDC (13개)
+### Group 01 — Timing/Clock/CDC (12개)
 
 | 파일 | 핵심 파싱 데이터 | 민감정보 밀도 |
 | :--- | :--- | :--- |
@@ -23,7 +23,6 @@
 | `Check_Timing.rpt` | no_clock 카운트, missing I/O delay | 중 |
 | `CDC_Report.rpt` | CDC 경고 유형별 카운트, Waived 내역 | 높음 (인스턴스 경로) |
 | `CDC_Critical.rpt` | 심각 CDC 카운트 및 상세 | 높음 |
-| `CDC_Unsafe.rpt` | 안전하지 않은 CDC 경로 상세 | 높음 |
 | `CDC_Interaction.rpt` | 클럭 도메인 간 상호작용 매트릭스 | 중 |
 | `Bus_Skew.rpt` | Worst Bus Skew (WBS) 및 Slack | 중 |
 | `Clock_Networks.rpt` | 클럭 트리 구조, 주파수 목록 | 중 (클럭 이름) |
@@ -31,10 +30,11 @@
 | `Pulse_Width.rpt` | Pulse width violation, Waveform, Period | 중 |
 | `Timing_Exceptions.rpt` | False path/multicycle/Clock groups 설정 | 중 |
 
-### Group 02 — Power/SSN (5개)
+### Group 02 — Power/SSN (6개)
 
 | 파일 | 핵심 파싱 데이터 | 민감정보 밀도 |
 | :--- | :--- | :--- |
+| `Power_Data.xpe` |
 | `Power_Report.rpt` | Total/Dynamic/Static Power, Vccint/aux 전류, Confidence | 중 |
 | `Power_Opt.rpt` | BRAM/SRL/Register gating 요약 (22K+ lines) | **매우 높음** (전체 인스턴스 경로) |
 | `SSN_Report.rpt` | 모든 IO PASS 여부, 마진값, OFFCHIP_TERM | 중 (핀 이름) |
@@ -149,7 +149,7 @@
 | 31~36 | 회로 보호/리셋 | (없음) | EVIDENCE |
 | 37 | 클럭 스위칭 회로 | **Clock_Utilization, Clock_Networks** | **AUTO** |
 | 38 | 클럭 스위칭 타이밍 | **Bus_Skew, Timing_Exceptions** | SEMI |
-| 39~40 | CDC 안전성 | **CDC_Report, CDC_Critical, CDC_Unsafe, CDC_Interaction** | SEMI |
+| 39~40 | CDC 안전성 | **CDC_Report, CDC_Critical, CDC_Interaction** | SEMI |
 | 41 | 클럭 전환 글리치 | **Clock_Networks, Clock_Utilization, CDC_Report, Pulse_Width** | SEMI |
 | 42 | CDC 회로 사용 여부 | **CDC_Report, Timing_Exceptions** | SEMI |
 | 43 | 비동기 메모리 위상 | **CDC_Report, Timing_Exceptions** | SEMI |
@@ -205,7 +205,6 @@ fpga_check_list/
   │       ├── cdc_critical_parser.py  # CDC_Critical.rpt 전담
   │       ├── cdc_interaction_parser.py  # CDC_Interaction.rpt 전담
   │       ├── cdc_report_parser.py  # CDC_Report.rpt 전담
-  │       ├── cdc_unsafe_parser.py  # CDC_Unsafe.rpt 전담
   │       ├── check_timing_parser.py  # Check_Timing.rpt 전담
   │       ├── clock_networks_parser.py  # Clock_Networks.rpt 전담
   │       ├── clock_utilization_parser.py  # Clock_Utilization.rpt 전담
@@ -218,7 +217,7 @@ fpga_check_list/
   │       ├── debug_core_parser.py  # Debug_Core.rpt 전담
   │       ├── design_analysis_parser.py  # Design_Analysis.rpt 전담
   │       ├── drc_report_parser.py  # DRC_Report.rpt 전담
-  │       ├── env_parser.py  # Environment.rpt 전담
+  │       ├── environment_parser.py  # Environment.rpt 전담
   │       ├── high_fanout_parser.py  # High_Fanout.rpt 전담
   │       ├── hold_critical_parser.py  # Hold_Critical.rpt 전담
   │       ├── io_report_parser.py  # IO_Report.rpt 전담

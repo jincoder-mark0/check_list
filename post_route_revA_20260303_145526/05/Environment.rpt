@@ -1,0 +1,361 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Tue Mar  3 14:57:24 2026
+| Host         : lc-kjlee-pc running 64-bit Ubuntu 24.04.3 LTS
+| Command      : report_environment -file /home/lc-kjlee-pc/works/fpga/20260202_MLC60_FPGA_100_630A_DDR/MLC_FPGA.reports/post_route_revA_20260303_145526/05/Environment.rpt
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Environment Report
+
+Table of Contents
+-----------------
+1. System Information
+2. Environment Variables
+3. Vivado Preferences
+4. Install Information
+5. Version of system dlls called by Xilinx software
+6. License Information
+
+1. System Information
+---------------------
+
+Host Information
++---------------------------+------------------------------------------------+
+| Hostname                  | lc-kjlee-pc                                    |
+| Network Interface Card ID | d0c637273b93,d0c637258979                      |
+| C: Drive Serial Number    | (not supported on this platform)               |
+| FLEXID Dongle ID          | (not supported on this platform)               |
+| Platform                  | Ubuntu                                         |
+| Operating System          | Ubuntu 24.04.3 LTS                             |
+| Processor Vendor          | Intel                                          |
+| Processor Detail          | 11th Gen Intel(R) Core(TM) i5-11600K @ 3.90GHz |
+| Processor Speed           | 4600.000 MHz                                   |
+| Processor Count           | 1                                              |
+| Physical Core Count       | 6                                              |
+| Logical Core Count        | 12                                             |
++---------------------------+------------------------------------------------+
+
+
+Available Disk Space
++--------------------------------------------------------------------------------------------------+--------+--------+
+| Volume                                                                                           |   Free |  Total |
++--------------------------------------------------------------------------------------------------+--------+--------+
+| /sys                                                                                             |    0 B |    0 B |
+| /proc                                                                                            |    0 B |    0 B |
+| /dev                                                                                             |  31 GB |  31 GB |
+| /dev/pts                                                                                         |    0 B |    0 B |
+| /run                                                                                             |   6 GB |   6 GB |
+| /                                                                                                |  67 GB | 217 GB |
+| /sys/kernel/security                                                                             |    0 B |    0 B |
+| /dev/shm                                                                                         |  31 GB |  31 GB |
+| /run/lock                                                                                        |   4 MB |   5 MB |
+| /sys/fs/cgroup                                                                                   |    0 B |    0 B |
+| /sys/fs/pstore                                                                                   |    0 B |    0 B |
+| /sys/firmware/efi/efivars                                                                        | 130 KB | 192 KB |
+| /sys/fs/bpf                                                                                      |    0 B |    0 B |
+| /proc/sys/fs/binfmt_misc                                                                         |    0 B |    0 B |
+| /sys/kernel/debug                                                                                |    0 B |    0 B |
+| /sys/kernel/tracing                                                                              |    0 B |    0 B |
+| /dev/hugepages                                                                                   |    0 B |    0 B |
+| /dev/mqueue                                                                                      |    0 B |    0 B |
+| /sys/fs/fuse/connections                                                                         |    0 B |    0 B |
+| /sys/kernel/config                                                                               |    0 B |    0 B |
+| /snap/code/225                                                                                   |    0 B | 336 MB |
+| /snap/bare/5                                                                                     |    0 B | 128 KB |
+| /snap/core18/2979                                                                                |    0 B |  55 MB |
+| /snap/core18/2976                                                                                |    0 B |  55 MB |
+| /snap/core20/2686                                                                                |    0 B |  63 MB |
+| /snap/core20/2717                                                                                |    0 B |  63 MB |
+| /snap/core22/2292                                                                                |    0 B |  74 MB |
+| /snap/core24/1267                                                                                |    0 B |  66 MB |
+| /snap/core22/2339                                                                                |    0 B |  74 MB |
+| /snap/cups/1142                                                                                  |    0 B |  47 MB |
+| /snap/core24/1349                                                                                |    0 B |  66 MB |
+| /snap/cups/1146                                                                                  |    0 B |  48 MB |
+| /snap/firefox/7836                                                                               |    0 B | 251 MB |
+| /snap/firmware-updater/210                                                                       |    0 B |  18 MB |
+| /snap/firefox/7901                                                                               |    0 B | 254 MB |
+| /snap/firmware-updater/216                                                                       |    0 B |  16 MB |
+| /snap/freecad/1634                                                                               |    0 B | 740 MB |
+| /snap/gnome-3-38-2004/143                                                                        |    0 B | 349 MB |
+| /snap/gnome-42-2204/226                                                                          |    0 B | 516 MB |
+| /snap/gnome-46-2404/145                                                                          |    0 B | 669 MB |
+| /snap/gnome-42-2204/247                                                                          |    0 B | 531 MB |
+| /snap/gnome-46-2404/153                                                                          |    0 B | 606 MB |
+| /snap/gtk-common-themes/1535                                                                     |    0 B |  91 MB |
+| /snap/icon-theme-breeze/5                                                                        |    0 B |  13 MB |
+| /snap/kf5-5-108-qt-5-15-10-core22/5                                                              |    0 B | 450 MB |
+| /snap/kf5-core22/3                                                                               |    0 B |   1 GB |
+| /snap/kf6-core22/43                                                                              |    0 B |   2 GB |
+| /snap/konsole/36                                                                                 |    0 B |   4 MB |
+| /snap/localsend/32                                                                               |    0 B |  17 MB |
+| /snap/marktext/9                                                                                 |    0 B | 145 MB |
+| /snap/mesa-2404/1165                                                                             |    0 B | 395 MB |
+| /snap/mesa-2404/912                                                                              |    0 B | 290 MB |
+| /snap/snap-store/1270                                                                            |    0 B |  10 MB |
+| /snap/snapd/25577                                                                                |    0 B |  51 MB |
+| /snap/snapd/25935                                                                                |    0 B |  48 MB |
+| /snap/snapd-desktop-integration/315                                                              |    0 B | 640 KB |
+| /snap/snapd-desktop-integration/343                                                              |    0 B | 640 KB |
+| /snap/thunderbird/995                                                                            |    0 B | 227 MB |
+| /mnt/WORKS_SSD                                                                                   | 184 GB | 255 GB |
+| /boot/efi                                                                                        |   1 GB |   1 GB |
+| /proc/sys/fs/binfmt_misc                                                                         |    0 B |    0 B |
+| /run/snapd/ns                                                                                    |   6 GB |   6 GB |
+| /run/snapd/ns/cups.mnt                                                                           |    0 B |    0 B |
+| /run/snapd/ns/snapd-desktop-integration.mnt                                                      |    0 B |    0 B |
+| /var/lib/docker/overlay2/88fa3306e1bbdfd9ed26c59dc5af8fa4e402d392aa71283bd55330c6a4b6a717/merged |   FAIL |   FAIL |
+| /var/lib/docker/overlay2/faac5e99d4124298ba9ab73e0e1605a9b3b1f1d2a6153041c0b8ceb5fc7398b5/merged |   FAIL |   FAIL |
+| /var/lib/docker/overlay2/c3f85ff9ccce2e50f928f6be7827e70baa4c40999d912e7c369baff23b26b1d7/merged |   FAIL |   FAIL |
+| /run/docker/netns/da59d2973eb7                                                                   |   FAIL |   FAIL |
+| /run/docker/netns/6c4f773fe3b9                                                                   |   FAIL |   FAIL |
+| /run/docker/netns/93e9ec01bc71                                                                   |   FAIL |   FAIL |
+| /run/user/1000                                                                                   |   6 GB |   6 GB |
+| /run/user/1000/doc                                                                               |   FAIL |   FAIL |
+| /run/user/1000/gvfs                                                                              |    0 B |    0 B |
+| /snap/thunderbird/1001                                                                           |    0 B | 227 MB |
+| /snap/code/226                                                                                   |    0 B | 336 MB |
+| /run/snapd/ns/thunderbird.mnt                                                                    |    0 B |    0 B |
+| /run/snapd/ns/firefox.mnt                                                                        |    0 B |    0 B |
++--------------------------------------------------------------------------------------------------+--------+--------+
+
+
+Host Memory Information
++---------------------------+-------+
+| Memory Type               | Value |
++---------------------------+-------+
+| Physical Memory           | 62 GB |
+| Available Physical Memory | 49 GB |
+| Swap File                 |  7 GB |
+| Total Virtual             | 70 GB |
+| Available Virtual         | 63 GB |
++---------------------------+-------+
+
+
+2. Environment Variables
+------------------------
+
+SHELL=/usr/bin/zsh
+SESSION_MANAGER=local/lc-kjlee-pc:@/tmp/.ICE-unix/4304,unix/lc-kjlee-pc:/tmp/.ICE-unix/4304
+QT_ACCESSIBILITY=1
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+XDG_MENU_PREFIX=gnome-
+RDI_APPROOT=/opt/Xilinx/Vivado/2019.2
+RDI_JAVA_PLATFORM=
+RDI_BINROOT=/opt/Xilinx/Vivado/2019.2/bin
+XILINX_VIVADO=/opt/Xilinx/Vivado/2019.2
+GNOME_SHELL_SESSION_MODE=ubuntu
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+RDI_OPT_EXT=.o
+RDI_INSTALLVER=2019.2
+RDI_INSTALLROOT=/opt/Xilinx
+MEMORY_PRESSURE_WRITE=c29tZSAyMDAwMDAgMjAwMDAwMAA=
+XMODIFIERS=@im=ibus
+RDI_PATCHROOT=
+DESKTOP_SESSION=ubuntu
+GTK_MODULES=appmenu-gtk-module
+RDI_LIBDIR=/opt/Xilinx/Vivado/2019.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vivado/2019.2/lib/lnx64.o
+PWD=/home/lc-kjlee-pc
+LOGNAME=lc-kjlee-pc
+XDG_SESSION_DESKTOP=ubuntu
+XDG_SESSION_TYPE=x11
+GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+SYSTEMD_EXEC_PID=4363
+XAUTHORITY=/run/user/1000/gdm/Xauthority
+RDI_PREPEND_PATH=/opt/Xilinx/Vitis/2019.2/bin:/opt/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/lin64
+XILINX_DSP=/opt/Xilinx/Vivado/2019.2/ids_lite/ISE
+GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+WINDOWPATH=2
+HOME=/home/lc-kjlee-pc
+USERNAME=lc-kjlee-pc
+SYNTH_COMMON=/opt/Xilinx/Vivado/2019.2/scripts/rt/data
+LANG=ko_KR.UTF-8
+XDG_CURRENT_DESKTOP=ubuntu:GNOME
+MEMORY_PRESSURE_WATCH=/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure
+RDI_BUILD=yes
+RDI_PROG=/opt/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado
+QTWEBENGINE_DICTIONARIES_PATH=/usr/share/hunspell-bdic/
+INVOCATION_ID=53e124fa97b24044a4756a1e3eefeb96
+MANAGERPID=3948
+RT_TCL_PATH=/opt/Xilinx/Vivado/2019.2/scripts/rt/base_tcl/tcl
+GJS_DEBUG_OUTPUT=stderr
+XILINX_SDK=/opt/Xilinx/Vitis/2019.2
+XDG_SESSION_CLASS=user
+PYTHONPATH=/opt/Xilinx/Vivado/2019.2/tps/lnx64/python-2.7.5:/opt/Xilinx/Vivado/2019.2/tps/lnx64/python-2.7.5/bin:/opt/Xilinx/Vivado/2019.2/tps/lnx64/python-2.7.5/lib:/opt/Xilinx/Vivado/2019.2/tps/lnx64/python-2.7.5/lib/python2.7/lib-tk:/opt/Xilinx/Vivado/2019.2/tps/lnx64/python-2.7.5/lib/python2.7/site-packages:
+PYTHONHOME=/opt/Xilinx/Vivado/2019.2/tps/lnx64/python-2.7.5
+USER=lc-kjlee-pc
+XILINX_PLANAHEAD=/opt/Xilinx/Vivado/2019.2
+PYTHON=/opt/Xilinx/Vivado/2019.2/tps/lnx64/python-2.7.5
+RDI_BASEROOT=/opt/Xilinx/Vivado
+CLUTTER_DISABLE_MIPMAPPED_TEXT=1
+RDI_TPS_ROOT=/opt/Xilinx/Vivado/2019.2/tps/lnx64
+RDI_JAVA_VERSION=9.0.4
+RDI_DATADIR=/opt/Xilinx/Vivado/2019.2/data
+DISPLAY=:1
+SHLVL=2
+GSM_SKIP_SSH_AGENT_WORKAROUND=true
+QT_IM_MODULE=ibus
+XILINX_VIVADO_HLS=/opt/Xilinx/Vivado/2019.2
+XIL_CHECK_TCL_DEBUG=False
+LD_LIBRARY_PATH=/opt/Xilinx/Vivado/2019.2/tps/lnx64/python-2.7.5/lib:/opt/Xilinx/Vivado/2019.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vivado/2019.2/lib/lnx64.o:/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/lib/:/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/lib//server:/opt/Xilinx/Vivado/2019.2/bin/../lnx64/tools/dot/lib
+HDIPRELDPATH=/opt/Xilinx/Vivado/2019.2/bin/../lnx64/tools/dot/lib
+XDG_RUNTIME_DIR=/run/user/1000
+DEBUGINFOD_URLS=https://debuginfod.ubuntu.com 
+XILINX=/opt/Xilinx/Vivado/2019.2/ids_lite/ISE
+TCL_LIBRARY=/opt/Xilinx/Vivado/2019.2/tps/tcl/tcl8.5
+JOURNAL_STREAM=9:29130
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/home/lc-kjlee-pc/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+PATH=/opt/Xilinx/Vivado/2019.2/tps/lnx64/python-2.7.5:/opt/Xilinx/Vivado/2019.2/tps/lnx64/python-2.7.5/bin:/opt/Xilinx/Vivado/2019.2/tps/lnx64/python-2.7.5/lib:/opt/Xilinx/Vivado/2019.2/tps/lnx64/python-2.7.5/lib/python2.7/lib-tk:/opt/Xilinx/Vivado/2019.2/tps/lnx64/python-2.7.5/lib/python2.7/site-packages::/opt/Xilinx/Vivado/2019.2/gnu/microblaze/lin/bin:/opt/Xilinx/Vivado/2019.2/bin:/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/bin:/opt/Xilinx/Vitis/2019.2/bin:/opt/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/lin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/lc-kjlee-pc/.lmstudio/bin
+RT_LIBPATH=/opt/Xilinx/Vivado/2019.2/scripts/rt/data
+GDMSESSION=ubuntu
+HDI_APPROOT=/opt/Xilinx/Vivado/2019.2
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+RDI_PLATFORM=lnx64
+ISL_IOSTREAMS_RSA=/opt/Xilinx/Vivado/2019.2/tps/isl
+GIO_LAUNCHED_DESKTOP_FILE_PID=8224
+GIO_LAUNCHED_DESKTOP_FILE=/home/lc-kjlee-pc/Desktop/Vivado 2019.2.desktop
+XILINX_VITIS=/opt/Xilinx/Vitis/2019.2
+OLDPWD=/opt/Xilinx/Vivado/2019.2/bin
+_=/opt/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado
+GLIBCPP_FORCE_NEW=1
+GLIBCXX_FORCE_NEW=1
+HRT_TCL_PATH=/opt/Xilinx/Vivado/2019.2/scripts/rt/fpga_tcl
+RT_INTERUPT=/home/lc-kjlee-pc/.oasys/realTime-interrupt.tcl
+
+3. Vivado Preferences
+---------------------
+
+4. Install Information
+----------------------
+
+No install information found.
+
+5. Version of system dlls called by Xilinx software
+---------------------------------------------------
+
+
+6. License Information
+----------------------
+
+
+
+
+License Information
++------------------------------+-------------------+---------+-----------+-------------+-------------------------+-----------+------------+---------+-----------------+--------+------------------------------+---------------+------------------+-----------------+----------------------------------------------------------------+------------------------------------------------------------------------------------+
+| Feature                      | S/W or IP Core    | Version | Expiring  | Start Date  | Floating or Node Locked | Count     | ServerName | Host Id | Host Id Matches | Notice | Issuer                       | Feature Index | License Validity | Licenses in Use | File Name                                                      | Info                                                                               |
++------------------------------+-------------------+---------+-----------+-------------+-------------------------+-----------+------------+---------+-----------------+--------+------------------------------+---------------+------------------+-----------------+----------------------------------------------------------------+------------------------------------------------------------------------------------+
+| AUTOESL_CC                   | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 1             | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| AUTOESL_FLOW                 | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 2             | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| AUTOESL_OPT                  | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 3             | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| AUTOESL_SC                   | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 4             | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| AUTOESL_XILINX               | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 5             | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| AccelDSP                     | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 6             | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| Analyzer                     | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 7             | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| ChipScopePro_SIOTK           | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 8             | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| ChipscopePro                 | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 9             | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| HLS                          | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 10            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| HLS_Synthesis                | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 11            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| ISE                          | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 12            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| ISIM                         | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 13            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| Implementation               | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 14            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| PartialReconfiguration       | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 15            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| PlanAhead                    | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 16            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| Rodin_Implementation         | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 17            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| Rodin_Synthesis              | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 18            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| Rodin_SystemBuilder          | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 19            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| SDK                          | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 20            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| Simulation                   | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 21            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| Synthesis                    | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 22            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| SysGen                       | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 23            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| VIVADO_HLS                   | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 24            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| VIVADO_HLS                   | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 25            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| Vivado                       | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 26            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| Vivado_System_Edition        | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 27            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| XPS                          | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 28            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| ap_sdsoc                     | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 29            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| petalinux_arch_microblaze    | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 30            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| petalinux_arch_ppc           | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 31            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| petalinux_arch_zynq          | IP:Bought         | 2037.05 | Permanent | 19-May-2016 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 32            | Okay             | Not Applicable  | /home/lc-kjlee-pc/.Xilinx/xilinx_2037.lic                      | License_Type:Bought                                                                |
+| axi_usb2_device              | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 33            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,axi_usb2_device,ip,permanent,_0_0_0              |
+| can                          | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 34            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,can,ip,permanent,_0_0_0                          |
+| canfd                        | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 35            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,canfd,ip,permanent,_0_0_0                        |
+| cmac                         | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 36            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,cmac,ip,permanent,_0_0_0                         |
+| cmac_an_lt                   | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 37            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,cmac_an_lt,ip,permanent,_0_0_0                   |
+| cmac_usplus                  | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 38            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,cmac_usplus,ip,permanent,_0_0_0                  |
+| cpri                         | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 39            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,cpri,ip,permanent,_0_0_0                         |
+| displayport                  | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 40            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,displayport,ip,permanent,_0_0_0                  |
+| eth_avb_endpoint             | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 41            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,eth_avb_endpoint,ip,permanent,_0_0_0             |
+| interlaken                   | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 42            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,interlaken,ip,permanent,_0_0_0                   |
+| jesd204                      | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 43            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,jesd204,ip,permanent,_0_0_0                      |
+| l_eth_basekr                 | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 44            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,l_eth_basekr,ip,permanent,_0_0_0                 |
+| l_eth_baser                  | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 45            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,l_eth_baser,ip,permanent,_0_0_0                  |
+| l_eth_mac_pcs                | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 46            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,l_eth_mac_pcs,ip,permanent,_0_0_0                |
+| mrmac                        | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 47            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,mrmac,ip,permanent,_0_0_0                        |
+| nvmehc                       | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 48            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,nvmehc,ip,permanent,_0_0_0                       |
+| pci32                        | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 49            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,pci32,ip,permanent,_0_0_0                        |
+| pci64                        | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 50            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,pci64,ip,permanent,_0_0_0                        |
+| roe_framer                   | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 51            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,roe_framer,ip,permanent,_0_0_0                   |
+| spdif                        | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 52            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,spdif,ip,permanent,_0_0_0                        |
+| srio_phylog_io               | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 53            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,srio_phylog_io,ip,permanent,_0_0_0               |
+| ten_gig_eth_mac              | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 54            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,ten_gig_eth_mac,ip,permanent,_0_0_0              |
+| ten_gig_eth_pcs_pma_basekr   | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 55            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,ten_gig_eth_pcs_pma_basekr,ip,permanent,_0_0_0   |
+| tri_mode_eth_mac             | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 56            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,tri_mode_eth_mac,ip,permanent,_0_0_0             |
+| tsn_bridged_endpoint_eth_mac | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 57            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,tsn_bridged_endpoint_eth_mac,ip,permanent,_0_0_0 |
+| tsn_endpoint_eth_mac         | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 58            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,tsn_endpoint_eth_mac,ip,permanent,_0_0_0         |
+| usxgmii_mac_pcs              | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 59            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,usxgmii_mac_pcs,ip,permanent,_0_0_0              |
+| v_ccm                        | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 60            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,v_ccm,ip,permanent,_0_0_0                        |
+| v_cresample                  | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 61            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,v_cresample,ip,permanent,_0_0_0                  |
+| v_deinterlacer               | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 62            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,v_deinterlacer,ip,permanent,_0_0_0               |
+| v_enhance                    | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 63            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,v_enhance,ip,permanent,_0_0_0                    |
+| v_gamma                      | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 64            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,v_gamma,ip,permanent,_0_0_0                      |
+| v_hdmi                       | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 65            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,v_hdmi,ip,permanent,_0_0_0                       |
+| v_osd                        | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 66            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,v_osd,ip,permanent,_0_0_0                        |
+| v_rgb2ycrcb                  | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 67            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,v_rgb2ycrcb,ip,permanent,_0_0_0                  |
+| v_ycrcb2rgb                  | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 68            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,v_ycrcb2rgb,ip,permanent,_0_0_0                  |
+| x_eth_mac                    | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 69            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,x_eth_mac,ip,permanent,_0_0_0                    |
+| xxv_eth_basekr               | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 70            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,xxv_eth_basekr,ip,permanent,_0_0_0               |
+| xxv_eth_mac_pcs              | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 71            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,xxv_eth_mac_pcs,ip,permanent,_0_0_0              |
+| xxv_tsn_802d1cm              | IP:Design_Linking | 2019.10 | Permanent | 06-Nov-2019 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 72            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/Xilinx.lic     | License_Type:Design_Linking;ipman,xxv_tsn_802d1cm,ip,permanent,_0_0_0              |
+| PCIE_BLK_PLUS                | IP:Bought         | 2010.08 | Permanent | 16-Aug-2009 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 73            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought;Xilinx_Free_IP_Core,PCIE_BLK_PLUS,ip,permanent,_ANY            |
+| PCIE_BLK_PLUS_classic        | IP:Bought         | 2010.08 | Permanent | 16-Aug-2009 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 74            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| RGB2YCRCB                    | IP:Bought         | 2013.10 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 75            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought;Xilinx_Free_IP_Core,RGB2YCRCB,ip,permanent,_ANY                |
+| RGB2YCRCB_classic            | IP:Bought         | 2013.10 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 76            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| S6_PCIE                      | IP:Bought         | 2010.08 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 77            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought;Xilinx_Free_IP_Core,S6_PCIE,ip,permanent,_ANY                  |
+| S6_PCIE_classic              | IP:Bought         | 2010.08 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 78            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| TC                           | IP:Bought         | 2013.10 | Permanent | 24-Sep-2013 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 79            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought;Xilinx_Free_IP_Core,TC,ip,permanent,_ANY                       |
+| TC_classic                   | IP:Bought         | 2013.10 | Permanent | 24-Sep-2013 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 80            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| V4_EMAC                      | IP:Bought         | 2010.08 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 81            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought;Xilinx_Free_IP_Core,V4_EMAC,ip,permanent,_ANY                  |
+| V4_EMAC_classic              | IP:Bought         | 2010.08 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 82            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| V5_EMAC                      | IP:Bought         | 2010.08 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 83            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought;Xilinx_Free_IP_Core,V5_EMAC,ip,permanent,_ANY                  |
+| V5_EMAC_classic              | IP:Bought         | 2010.08 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 84            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| V6_EMAC                      | IP:Bought         | 2010.08 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 85            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought;Xilinx_Free_IP_Core,V6_EMAC,ip,permanent,_ANY                  |
+| V6_EMAC_classic              | IP:Bought         | 2010.08 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 86            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| V6_PCIE                      | IP:Bought         | 2010.08 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 87            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought;Xilinx_Free_IP_Core,V6_PCIE,ip,permanent,_ANY                  |
+| V6_PCIE_classic              | IP:Bought         | 2010.08 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 88            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| XAUI                         | IP:Bought         | 2010.08 | Permanent | 16-Aug-2009 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 89            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought;Xilinx_Free_IP_Core,XAUI,ip,permanent,_ANY                     |
+| XAUI_classic                 | IP:Bought         | 2010.08 | Permanent | 16-Aug-2009 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 90            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| YCRCB2RGB                    | IP:Bought         | 2013.10 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 91            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought;Xilinx_Free_IP_Core,YCRCB2RGB,ip,permanent,_ANY                |
+| YCRCB2RGB_classic            | IP:Bought         | 2013.10 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 92            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| pcie_blk_plus_v1             | IP:Bought         | 2010.08 | Permanent | 16-Aug-2009 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 93            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| s6_pcie_v1                   | IP:Bought         | 2010.08 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 94            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| ten_gig_eth_pcs_pma          | IP:Bought         | 2012.04 | Permanent | 21-Mar-2012 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc                   | 95            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought;ipman,ten_gig_eth_pcs_pma,ip,permanent,_0_0_0                  |
+| v4_emac_v4                   | IP:Bought         | 2010.08 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 96            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| v5_emac_v1                   | IP:Bought         | 2010.08 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 97            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| v6_emac_v1                   | IP:Bought         | 2010.08 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 98            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| v6_pcie_v1                   | IP:Bought         | 2010.08 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 99            | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| v_rgb2ycrcb                  | IP:Bought         | 2013.10 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 100           | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought;Xilinx_Free_IP_Core,RGB2YCRCB,ip,permanent,_ANY                |
+| v_rgb2ycrcb_v2               | IP:Bought         | 2013.10 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 101           | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| v_tc                         | IP:Bought         | 2013.10 | Permanent | 24-Sep-2013 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 102           | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought;Xilinx_Free_IP_Core,TC,ip,permanent,_ANY                       |
+| v_tc_v1                      | IP:Bought         | 2013.10 | Permanent | 24-Sep-2013 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 103           | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| v_ycrcb2rgb                  | IP:Bought         | 2013.10 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 104           | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought;Xilinx_Free_IP_Core,YCRCB2RGB,ip,permanent,_ANY                |
+| v_ycrcb2rgb_v2               | IP:Bought         | 2013.10 | Permanent | 9-Aug-2009  | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 105           | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| xaui_v3_0                    | IP:Bought         | 2010.08 | Permanent | 16-Aug-2009 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 106           | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| xaui_v4_0                    | IP:Bought         | 2010.08 | Permanent | 16-Aug-2009 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 107           | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| xaui_v5_0                    | IP:Bought         | 2010.08 | Permanent | 16-Aug-2009 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 108           | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| xaui_v6                      | IP:Bought         | 2010.08 | Permanent | 16-Aug-2009 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 109           | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| xaui_v7                      | IP:Bought         | 2010.08 | Permanent | 16-Aug-2009 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 110           | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
+| xaui_v8                      | IP:Bought         | 2010.08 | Permanent | 16-Aug-2009 | Nodelocked              | Uncounted |            | ANY     | Yes             |        | Xilinx Inc, ip_license_admin | 111           | Okay             | Not Applicable  | /opt/Xilinx/Vivado/2019.2/data/ip/core_licenses/XilinxFree.lic | License_Type:Bought                                                                |
++------------------------------+-------------------+---------+-----------+-------------+-------------------------+-----------+------------+---------+-----------------+--------+------------------------------+---------------+------------------+-----------------+----------------------------------------------------------------+------------------------------------------------------------------------------------+
+
+

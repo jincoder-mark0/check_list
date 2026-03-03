@@ -45,8 +45,8 @@ QUESTION_REPORT_MAP: Dict[str, Set[str]] = {
     # -------------------------------------------------------------------------
     "Q11": {"Utilization", "Clock_Utilization", "Control_Sets", "IO_Report", "QoR_Assessment", "PR_NA_Evidence", "PR_DFX_Detection", "PR_PBLOCK_Utilization"},
     "Q12": {"Timing_Summary", "Setup_Critical", "Hold_Critical", "QoR_Assessment", "Datasheet", "Check_Timing"},
-    "Q13": {"Power_Data", "Power_Report", "Power_Opt", "Operating_Cond"},
-    "Q14": {"Power_Data", "Power_Report", "Switching_Activity"},
+    "Q13": {"Power_Report", "Power_Data", "Power_Opt", "Operating_Cond"},
+    "Q14": {"Power_Report", "Power_Data", "Switching_Activity"},
     "Q15": {"QoR_Assessment", "QoR_Suggestions", "Pipeline_Analysis", "High_Fanout", "PR_NA_Evidence", "PR_DFX_Detection", "PR_PBLOCK_Utilization"},
     "Q16": set(), "Q17": set(),                # EVIDENCE
     "Q18": {"Debug_Core", "Partial_Bit_Config_Summary"},
@@ -60,7 +60,7 @@ QUESTION_REPORT_MAP: Dict[str, Set[str]] = {
     "Q22": {"RAM_Utilization", "Methodology"},
     "Q23": set(),                              # EVIDENCE
     "Q24": {"Datasheet", "IO_Report"},
-    "Q25": {"Power_Data", "Power_Report", "Datasheet", "Operating_Cond", "CDC_Report"},
+    "Q25": {"Power_Report", "Power_Data", "Datasheet", "Operating_Cond", "CDC_Report"},
     "Q26": {"PR_NA_Evidence", "PR_DFX_Detection", "PR_Verify_Report", "Partial_Bit_Config_Summary"},
     "Q27": {"Clocks_Summary", "Property_Check", "PR_NA_Evidence", "PR_DFX_Detection", "PR_DRC_Report"},
     "Q28": {"Config_Impl", "Partial_Bit_Config_Summary", "PR_DFX_Detection", "IO_Report"},
@@ -78,19 +78,19 @@ QUESTION_REPORT_MAP: Dict[str, Set[str]] = {
     "Q36": {"CDC_Report"},
     "Q37": {"Clock_Utilization", "Clock_Networks", "Timing_Exceptions"},
     "Q38": {"Bus_Skew", "Timing_Exceptions"},
-    "Q39": {"CDC_Report", "CDC_Critical", "CDC_Unsafe", "CDC_Interaction", "Timing_Exceptions"},
-    "Q40": {"CDC_Report", "CDC_Critical", "CDC_Unsafe", "CDC_Interaction", "Timing_Exceptions"},
+    "Q39": {"CDC_Report", "CDC_Critical", "CDC_Interaction", "Timing_Exceptions"},
+    "Q40": {"CDC_Report", "CDC_Critical", "CDC_Interaction", "Timing_Exceptions"},
 
     # -------------------------------------------------------------------------
     # Q41 ~ Q50: 상세 설계 및 버스 인터페이스
     # -------------------------------------------------------------------------
-    "Q41": {"Clock_Networks", "CDC_Report", "CDC_Critical", "CDC_Unsafe", "CDC_Interaction", "Timing_Exceptions"},
-    "Q42": {"CDC_Report", "CDC_Critical", "CDC_Unsafe", "CDC_Interaction", "Timing_Exceptions"},
-    "Q43": {"CDC_Report", "CDC_Critical", "CDC_Unsafe", "CDC_Interaction", "Timing_Exceptions"},
-    "Q44": {"Bus_Skew", "CDC_Report", "CDC_Critical", "CDC_Unsafe", "CDC_Interaction", "Timing_Exceptions"},
+    "Q41": {"Clock_Networks", "CDC_Report", "CDC_Critical", "CDC_Interaction", "Timing_Exceptions"},
+    "Q42": {"CDC_Report", "CDC_Critical", "CDC_Interaction", "Timing_Exceptions"},
+    "Q43": {"CDC_Report", "CDC_Critical", "CDC_Interaction", "Timing_Exceptions"},
+    "Q44": {"Bus_Skew", "CDC_Report", "CDC_Critical", "CDC_Interaction", "Timing_Exceptions"},
     "Q45": {"Pulse_Width", "Clock_Utilization"},
     "Q46": {"RAM_Utilization", "Check_Timing"},
-    "Q47": {"RAM_Utilization", "CDC_Report", "CDC_Critical", "CDC_Unsafe", "CDC_Interaction", "Timing_Exceptions"},
+    "Q47": {"RAM_Utilization", "CDC_Report", "CDC_Critical", "CDC_Interaction", "Timing_Exceptions"},
     "Q48": {"RAM_Utilization", "IP_Status"},
     "Q49": {"Debug_Core"},
     "Q50": {"Debug_Core", "DRC_Report"},
@@ -106,13 +106,13 @@ QUESTION_REPORT_MAP: Dict[str, Set[str]] = {
     "Q56": {"Coverage_Report"},
     "Q57": {"Design_Analysis", "Methodology"},
     "Q58": {"Coverage_Report", "Waiver", "DRC_Report", "Methodology"},
-    "Q59": {"SSN_Report", "Waiver", "Methodology", "CDC_Report", "CDC_Critical", "CDC_Unsafe", "CDC_Interaction", "Timing_Exceptions"},
+    "Q59": {"SSN_Report", "Waiver", "Methodology", "CDC_Report", "CDC_Critical", "CDC_Interaction", "Timing_Exceptions"},
     "Q60": {"CDC_Report", "SSN_Report", "Waiver", "Methodology", "Coverage_Report"},
 
     # -------------------------------------------------------------------------
     # Q61 ~ Q69: 최종 구현 로그 및 툴 품질
     # -------------------------------------------------------------------------
-    "Q61": {"Timing_Summary", "CDC_Report", "CDC_Critical", "CDC_Unsafe", "CDC_Interaction", "Timing_Exceptions"},
+    "Q61": {"Timing_Summary", "CDC_Report", "CDC_Critical", "CDC_Interaction", "Timing_Exceptions"},
     "Q62": {"Pulse_Width", "Clocks_Summary", "Property_Check", "Timing_Summary", "Check_Timing"},
     "Q63": {"Timing_Summary", "Setup_Critical", "Hold_Critical"},
     "Q64": {"Timing_Summary", "Setup_Critical", "Hold_Critical", "Bus_Skew"},

@@ -1,0 +1,29 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Tue Mar  3 14:57:27 2026
+| Host         : lc-kjlee-pc running 64-bit Ubuntu 24.04.3 LTS
+| Command      : report_config_implementation -file /home/lc-kjlee-pc/works/fpga/20260202_MLC60_FPGA_100_630A_DDR/MLC_FPGA.reports/post_route_revA_20260303_145526/05/Config_Impl.rpt
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Implementation Config Params Information
+
+Table of Contents
+-----------------
+1. All Config Params
+
+1. All Config Params
+--------------------
+
++------------------------------------+------------------+------+-----+---------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                Param               | Allowable values |  Min | Max | Default | Value |                                                                         Param Description                                                                         |
++------------------------------------+------------------+------+-----+---------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| autoIncr.cellMatch                 |                  |    0 | 100 |      94 |    94 | Minimum Cell matching percentage to invoke auto_incremental flow                                                                                                  |
+| autoIncr.dcpWns                    |                  | -inf |   0 |   -0.25 | -0.25 | Threshold WNS(ns) for candidate DCP. Make it ref DCP if its WNS is >= this threshold                                                                              |
+| autoIncr.netMatch                  |                  |    0 | 100 |      90 |    90 | Minimum Net matching percentage to invoke auto_incremental flow                                                                                                   |
+| incr.ignore_user_clock_uncertainty |      True, False |      |     |       0 |     0 | Disable clock uncertainity constraint for incremental flow                                                                                                        |
+| route.preRouteSLLs                 |      True, False |      |     |       0 |     0 | This setting controls whether the SLLs are routed before routing the entire design. Note that SLL routes may be updated after pre-routing to improve performance. |
+| route.earlyReturnWNSThreshold      |                  |      |     |       0 |     0 | Option to exit route_design early by skipping further timing optimization when WNS is above this threshold in ns.                                                 |
++------------------------------------+------------------+------+-----+---------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+

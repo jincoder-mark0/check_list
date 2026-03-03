@@ -19,14 +19,14 @@
 
 - **답변 유형**: `SEMI` — Clock_Networks 및 CDC 관련 내용 확인
 
-📄 **`CDC_Report.rpt`** + **`CDC_Critical.rpt`** + **`CDC_Unsafe.rpt`** + **`CDC_Interaction.rpt`** + **`Timing_Exceptions.rpt`** + **`Clock_Networks.rpt`** + **`Clock_Utilization.rpt`**
+📄 **`CDC_Report.rpt`** + **`CDC_Critical.rpt`** + **`CDC_Interaction.rpt`** + **`Timing_Exceptions.rpt`** + **`Clock_Networks.rpt`** + **`Clock_Utilization.rpt`**
 
 🔍 **파싱 위치**
 
 - `Clock_Utilization.rpt`: `Clock Primitive Utilization` 섹션 (BUFGMUX 등 사용 여부 파악)
 - `Clock_Utilization.rpt`: `Global Clock Resources` 섹션의 `Driver Type` 컬럼 확인
 - `Clock_Networks.rpt`: 클럭 경로 상의 글리치/해저드 발생 가능 지점 (BUFGMUX 등) 식별
-- `CDC_Report`, `CDC_Critical`, `CDC_Unsafe`, `CDC_Interaction`: 클럭 도메인 간 비동기/스위칭 전환 시 안전성
+- `CDC_Report`, `CDC_Critical`, `CDC_Interaction`: 클럭 도메인 간 비동기/스위칭 전환 시 안전성
 - `Timing_Exceptions.rpt`: 스위칭/타이밍 예외 설정 여부
 
 🧩 **파싱 로직**
@@ -112,7 +112,7 @@ def judge_q41(data, criteria):
 
 - **답변 유형**: `SEMI` — CDC 존재 확인 가능
 
-📄 **`CDC_Report.rpt`** + **`CDC_Critical.rpt`** + **`CDC_Unsafe.rpt`** + **`CDC_Interaction.rpt`** + **`Timing_Exceptions.rpt`**
+📄 **`CDC_Report.rpt`** + **`CDC_Critical.rpt`** + **`CDC_Interaction.rpt`** + **`Timing_Exceptions.rpt`**
 
 🔍 **파싱 위치**
 
@@ -180,7 +180,7 @@ def judge_q42(cdc_data):
 
 - **답변 유형**: `SEMI` — FIFO 구조에서 부분 확인 가능
 
-📄 **`CDC_Report.rpt`** + **`CDC_Critical.rpt`** + **`CDC_Unsafe.rpt`** + **`CDC_Interaction.rpt`** + **`Timing_Exceptions.rpt`**
+📄 **`CDC_Report.rpt`** + **`CDC_Critical.rpt`** + **`CDC_Interaction.rpt`** + **`Timing_Exceptions.rpt`**
 
 🔍 **파싱 위치**
 
@@ -234,7 +234,7 @@ def judge_q43(data, criteria):
 
 - **답변 유형**: `SEMI` — CDC 및 Timing_Exceptions 분석
 
-📄 **`CDC_Report.rpt`** + **`CDC_Critical.rpt`** + **`CDC_Unsafe.rpt`** + **`CDC_Interaction.rpt`** + **`Timing_Exceptions.rpt`** + **`Bus_Skew.rpt`**
+📄 **`CDC_Report.rpt`** + **`CDC_Critical.rpt`** + **`CDC_Interaction.rpt`** + **`Timing_Exceptions.rpt`** + **`Bus_Skew.rpt`**
 
 🔍 **파싱 위치**
 
@@ -406,7 +406,7 @@ def judge_q46(data, criteria):
 
 - **답변 유형**: `SEMI` — RAM 구조 및 CDC 동기화에서 확인 가능
 
-📄 **`CDC_Report.rpt`** + **`CDC_Critical.rpt`** + **`CDC_Unsafe.rpt`** + **`CDC_Interaction.rpt`** + **`Timing_Exceptions.rpt`** + **`RAM_Utilization.rpt`**
+📄 **`CDC_Report.rpt`** + **`CDC_Critical.rpt`** + **`CDC_Interaction.rpt`** + **`Timing_Exceptions.rpt`** + **`RAM_Utilization.rpt`**
 
 🔍 **파싱 위치**
 

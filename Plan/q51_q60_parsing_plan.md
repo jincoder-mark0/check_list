@@ -497,7 +497,7 @@ def judge_q58(data, criteria):
 
 - **답변 유형**: `AUTO` ⚙️
 
-📄 **`CDC_Report.rpt`** + **`CDC_Critical.rpt`** + **`CDC_Unsafe.rpt`** + **`CDC_Interaction.rpt`** + **`Timing_Exceptions.rpt`** + **`Coverage_Report.html / .txt`** + **`Methodology.rpt`** + **`Waiver.rpt`** + **`SSN_Report.rpt`**
+📄 **`CDC_Report.rpt`** + **`CDC_Critical.rpt`** + **`CDC_Interaction.rpt`** + **`Timing_Exceptions.rpt`** + **`Coverage_Report.html / .txt`** + **`Methodology.rpt`** + **`Waiver.rpt`** + **`SSN_Report.rpt`**
 
 🧩 **파싱 로직**
 

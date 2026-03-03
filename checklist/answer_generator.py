@@ -258,8 +258,8 @@ class AnswerGenerator:
 
     def _check_q13(self) -> ParseResult:
         """ 최대 소비전력 점검 (Q13) """
-        # Power_Data가 있으면 우선 사용, 없으면 Power_Report 사용
-        pwr_data = self.parsed_data.get('power_data') or self.parsed_data.get('power_report', {})
+        # Power_Report가 있으면 우선 사용, 없으면 Power_Data 사용
+        pwr_data = self.parsed_data.get('power_report', {}) or self.parsed_data.get('power_data')
         total_pwr = pwr_data.get('total_power', 0.0)
         limit = self.criteria.get('power', {}).get('max_total_power_watt', 5.0)
 
@@ -270,7 +270,7 @@ class AnswerGenerator:
 
     def _check_q14(self) -> ParseResult:
         """ 전압별 소비전류 점검 (Q14) """
-        pwr_data = self.parsed_data.get('power_data') or self.parsed_data.get('power_report', {})
+        pwr_data = self.parsed_data.get('power_report', {}) or self.parsed_data.get('power_data')
         supplies = pwr_data.get('supplies', [])
         temp = pwr_data.get('junction_temp', 0.0)
 
@@ -384,7 +384,7 @@ class AnswerGenerator:
     def _check_q25(self) -> ParseResult:
         """ 비동기 데이터 동기화 (Q25) """
         cdc_data = self.parsed_data.get('cdc_report', {})
-        pwr_data = self.parsed_data.get('power_data') or self.parsed_data.get('power_report', {})
+        pwr_data = self.parsed_data.get('power_report', {}) or self.parsed_data.get('power_data')
 
         unsafe = cdc_data.get('summary', {}).get('Unsafe', 0)
 

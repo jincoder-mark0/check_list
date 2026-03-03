@@ -388,8 +388,8 @@ def judge_q10(ip_data, criteria):
 | 우선순위 | 질문 | 답변 유형 | 파서 구현 | 리포트 |
 |---------|------|----------|-------------|--------|
 | ⬆️ 높음 | Q5 | AUTO | `base_parser.py` (공통 헤더) | Environment |
-| ⬆️ 높음 | Q8 | AUTO | `env_parser.py` → `parse_tool_version()` | Environment, Config_Impl |
-| ⬆️ 높음 | Q9 | SEMI | `env_parser.py` → `parse_ip_status()` | IP_Status, Environment |
+| ⬆️ 높음 | Q8 | AUTO | `environment_parser.py` → `parse_tool_version()` | Environment, Config_Impl |
+| ⬆️ 높음 | Q9 | SEMI | `environment_parser.py` → `parse_ip_status()` | IP_Status, Environment |
 | 🔹 중간 | Q10 | SEMI | Q9 파서 재사용 + changelog 파싱 | IP_Status |
-| 🔹 중간 | Q1 | SEMI | `env_parser.py` → `parse_compile_order()` | Compile_Order, Environment, IP_Status |
+| 🔹 중간 | Q1 | SEMI | `environment_parser.py` → `parse_compile_order()` | Compile_Order, Environment, IP_Status |
 | ⬇️ 낮음 | Q2, Q3, Q4, Q6, Q7 | EVIDENCE_NEEDED | 파싱 불필요 | 없음 |

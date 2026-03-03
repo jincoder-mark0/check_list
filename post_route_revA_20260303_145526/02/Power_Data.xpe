@@ -1,0 +1,892 @@
+<?xml version="1.0"?>
+<POWERDATA author="Vivado Power Analysis" dataVersion="2019.2" design="top_with_ddr3" designState="routed" date="Tue Mar  3 14:55:52 2026" pwrOpt="BRAMPwropt" activityLevel="vectorless">
+	<ENVIRONMENT>
+		<DEVICE part="xc7a100t" grade="industrial" package="fgg676" speed="-2" process="maximum" vid="No">
+		</DEVICE>
+		<VOLTAGESOURCES>
+			<SOURCE name="Vcco33" voltage="3.300000" icc="0.019654" iccq="0.003000" power="0.074758">
+			</SOURCE>
+			<SOURCE name="Vcco18" voltage="1.800000" icc="0.037341" iccq="0.003000" power="0.072613">
+			</SOURCE>
+			<SOURCE name="Vcco135" voltage="1.350000" icc="0.049062" iccq="0.003000" power="0.070284">
+			</SOURCE>
+			<SOURCE name="Vccbram" voltage="1.000000" icc="0.009909" iccq="0.019549" power="0.029458">
+			</SOURCE>
+			<SOURCE name="Vccint" voltage="1.000000" icc="0.651867" iccq="0.254285" power="0.906152">
+			</SOURCE>
+			<SOURCE name="Vccaux" voltage="1.800000" icc="0.521208" iccq="0.054957" power="1.037098">
+			</SOURCE>
+			<SOURCE name="Vccadc" voltage="1.800000" icc="0.000624" iccq="0.025000" power="0.046123">
+			</SOURCE>
+		</VOLTAGESOURCES>
+		<THERMAL>
+			<AMBIENT value="80.000000">
+			</AMBIENT>
+			<AIRFLOW value="250.000000">
+			</AIRFLOW>
+			<HEATSINK value="medium (Medium Profile)">
+			</HEATSINK>
+			<BOARDSELECTION value="medium (10&quot;x10&quot;)">
+			</BOARDSELECTION>
+			<BOARDLAYERS value="12to15 (12 to 15 Layers)">
+			</BOARDLAYERS>
+			<TSA value="4.600000">
+			</TSA>
+			<TJB value="6.800000">
+			</TJB>
+			<BOARDTEMP value="25.0 (C)">
+			</BOARDTEMP>
+			<JUNCTION value="85.8 (C)">
+			</JUNCTION>
+		</THERMAL>
+	</ENVIRONMENT>
+	<BLOCKDETAILS>
+		<BYTYPE>
+			<BLOCKTYPE name="Clocks">
+				<CLOCK name="ip_clk_wiz_ddr3_clk/inst/clk_out1" freq="100.000001" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="1.000000" power="0.000211" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_ddr3_clk/inst/clk_out1_ip_clk_wiz_ddr3_clk" freq="100.000001" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000060" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="u_phy_fmc/ip_clk_wiz_fmc_clk/inst/clk_out1" freq="86.400550" belFanout="2258" sliceFanout="482" FoPerSite="4.684647" sliceEnableRate="0.454397" leafs="31.000000" hrows="3.000000" power="0.006761" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="u_phy_fmc/ip_clk_wiz_fmc_clk/inst/clk_out1_ip_clk_wiz_fmc_clk" freq="86.400550" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000052" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_lcos_pclk/inst/clk_out1" freq="78.000012" belFanout="8196" sliceFanout="1894" FoPerSite="4.327350" sliceEnableRate="0.542607" leafs="71.000000" hrows="5.000000" power="0.019635" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_lcos_pclk/inst/clk_out1_ip_clk_wiz_lcos_pclk" freq="78.000012" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000095" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_lcos_sftcck/inst/clk_out1" freq="98.803954" belFanout="83" sliceFanout="26" FoPerSite="3.192308" sliceEnableRate="0.846758" leafs="6.000000" hrows="3.000000" power="0.001514" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_lcos_sftcck/inst/clk_out1_ip_clk_wiz_lcos_sftcck" freq="98.803954" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000112" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="u_sys_top_with_ddr3/ip_clk_wiz_power_loader/inst/clk_out1" freq="311.999961" belFanout="15584" sliceFanout="4600" FoPerSite="3.387826" sliceEnableRate="0.161844" leafs="90.000000" hrows="5.000000" power="0.095790" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="u_sys_top_with_ddr3/ip_clk_wiz_power_loader/inst/clk_out1_ip_clk_wiz_power_loader" freq="311.999961" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000354" enableRate="1" bufType="PLL">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_ddr3_clk/inst/clk_out2" freq="200.000001" belFanout="57" sliceFanout="15" FoPerSite="3.800000" sliceEnableRate="0.543868" leafs="7.000000" hrows="3.000000" power="0.002516" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_ddr3_clk/inst/clk_out2_ip_clk_wiz_ddr3_clk" freq="200.000001" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000121" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_lcos_pclk/inst/clk_out2" freq="38.999998" belFanout="19" sliceFanout="8" FoPerSite="2.375000" sliceEnableRate="0.947368" leafs="7.000000" hrows="3.000000" power="0.000532" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_lcos_pclk/inst/clk_out2_ip_clk_wiz_lcos_pclk" freq="38.999998" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000047" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_lcos_sftcck/inst/clk_out2" freq="98.803954" belFanout="131" sliceFanout="35" FoPerSite="3.742857" sliceEnableRate="0.924296" leafs="10.000000" hrows="3.000000" power="0.001941" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_lcos_sftcck/inst/clk_out2_ip_clk_wiz_lcos_sftcck" freq="98.803954" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000112" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_lcos_pclk/inst/clk_out3" freq="155.999980" belFanout="9870" sliceFanout="2461" FoPerSite="4.010565" sliceEnableRate="0.706831" leafs="136.000000" hrows="8.000000" power="0.061495" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_lcos_pclk/inst/clk_out3_ip_clk_wiz_lcos_pclk" freq="155.999980" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000189" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_lcos_pclk/inst/clk_out4" freq="78.000012" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="1.000000" hrows="1.000000" power="0.000407" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_lcos_pclk/inst/clk_out4_ip_clk_wiz_lcos_pclk" freq="78.000012" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000095" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_lcos_pclk/inst/clk_out5_ip_clk_wiz_lcos_pclk" freq="155.999980" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000189" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="u_sys_top_with_ddr3/ip_clk_wiz_power_loader/inst/clk_in1_ip_clk_wiz_power_loader" freq="155.999980" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="1.000000" power="0.000686" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/CLK" freq="81.249998" belFanout="5414" sliceFanout="1412" FoPerSite="3.834278" sliceEnableRate="0.540790" leafs="45.000000" hrows="4.000000" power="0.016555" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/clk_pll_i" freq="81.249998" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000051" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_ddr3_clk/inst/clkfbout_buf_ip_clk_wiz_ddr3_clk" freq="100.000001" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="1.000000" power="0.000217" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_ddr3_clk/inst/clkfbout_ip_clk_wiz_ddr3_clk" freq="100.000001" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000060" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="u_phy_fmc/ip_clk_wiz_fmc_clk/inst/clkfbout_buf_ip_clk_wiz_fmc_clk" freq="43.200275" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="1.000000" power="0.000094" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="u_phy_fmc/ip_clk_wiz_fmc_clk/inst/clkfbout_ip_clk_wiz_fmc_clk" freq="43.200275" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000026" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_lcos_pclk/inst/clkfbout_buf_ip_clk_wiz_lcos_pclk" freq="20.000000" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="1.000000" power="0.000088" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_lcos_pclk/inst/clkfbout_ip_clk_wiz_lcos_pclk" freq="20.000000" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000024" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_lcos_sftcck/inst/clkfbout_buf_ip_clk_wiz_lcos_sftcck" freq="26.001041" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="1.000000" power="0.000114" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_lcos_sftcck/inst/clkfbout_ip_clk_wiz_lcos_sftcck" freq="26.001041" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000030" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="u_sys_top_with_ddr3/ip_clk_wiz_power_loader/inst/clkfbout_buf_ip_clk_wiz_power_loader" freq="155.999980" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="1.000000" power="0.000686" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="u_sys_top_with_ddr3/ip_clk_wiz_power_loader/inst/clkfbout_ip_clk_wiz_power_loader" freq="155.999980" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000177" enableRate="1" bufType="PLL">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/freq_refclk" freq="649.999888" belFanout="9" sliceFanout="9" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000051" enableRate="1" bufType="PLL">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clkdiv" freq="81.249986" belFanout="9" sliceFanout="9" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000022" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clkdiv" freq="81.249986" belFanout="9" sliceFanout="9" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000022" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/mem_refclk" freq="324.999991" belFanout="9" sliceFanout="9" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000025" enableRate="1" bufType="PLL">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk" freq="324.999991" belFanout="2" sliceFanout="2" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000023" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk" freq="324.999991" belFanout="12" sliceFanout="12" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000119" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk" freq="324.999991" belFanout="10" sliceFanout="10" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000099" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk" freq="324.999991" belFanout="18" sliceFanout="18" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000099" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk_delayed" freq="324.999991" belFanout="2" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000012" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk" freq="324.999991" belFanout="18" sliceFanout="18" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000099" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk_delayed" freq="324.999991" belFanout="2" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000012" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv" freq="81.249998" belFanout="3" sliceFanout="3" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000007" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv" freq="81.249998" belFanout="13" sliceFanout="13" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000031" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv" freq="81.249998" belFanout="10" sliceFanout="10" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000024" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv" freq="162.499996" belFanout="11" sliceFanout="11" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000053" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv" freq="162.499996" belFanout="11" sliceFanout="11" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000053" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_ddr3_clk/inst/clk_in1_ip_clk_wiz_ddr3_clk" freq="100.000001" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000018" enableRate="1" bufType="I/O">
+				</CLOCK>
+				<CLOCK name="pin_i_clk_100m" freq="100.000001" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_lcos_pclk/inst/clk_in1_ip_clk_wiz_lcos_pclk" freq="20.000000" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000004" enableRate="1" bufType="I/O">
+				</CLOCK>
+				<CLOCK name="pin_i_clk_20m" freq="20.000000" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000">
+				</CLOCK>
+				<CLOCK name="ip_clk_wiz_lcos_sftcck/inst/clk_in1_ip_clk_wiz_lcos_sftcck" freq="78.003124" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000014" enableRate="1" bufType="I/O">
+				</CLOCK>
+				<CLOCK name="pin_i_clk_78m" freq="78.003124" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000">
+				</CLOCK>
+				<CLOCK name="pin_i_fmc_clk" freq="43.200275" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000">
+				</CLOCK>
+				<CLOCK name="u_phy_fmc/ip_clk_wiz_fmc_clk/inst/clk_in1_ip_clk_wiz_fmc_clk" freq="43.200275" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000008" enableRate="1" bufType="I/O">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/pll_clk3" freq="81.249998" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="1.000000" power="0.000096" enableRate="1" bufType="BUFH">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/pll_clk3_out" freq="81.249998" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000032" enableRate="1" bufType="PLL">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/pll_clkfbout" freq="100.000001" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PLL">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/sync_pulse" freq="20.312499" belFanout="9" sliceFanout="9" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000002" enableRate="1" bufType="PLL">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/C_rst_primitives_reg" freq="324.999944" belFanout="8" sliceFanout="8" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000144" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/C_rst_primitives_reg" freq="324.999944" belFanout="8" sliceFanout="8" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000144" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="LOGIC">
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="86.400550" clockFreq2="86.400550" toggleRate="3.026601" toggleRate2="4.161389" totalRate="321.131009" name="clk_out1_ip_clk_wiz_fmc_clk" hierName="top_with_ddr3/u_ddr3_top" writeRate="0.000000" enableRate="0.000000" fanout="10.352941" ru="9.144429" fanout2="3.333333" totalFanout="352.000000" fanoutRate="111.122032" numNets="100" extNets="34" luts="80" logicCap="36700601" signalCap="12969.000000" power="0.000041" sp="0.000007">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="78.000012" clockFreq2="78.000012" toggleRate="3.413249" toggleRate2="14.209031" totalRate="2132.193817" name="clk_out1_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3/u_ddr3_top" writeRate="0.000000" enableRate="0.000000" fanout="3.707904" ru="5.433436" fanout2="4.175439" totalFanout="1079.000000" fanoutRate="1324.280696" numNets="671" extNets="291" SMUX="40" carry4s="12" luts="506" logicCap="116443803" signalCap="91146.000000" power="0.000128" sp="0.000081">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="200.000001" clockFreq2="200.000001" toggleRate="0.004359" toggleRate2="0.000000" totalRate="0.006998" name="clk_out2_ip_clk_wiz_ddr3_clk" hierName="top_with_ddr3/u_ddr3_top" writeRate="0.000000" enableRate="0.000000" fanout="32.000000" ru="18.129134" fanout2="0.000000" totalFanout="32.000000" fanoutRate="0.223945" numNets="1" extNets="1" luts="1" logicCap="0" signalCap="3431.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="81.249998" clockFreq2="81.249998" toggleRate="3.454638" toggleRate2="10.066828" totalRate="13969.909942" name="clk_pll_i" hierName="top_with_ddr3/u_ddr3_top" writeRate="0.000000" enableRate="0.000000" fanout="2.788940" ru="6.658390" fanout2="2.925117" totalFanout="9078.000000" fanoutRate="8562.801832" numNets="5786" extNets="3255" SMUX="4" carry4s="144" luts="4118" logicCap="1056374523" signalCap="1119277.000000" power="0.002158" sp="0.000884">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="324.999991" clockFreq2="324.999991" toggleRate="0.000000" toggleRate2="0.000000" totalRate="0.000000" name="oserdes_clk_2" hierName="top_with_ddr3/u_ddr3_top" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="1" extNets="0" luts="0" logicCap="0" signalCap="0.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="324.999991" clockFreq2="324.999991" toggleRate="0.000000" toggleRate2="0.000000" totalRate="0.000000" name="oserdes_clk_3" hierName="top_with_ddr3/u_ddr3_top" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="1" extNets="0" luts="0" logicCap="0" signalCap="0.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="324.999991" clockFreq2="324.999991" toggleRate="0.000000" toggleRate2="0.000000" totalRate="0.000000" name="oserdes_clk_4" hierName="top_with_ddr3/u_ddr3_top" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="1" extNets="0" luts="0" logicCap="0" signalCap="0.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/CLK" clockFreq="81.249998" clockFreq2="81.249998" toggleRate="1.916669" toggleRate2="7.665902" totalRate="69.000089" name="clk_pll_i" hierName="top_with_ddr3/u_ddr3_top" writeRate="0.000000" enableRate="1.000000" fanout="4.000000" ru="0.033952" fanout2="0.000000" totalFanout="4.000000" fanoutRate="0.000000" numNets="18" extNets="1" SRL="18" logicCap="5724000" signalCap="369.000000" power="0.000009" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="u_phy_fmc/ip_clk_wiz_fmc_clk/inst/clk_out1" clockFreq="86.400550" clockFreq2="86.400550" toggleRate="0.000000" toggleRate2="0.000000" totalRate="0.000002" name="clk_out1_ip_clk_wiz_fmc_clk" hierName="top_with_ddr3/u_ddr3_top" writeRate="0.000000" enableRate="0.000000" fanout="1.000000" ru="8.976271" fanout2="0.000000" totalFanout="87.000000" fanoutRate="0.000001" numNets="120" extNets="87" RAM="60" logicCap="0" signalCap="17970.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/CLK" clockFreq="81.249998" clockFreq2="81.249998" toggleRate="0.955880" toggleRate2="5.385145" totalRate="797.001514" name="clk_pll_i" hierName="top_with_ddr3/u_ddr3_top" writeRate="0.412398" enableRate="0.000000" fanout="1.425743" ru="9.551618" fanout2="1.238095" totalFanout="864.000000" fanoutRate="349.513186" numNets="1040" extNets="606" RAM="520" logicCap="119047298" signalCap="141829.000000" power="0.000160" sp="0.000067">
+				</LOGIC>
+				<LOGIC clock="u_phy_fmc/ip_clk_wiz_fmc_clk/inst/clk_out1" clockFreq="86.400550" clockFreq2="86.400550" toggleRate="1.413705" toggleRate2="4.665090" totalRate="589.515113" name="clk_out1_ip_clk_wiz_fmc_clk" hierName="top_with_ddr3/u_ddr3_top" writeRate="0.000000" enableRate="0.554219" fanout="2.737349" ru="8.267400" fanout2="6.617886" totalFanout="1136.000000" fanoutRate="1684.567526" numNets="417" extNets="415" ffs="417" logicCap="10035000" signalCap="104695.000000" power="0.000011" sp="0.000080">
+				</LOGIC>
+				<LOGIC clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" clockFreq2="78.000012" toggleRate="0.595724" toggleRate2="6.033919" totalRate="1013.326498" name="clk_out1_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3/u_ddr3_top" writeRate="0.000000" enableRate="0.522588" fanout="2.282187" ru="9.794536" fanout2="5.018072" totalFanout="3882.000000" fanoutRate="826.768234" numNets="1701" extNets="1701" ffs="1701" logicCap="13365000" signalCap="713632.000000" power="0.000018" sp="0.000112">
+				</LOGIC>
+				<LOGIC clock="ip_clk_wiz_ddr3_clk/inst/clk_out2" clockFreq="200.000001" clockFreq2="200.000001" toggleRate="0.054542" toggleRate2="0.458662" totalRate="1.036295" name="clk_out2_ip_clk_wiz_ddr3_clk" hierName="top_with_ddr3/u_ddr3_top" writeRate="0.000000" enableRate="1.000000" fanout="1.842105" ru="8.915081" fanout2="1.000000" totalFanout="35.000000" fanoutRate="1.148268" numNets="19" extNets="19" ffs="19" logicCap="90000" signalCap="7788.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/CLK" clockFreq="81.249998" clockFreq2="81.249998" toggleRate="1.802140" toggleRate2="7.857320" totalRate="7599.624034" name="clk_pll_i" hierName="top_with_ddr3/u_ddr3_top" writeRate="0.000000" enableRate="0.677580" fanout="4.370995" ru="10.706012" fanout2="5.390269" totalFanout="18415.000000" fanoutRate="32518.460049" numNets="4217" extNets="4213" ffs="4217" logicCap="46440000" signalCap="1998811.000000" power="0.000139" sp="0.001862">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="649.999888" clockFreq2="78.884407" toggleRate="4.045355" toggleRate2="11.718750" totalRate="11.718750" name="Unassigned_Clock" hierName="top_with_ddr3/u_ddr3_top" writeRate="0.000000" enableRate="0.000000" fanout="1.000000" ru="10.275998" fanout2="1.000000" totalFanout="1.000000" fanoutRate="38.085931" numNets="3" extNets="1" luts="3" logicCap="225400" signalCap="995.000000" power="0.000009" sp="0.000038">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="649.999888" clockFreq2="10.162670" toggleRate="0.371305" toggleRate2="12.548381" totalRate="326.534948" name="High_Fanout_Nets" hierName="top_with_ddr3/u_ddr3_top" writeRate="0.000000" enableRate="0.771707" fanout="83.692982" ru="22.361307" fanout2="82.461538" totalFanout="9541.000000" fanoutRate="12630.504276" numNets="114" extNets="114" SMUX="1" ffs="103" luts="10" logicCap="4277100" signalCap="690205.000000" power="0.000009" sp="0.000742">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="86.400550" clockFreq2="86.400550" toggleRate="2.694389" toggleRate2="4.040057" totalRate="740.886043" name="clk_out1_ip_clk_wiz_fmc_clk" hierName="top_with_ddr3/u_lcos_top" writeRate="0.000000" enableRate="0.000000" fanout="7.053097" ru="8.846333" fanout2="2.533333" totalFanout="797.000000" fanoutRate="258.657933" numNets="249" extNets="113" luts="201" logicCap="93301302" signalCap="47782.000000" power="0.000092" sp="0.000025">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="78.000012" clockFreq2="78.000012" toggleRate="11.849651" toggleRate2="15.891017" totalRate="41414.462909" name="clk_out1_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3/u_lcos_top" writeRate="0.000000" enableRate="0.000000" fanout="3.438596" ru="4.614491" fanout2="2.950565" totalFanout="6076.000000" fanoutRate="10133.909238" numNets="5039" extNets="1767" SMUX="38" carry4s="339" luts="3222" logicCap="1353895623" signalCap="545692.000000" power="0.003919" sp="0.001102">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="98.803954" clockFreq2="98.803954" toggleRate="12.799797" toggleRate2="10.949220" totalRate="1674.628318" name="clk_out1_ip_clk_wiz_lcos_sftcck" hierName="top_with_ddr3/u_lcos_top" writeRate="0.000000" enableRate="0.000000" fanout="2.273973" ru="3.711490" fanout2="2.315789" totalFanout="166.000000" fanoutRate="386.781384" numNets="195" extNets="73" carry4s="13" luts="128" logicCap="78672201" signalCap="15171.000000" power="0.000393" sp="0.000032">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="38.999998" clockFreq2="38.999998" toggleRate="18.197126" toggleRate2="15.935791" totalRate="172.285474" name="clk_out2_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3/u_lcos_top" writeRate="0.000000" enableRate="0.000000" fanout="1.714286" ru="4.962268" fanout2="1.500000" totalFanout="12.000000" fanoutRate="23.417918" numNets="16" extNets="7" luts="13" logicCap="7404800" signalCap="1196.000000" power="0.000022" sp="0.000003">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="98.803954" clockFreq2="98.803954" toggleRate="34.610892" toggleRate2="31.541798" totalRate="3486.720747" name="clk_out2_ip_clk_wiz_lcos_sftcck" hierName="top_with_ddr3/u_lcos_top" writeRate="0.000000" enableRate="0.000000" fanout="2.447368" ru="1.826964" fanout2="2.153846" totalFanout="93.000000" fanoutRate="311.536123" numNets="123" extNets="38" carry4s="6" luts="85" logicCap="43177301" signalCap="8513.000000" power="0.000519" sp="0.000064">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="155.999980" clockFreq2="155.999980" toggleRate="14.100291" toggleRate2="17.067255" totalRate="54788.533996" name="clk_out3_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3/u_lcos_top" writeRate="0.000000" enableRate="0.000000" fanout="2.388504" ru="2.877388" fanout2="2.211207" totalFanout="5859.000000" fanoutRate="10605.241629" numNets="6598" extNets="2453" SMUX="210" carry4s="229" luts="3959" logicCap="1550108832" signalCap="769233.000000" power="0.011927" sp="0.000806">
+				</LOGIC>
+				<LOGIC clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" clockFreq2="78.000012" toggleRate="4.251982" toggleRate2="6.831122" totalRate="739.844882" name="clk_out1_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3/u_lcos_top" writeRate="0.000000" enableRate="1.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="128" extNets="0" SRL="87" logicCap="80772001" signalCap="0.000000" power="0.000092" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="ip_clk_wiz_lcos_pclk/inst/clk_out3" clockFreq="155.999980" clockFreq2="155.999980" toggleRate="0.000276" toggleRate2="0.342734" totalRate="1.002459" name="clk_out3_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3/u_lcos_top" writeRate="0.000000" enableRate="0.003962" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="1000" extNets="0" SRL="625" logicCap="636000" signalCap="0.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="u_phy_fmc/ip_clk_wiz_fmc_clk/inst/clk_out1" clockFreq="86.400550" clockFreq2="86.400550" toggleRate="0.000000" toggleRate2="0.000000" totalRate="0.000004" name="clk_out1_ip_clk_wiz_fmc_clk" hierName="top_with_ddr3/u_lcos_top" writeRate="0.000000" enableRate="0.000000" fanout="1.000000" ru="9.489832" fanout2="0.000000" totalFanout="174.000000" fanoutRate="0.000003" numNets="240" extNets="174" RAM="120" logicCap="0" signalCap="47078.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="u_phy_fmc/ip_clk_wiz_fmc_clk/inst/clk_out1" clockFreq="86.400550" clockFreq2="86.400550" toggleRate="1.410362" toggleRate2="4.665094" totalRate="1177.652657" name="clk_out1_ip_clk_wiz_fmc_clk" hierName="top_with_ddr3/u_lcos_top" writeRate="0.000000" enableRate="0.554753" fanout="2.770156" ru="8.441929" fanout2="6.691057" totalFanout="2302.000000" fanoutRate="3387.482551" numNets="835" extNets="831" ffs="835" logicCap="18450000" signalCap="233451.000000" power="0.000023" sp="0.000179">
+				</LOGIC>
+				<LOGIC clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" clockFreq2="78.000012" toggleRate="3.096159" toggleRate2="7.594744" totalRate="16558.257030" name="clk_out1_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3/u_lcos_top" writeRate="0.000000" enableRate="0.576532" fanout="3.021129" ru="10.224712" fanout2="3.394749" totalFanout="16157.000000" fanoutRate="29782.557733" numNets="5348" extNets="5348" ffs="5348" logicCap="130814999" signalCap="2190149.000000" power="0.000291" sp="0.003859">
+				</LOGIC>
+				<LOGIC clock="ip_clk_wiz_lcos_sftcck/inst/clk_out1" clockFreq="98.803954" clockFreq2="98.803954" toggleRate="8.699288" toggleRate2="12.855300" totalRate="695.943076" name="clk_out1_ip_clk_wiz_lcos_sftcck" hierName="top_with_ddr3/u_lcos_top" writeRate="0.000000" enableRate="0.853512" fanout="6.000000" ru="12.085085" fanout2="6.518519" totalFanout="480.000000" fanoutRate="2882.665332" numNets="80" extNets="80" ffs="80" logicCap="3240000" signalCap="45219.000000" power="0.000015" sp="0.000228">
+				</LOGIC>
+				<LOGIC clock="ip_clk_wiz_lcos_pclk/inst/clk_out2" clockFreq="38.999998" clockFreq2="38.999998" toggleRate="7.797517" toggleRate2="15.267306" totalRate="124.760279" name="clk_out2_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3/u_lcos_top" writeRate="0.000000" enableRate="1.000000" fanout="6.000000" ru="12.657020" fanout2="8.250000" totalFanout="96.000000" fanoutRate="229.454981" numNets="16" extNets="16" ffs="16" logicCap="720000" signalCap="10330.000000" power="0.000001" sp="0.000017">
+				</LOGIC>
+				<LOGIC clock="ip_clk_wiz_lcos_sftcck/inst/clk_out2" clockFreq="98.803954" clockFreq2="98.803954" toggleRate="34.562247" toggleRate2="39.316131" totalRate="4285.718472" name="clk_out2_ip_clk_wiz_lcos_sftcck" hierName="top_with_ddr3/u_lcos_top" writeRate="0.000000" enableRate="0.960345" fanout="3.185484" ru="11.385573" fanout2="2.844037" totalFanout="395.000000" fanoutRate="4345.159183" numNets="124" extNets="124" ffs="124" logicCap="4995000" signalCap="85561.000000" power="0.000095" sp="0.001492">
+				</LOGIC>
+				<LOGIC clock="ip_clk_wiz_lcos_pclk/inst/clk_out3" clockFreq="155.999980" clockFreq2="155.999980" toggleRate="4.513625" toggleRate2="11.181830" totalRate="38690.791117" name="clk_out3_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3/u_lcos_top" writeRate="0.000000" enableRate="0.804282" fanout="2.576528" ru="10.538104" fanout2="3.233883" totalFanout="22086.000000" fanoutRate="108441.801397" numNets="8572" extNets="8572" ffs="8572" logicCap="164610001" signalCap="4600311.000000" power="0.001358" sp="0.012778">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="649.999888" clockFreq2="0.000000" toggleRate="0.000000" toggleRate2="0.000000" totalRate="0.000000" name="Unassigned_Clock" hierName="top_with_ddr3/u_lcos_top" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="4" extNets="0" carry4s="2" logicCap="0" signalCap="0.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="649.999888" clockFreq2="1.120071" toggleRate="0.055762" toggleRate2="1.116863" totalRate="46.560980" name="High_Fanout_Nets" hierName="top_with_ddr3/u_lcos_top" writeRate="0.000000" enableRate="0.753082" fanout="63.537037" ru="23.322053" fanout2="87.175000" totalFanout="10293.000000" fanoutRate="2064.773852" numNets="162" extNets="162" carry4s="2" ffs="126" luts="26" logicCap="11715700" signalCap="1385088.000000" power="0.000002" sp="0.000239">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="86.400550" clockFreq2="86.400550" toggleRate="2.894828" toggleRate2="2.453762" totalRate="492.759910" name="clk_out1_ip_clk_wiz_fmc_clk" hierName="top_with_ddr3/u_phy_fmc" writeRate="0.000000" enableRate="0.000000" fanout="1.368421" ru="5.436240" fanout2="1.369427" totalFanout="338.000000" fanoutRate="345.476773" numNets="253" extNets="247" luts="215" logicCap="102834700" signalCap="74546.000000" power="0.000103" sp="0.000029">
+				</LOGIC>
+				<LOGIC clock="u_phy_fmc/ip_clk_wiz_fmc_clk/inst/clk_out1" clockFreq="86.400550" clockFreq2="86.400550" toggleRate="7.039640" toggleRate2="15.313879" totalRate="415.338761" name="clk_out1_ip_clk_wiz_fmc_clk" hierName="top_with_ddr3/u_phy_fmc" writeRate="0.000000" enableRate="0.857458" fanout="4.694915" ru="13.404105" fanout2="9.074074" totalFanout="277.000000" fanoutRate="1484.328075" numNets="59" extNets="59" ffs="59" logicCap="1935000" signalCap="62126.000000" power="0.000008" sp="0.000286">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="649.999888" clockFreq2="7.211215" toggleRate="1.109418" toggleRate2="2.743235" totalRate="14.563282" name="High_Fanout_Nets" hierName="top_with_ddr3/u_phy_fmc" writeRate="0.000000" enableRate="1.000000" fanout="73.333333" ru="15.209218" fanout2="80.800000" totalFanout="660.000000" fanoutRate="846.071268" numNets="9" extNets="9" ffs="1" luts="8" logicCap="4218800" signalCap="47437.000000" power="0.000015" sp="0.000038">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="78.000012" clockFreq2="78.000012" toggleRate="7.126607" toggleRate2="1.484627" totalRate="32.847499" name="clk_out1_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3/u_phy_lcos" writeRate="0.000000" enableRate="0.000000" fanout="1.000000" ru="7.940478" fanout2="1.000000" totalFanout="27.000000" fanoutRate="12.810527" numNets="27" extNets="27" luts="15" logicCap="8907100" signalCap="44113.000000" power="0.000014" sp="0.000020">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="98.803954" clockFreq2="98.803954" toggleRate="0.232342" toggleRate2="0.000000" totalRate="0.384511" name="clk_out1_ip_clk_wiz_lcos_sftcck" hierName="top_with_ddr3/u_phy_lcos" writeRate="0.000000" enableRate="0.000000" fanout="1.000000" ru="8.740071" fanout2="0.000000" totalFanout="6.000000" fanoutRate="0.189956" numNets="6" extNets="6" luts="4" logicCap="1998200" signalCap="9282.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="38.999998" clockFreq2="38.999998" toggleRate="0.133955" toggleRate2="0.000000" totalRate="0.030403" name="clk_out2_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3/u_phy_lcos" writeRate="0.000000" enableRate="0.000000" fanout="1.000000" ru="8.971283" fanout2="0.000000" totalFanout="1.000000" fanoutRate="0.005929" numNets="1" extNets="1" luts="1" logicCap="316800" signalCap="1684.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="98.803954" clockFreq2="98.803954" toggleRate="0.040947" toggleRate2="0.000000" totalRate="0.054188" name="clk_out2_ip_clk_wiz_lcos_sftcck" hierName="top_with_ddr3/u_phy_lcos" writeRate="0.000000" enableRate="0.000000" fanout="1.000000" ru="11.492255" fanout2="0.000000" totalFanout="3.000000" fanoutRate="0.026770" numNets="3" extNets="3" luts="2" logicCap="701300" signalCap="5180.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" clockFreq2="78.000012" toggleRate="0.000000" toggleRate2="0.000000" totalRate="0.000000" name="clk_out1_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3/u_phy_lcos" writeRate="0.000000" enableRate="1.000000" fanout="15.000000" ru="14.149733" fanout2="0.000000" totalFanout="30.000000" fanoutRate="0.000000" numNets="2" extNets="2" ffs="2" logicCap="0" signalCap="1853.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="ip_clk_wiz_lcos_sftcck/inst/clk_out1" clockFreq="98.803954" clockFreq2="98.803954" toggleRate="0.000000" toggleRate2="0.000000" totalRate="0.000000" name="clk_out1_ip_clk_wiz_lcos_sftcck" hierName="top_with_ddr3/u_phy_lcos" writeRate="0.000000" enableRate="1.000000" fanout="3.000000" ru="11.760913" fanout2="0.000000" totalFanout="6.000000" fanoutRate="0.000000" numNets="2" extNets="2" ffs="2" logicCap="0" signalCap="2272.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="ip_clk_wiz_lcos_pclk/inst/clk_out2" clockFreq="38.999998" clockFreq2="38.999998" toggleRate="0.000000" toggleRate2="0.000000" totalRate="0.000000" name="clk_out2_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3/u_phy_lcos" writeRate="0.000000" enableRate="1.000000" fanout="1.500000" ru="10.211893" fanout2="0.000000" totalFanout="3.000000" fanoutRate="0.000000" numNets="2" extNets="2" ffs="2" logicCap="0" signalCap="1562.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="ip_clk_wiz_lcos_sftcck/inst/clk_out2" clockFreq="98.803954" clockFreq2="98.803954" toggleRate="0.000000" toggleRate2="0.000000" totalRate="0.000000" name="clk_out2_ip_clk_wiz_lcos_sftcck" hierName="top_with_ddr3/u_phy_lcos" writeRate="0.000000" enableRate="1.000000" fanout="2.500000" ru="11.613680" fanout2="0.000000" totalFanout="5.000000" fanoutRate="0.000000" numNets="2" extNets="2" ffs="2" logicCap="0" signalCap="2034.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="86.400550" clockFreq2="86.400550" toggleRate="3.393963" toggleRate2="4.385213" totalRate="345.860538" name="clk_out1_ip_clk_wiz_fmc_clk" hierName="top_with_ddr3/u_sys_top_with_ddr3" writeRate="0.000000" enableRate="0.000000" fanout="10.243243" ru="8.639851" fanout2="3.333333" totalFanout="379.000000" fanoutRate="110.851074" numNets="105" extNets="37" luts="78" logicCap="36963801" signalCap="14136.000000" power="0.000043" sp="0.000007">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="78.000012" clockFreq2="78.000012" toggleRate="4.965629" toggleRate2="11.036251" totalRate="1824.699537" name="clk_out1_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3/u_sys_top_with_ddr3" writeRate="0.000000" enableRate="0.000000" fanout="3.596439" ru="5.796383" fanout2="5.860465" totalFanout="1212.000000" fanoutRate="1061.310996" numNets="517" extNets="337" carry4s="21" luts="349" logicCap="164249900" signalCap="112142.000000" power="0.000117" sp="0.000052">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="311.999961" clockFreq2="311.999961" toggleRate="16.923692" toggleRate2="20.073574" totalRate="336610.070908" name="clk_out1_ip_clk_wiz_power_loader" hierName="top_with_ddr3/u_sys_top_with_ddr3" writeRate="0.000000" enableRate="0.000000" fanout="1.445887" ru="2.340342" fanout2="1.070635" totalFanout="5678.000000" fanoutRate="97686.651096" numNets="20980" extNets="3927" SMUX="768" carry4s="914" luts="15691" logicCap="5527971871" signalCap="690967.000000" power="0.092018" sp="0.014813">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="200.000001" clockFreq2="200.000001" toggleRate="0.228157" toggleRate2="0.000000" totalRate="0.026403" name="clk_out2_ip_clk_wiz_ddr3_clk" hierName="top_with_ddr3/u_sys_top_with_ddr3" writeRate="0.000000" enableRate="0.000000" fanout="13.000000" ru="0.603277" fanout2="0.000000" totalFanout="13.000000" fanoutRate="0.091156" numNets="5" extNets="1" luts="5" logicCap="555000" signalCap="577.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" clockFreq2="78.000012" toggleRate="8.323318" toggleRate2="12.729779" totalRate="432.812500" name="clk_out1_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3/u_sys_top_with_ddr3" writeRate="0.000000" enableRate="1.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="34" extNets="0" SRL="26" logicCap="21624000" signalCap="0.000000" power="0.000054" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="u_phy_fmc/ip_clk_wiz_fmc_clk/inst/clk_out1" clockFreq="86.400550" clockFreq2="86.400550" toggleRate="0.000000" toggleRate2="0.000000" totalRate="0.000002" name="clk_out1_ip_clk_wiz_fmc_clk" hierName="top_with_ddr3/u_sys_top_with_ddr3" writeRate="0.000000" enableRate="0.000000" fanout="1.000000" ru="9.302696" fanout2="0.000000" totalFanout="87.000000" fanoutRate="0.000001" numNets="120" extNets="87" RAM="60" logicCap="0" signalCap="22057.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="u_sys_top_with_ddr3/ip_clk_wiz_power_loader/inst/clk_out1" clockFreq="311.999961" clockFreq2="311.999961" toggleRate="0.000000" toggleRate2="0.000000" totalRate="0.000003" name="clk_out1_ip_clk_wiz_power_loader" hierName="top_with_ddr3/u_sys_top_with_ddr3" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="1024" extNets="0" RAM="1024" logicCap="0" signalCap="0.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="u_phy_fmc/ip_clk_wiz_fmc_clk/inst/clk_out1" clockFreq="86.400550" clockFreq2="86.400550" toggleRate="1.690012" toggleRate2="5.539973" totalRate="787.545575" name="clk_out1_ip_clk_wiz_fmc_clk" hierName="top_with_ddr3/u_sys_top_with_ddr3" writeRate="0.000000" enableRate="0.601093" fanout="3.228448" ru="10.436680" fanout2="6.525180" totalFanout="1498.000000" fanoutRate="2243.245566" numNets="466" extNets="464" ffs="466" logicCap="11115000" signalCap="232862.000000" power="0.000015" sp="0.000233">
+				</LOGIC>
+				<LOGIC clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" clockFreq2="78.000012" toggleRate="1.689111" toggleRate2="5.810213" totalRate="1499.930788" name="clk_out1_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3/u_sys_top_with_ddr3" writeRate="0.000000" enableRate="0.488886" fanout="2.300676" ru="9.657185" fanout2="3.756863" totalFanout="2043.000000" fanoutRate="1030.201654" numNets="888" extNets="888" ffs="888" logicCap="19350000" signalCap="390910.000000" power="0.000026" sp="0.000191">
+				</LOGIC>
+				<LOGIC clock="u_sys_top_with_ddr3/ip_clk_wiz_power_loader/inst/clk_out1" clockFreq="311.999961" clockFreq2="311.999961" toggleRate="13.311069" toggleRate2="15.513601" totalRate="192757.585405" name="clk_out1_ip_clk_wiz_power_loader" hierName="top_with_ddr3/u_sys_top_with_ddr3" writeRate="0.000000" enableRate="0.171202" fanout="1.418410" ru="7.228515" fanout2="1.150101" totalFanout="20540.000000" fanoutRate="391165.115467" numNets="14481" extNets="14481" ffs="14481" logicCap="560385006" signalCap="2909348.000000" power="0.013532" sp="0.047172">
+				</LOGIC>
+				<LOGIC clock="ip_clk_wiz_ddr3_clk/inst/clk_out2" clockFreq="200.000001" clockFreq2="200.000001" toggleRate="0.061712" toggleRate2="0.697793" totalRate="2.159920" name="clk_out2_ip_clk_wiz_ddr3_clk" hierName="top_with_ddr3/u_sys_top_with_ddr3" writeRate="0.000000" enableRate="0.285727" fanout="2.028571" ru="8.968410" fanout2="1.666667" totalFanout="71.000000" fanoutRate="4.648520" numNets="35" extNets="35" ffs="35" logicCap="135000" signalCap="12123.000000" power="0.000000" sp="0.000001">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="649.999888" clockFreq2="87.982340" toggleRate="0.008359" toggleRate2="14.453125" totalRate="62.500000" name="Unassigned_Clock" hierName="top_with_ddr3/u_sys_top_with_ddr3" writeRate="0.000000" enableRate="0.000000" fanout="8.314286" ru="11.674294" fanout2="1.000000" totalFanout="582.000000" fanoutRate="203.124965" numNets="9081" extNets="70" luts="6477" logicCap="1247900" signalCap="29509.000000" power="0.000055" sp="0.000039">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="649.999888" clockFreq2="0.566405" toggleRate="0.019157" toggleRate2="0.126107" totalRate="7.837339" name="High_Fanout_Nets" hierName="top_with_ddr3/u_sys_top_with_ddr3" writeRate="0.000000" enableRate="0.500956" fanout="296.668966" ru="28.974268" fanout2="283.632653" totalFanout="43017.000000" fanoutRate="3909.538109" numNets="145" extNets="145" ffs="86" luts="59" logicCap="24118000" signalCap="2860117.000000" power="0.000002" sp="0.000306">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="78.000012" clockFreq2="78.000012" toggleRate="24.942858" toggleRate2="24.885512" totalRate="318.235436" name="clk_out1_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3" writeRate="0.000000" enableRate="0.000000" fanout="4.000000" ru="3.529174" fanout2="3.000000" totalFanout="24.000000" fanoutRate="50.830822" numNets="15" extNets="6" luts="13" logicCap="6285200" signalCap="1444.000000" power="0.000066" sp="0.000004">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="311.999961" clockFreq2="311.999961" toggleRate="92.095742" toggleRate2="24.180158" totalRate="1765.180858" name="clk_out1_ip_clk_wiz_power_loader" hierName="top_with_ddr3" writeRate="0.000000" enableRate="0.000000" fanout="1.000000" ru="10.242979" fanout2="1.000000" totalFanout="76.000000" fanoutRate="2689.763047" numNets="81" extNets="76" carry4s="16" luts="5" logicCap="2325900" signalCap="10294.000000" power="0.000180" sp="0.000436">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="155.999980" clockFreq2="155.999980" toggleRate="256.441145" toggleRate2="44.576313" totalRate="668.644701" name="clk_out3_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3" writeRate="0.000000" enableRate="0.000000" fanout="1.000000" ru="0.000000" fanout2="1.000000" totalFanout="3.000000" fanoutRate="53.542860" numNets="15" extNets="3" carry4s="3" logicCap="165000" signalCap="0.000000" power="0.000033" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" clockFreq2="78.000012" toggleRate="20.909036" toggleRate2="20.909036" totalRate="271.817463" name="clk_out1_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3" writeRate="0.000000" enableRate="1.000000" fanout="4.384615" ru="10.650336" fanout2="4.384615" totalFanout="57.000000" fanoutRate="579.573039" numNets="13" extNets="13" ffs="13" logicCap="585000" signalCap="5120.000000" power="0.000005" sp="0.000040">
+				</LOGIC>
+				<LOGIC clock="ip_clk_wiz_ddr3_clk/inst/clk_out2" clockFreq="200.000001" clockFreq2="200.000001" toggleRate="1.176056" toggleRate2="1.176056" totalRate="2.352113" name="clk_out2_ip_clk_wiz_ddr3_clk" hierName="top_with_ddr3" writeRate="0.000000" enableRate="1.000000" fanout="1.000000" ru="7.403627" fanout2="1.000000" totalFanout="2.000000" fanoutRate="2.352113" numNets="2" extNets="2" ffs="2" logicCap="90000" signalCap="455.000000" power="0.000000" sp="0.000001">
+				</LOGIC>
+				<LOGIC clock="ip_clk_wiz_lcos_pclk/inst/clk_out3" clockFreq="155.999980" clockFreq2="155.999980" toggleRate="1.176056" toggleRate2="1.176056" totalRate="1.176056" name="clk_out3_ip_clk_wiz_lcos_pclk" hierName="top_with_ddr3" writeRate="0.000000" enableRate="1.000000" fanout="1.000000" ru="6.020600" fanout2="1.000000" totalFanout="1.000000" fanoutRate="0.917324" numNets="1" extNets="1" ffs="1" logicCap="45000" signalCap="130.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="649.999888" clockFreq2="3.617341" toggleRate="0.556514" toggleRate2="3.811730" totalRate="16.028169" name="High_Fanout_Nets" hierName="top_with_ddr3" writeRate="0.000000" enableRate="1.000000" fanout="525.500000" ru="27.289622" fanout2="525.500000" totalFanout="2102.000000" fanoutRate="1274.048509" numNets="4" extNets="4" ffs="3" luts="1" logicCap="368700" signalCap="87407.000000" power="0.000001" sp="0.000090">
+				</LOGIC>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="BRAM">
+				<MODULE name="ip_clk_wiz_lcos_pclk/inst/clk_out1" count="1">
+					<GROUPSUMMARY>
+						<BRAM name="ip_clk_wiz_lcos_pclk/inst/clk_out1" hierName="top_with_ddr3/u_ddr3_top" mode="RAMB18SDP" toggleRate="0.028928" power="0.001148" sp="0.000000" vccbram="0.000061" vccint="0.001087">
+							<RAMPORT name="A" clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" readWidth="36" writeWidth="0" enableRate="0.112241" writeMode="WRITE_FIRST" writeRate="0.000000">
+							</RAMPORT>
+							<RAMPORT name="B" clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" readWidth="0" writeWidth="36" enableRate="1.000000" writeMode="WRITE_FIRST" writeRate="1.000000">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ip_clk_wiz_lcos_pclk/inst/clk_out1_u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/CLK" count="6">
+					<GROUPSUMMARY>
+						<BRAM name="ip_clk_wiz_lcos_pclk/inst/clk_out1_u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/CLK" hierName="top_with_ddr3/u_ddr3_top" mode="RAMB36SDP" toggleRate="1.282245" power="0.004130" sp="0.000000" vccbram="0.000128" vccint="0.004002">
+							<RAMPORT name="A" clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" readWidth="72" writeWidth="0" enableRate="0.333333" writeMode="WRITE_FIRST" writeRate="0.000000">
+							</RAMPORT>
+							<RAMPORT name="B" clock="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/CLK" clockFreq="81.249998" readWidth="0" writeWidth="72" enableRate="0.000000" writeMode="WRITE_FIRST" writeRate="0.000000">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/CLK" count="1">
+					<GROUPSUMMARY>
+						<BRAM name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/CLK" hierName="top_with_ddr3/u_ddr3_top" mode="RAMB36SDP" toggleRate="0.657047" power="0.000000" sp="0.000000" vccbram="0.000000" vccint="0.000000">
+							<RAMPORT name="A" clock="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/CLK" clockFreq="81.249998" readWidth="72" writeWidth="0" enableRate="0.000000" writeMode="READ_FIRST" writeRate="0.000000">
+							</RAMPORT>
+							<RAMPORT name="B" clock="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/CLK" clockFreq="81.249998" readWidth="0" writeWidth="72" enableRate="0.000001" writeMode="READ_FIRST" writeRate="0.000001">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/CLK_ip_clk_wiz_lcos_pclk/inst/clk_out1" count="6">
+					<GROUPSUMMARY>
+						<BRAM name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/CLK_ip_clk_wiz_lcos_pclk/inst/clk_out1" hierName="top_with_ddr3/u_ddr3_top" mode="RAMB36SDP" toggleRate="0.000000" power="0.000000" sp="0.000000" vccbram="0.000000" vccint="0.000000">
+							<RAMPORT name="A" clock="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/CLK" clockFreq="81.249998" readWidth="72" writeWidth="0" enableRate="0.000000" writeMode="WRITE_FIRST" writeRate="0.000000">
+							</RAMPORT>
+							<RAMPORT name="B" clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" readWidth="0" writeWidth="72" enableRate="0.000000" writeMode="WRITE_FIRST" writeRate="0.000000">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ip_clk_wiz_lcos_pclk/inst/clk_out1" count="1">
+					<GROUPSUMMARY>
+						<BRAM name="ip_clk_wiz_lcos_pclk/inst/clk_out1" hierName="top_with_ddr3/u_lcos_top" mode="RAMB18SDP" toggleRate="0.028928" power="0.001148" sp="0.000000" vccbram="0.000061" vccint="0.001087">
+							<RAMPORT name="A" clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" readWidth="36" writeWidth="0" enableRate="0.112241" writeMode="WRITE_FIRST" writeRate="0.000000">
+							</RAMPORT>
+							<RAMPORT name="B" clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" readWidth="0" writeWidth="36" enableRate="1.000000" writeMode="WRITE_FIRST" writeRate="1.000000">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ip_clk_wiz_lcos_pclk/inst/clk_out1" count="3">
+					<GROUPSUMMARY>
+						<BRAM name="ip_clk_wiz_lcos_pclk/inst/clk_out1" hierName="top_with_ddr3/u_lcos_top" mode="RAMB36" toggleRate="1.822111" power="0.003441" sp="0.000038" vccbram="0.000286" vccint="0.003155">
+							<RAMPORT name="A" clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" readWidth="36" writeWidth="36" enableRate="0.375000" writeMode="NO_CHANGE" writeRate="0.666667">
+							</RAMPORT>
+							<RAMPORT name="B" clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" readWidth="36" writeWidth="36" enableRate="0.414329" writeMode="WRITE_FIRST" writeRate="0.000000">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ip_clk_wiz_lcos_pclk/inst/clk_out1" count="2">
+					<GROUPSUMMARY>
+						<BRAM name="ip_clk_wiz_lcos_pclk/inst/clk_out1" hierName="top_with_ddr3/u_lcos_top" mode="RAMB36" toggleRate="9.326549" power="0.003221" sp="0.000228" vccbram="0.000256" vccint="0.002965">
+							<RAMPORT name="A" clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" readWidth="36" writeWidth="36" enableRate="0.003042" writeMode="WRITE_FIRST" writeRate="0.000002">
+							</RAMPORT>
+							<RAMPORT name="B" clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" readWidth="36" writeWidth="36" enableRate="1.000000" writeMode="WRITE_FIRST" writeRate="0.000000">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ip_clk_wiz_lcos_pclk/inst/clk_out1_ip_clk_wiz_lcos_sftcck/inst/clk_out2" count="2">
+					<GROUPSUMMARY>
+						<BRAM name="ip_clk_wiz_lcos_pclk/inst/clk_out1_ip_clk_wiz_lcos_sftcck/inst/clk_out2" hierName="top_with_ddr3/u_lcos_top" mode="RAMB36" toggleRate="9.980354" power="0.004078" sp="0.000328" vccbram="0.000324" vccint="0.003754">
+							<RAMPORT name="A" clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" readWidth="36" writeWidth="36" enableRate="0.003036" writeMode="WRITE_FIRST" writeRate="0.000000">
+							</RAMPORT>
+							<RAMPORT name="B" clock="ip_clk_wiz_lcos_sftcck/inst/clk_out2" clockFreq="98.803954" readWidth="36" writeWidth="36" enableRate="1.000000" writeMode="WRITE_FIRST" writeRate="0.000000">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ip_clk_wiz_lcos_pclk/inst/clk_out3" count="26">
+					<GROUPSUMMARY>
+						<BRAM name="ip_clk_wiz_lcos_pclk/inst/clk_out3" hierName="top_with_ddr3/u_lcos_top" mode="RAMB18" toggleRate="0.405069" power="0.021170" sp="0.000218" vccbram="0.001813" vccint="0.019356">
+							<RAMPORT name="A" clock="ip_clk_wiz_lcos_pclk/inst/clk_out3" clockFreq="155.999980" readWidth="18" writeWidth="18" enableRate="0.500000" writeMode="WRITE_FIRST" writeRate="0.000000">
+							</RAMPORT>
+							<RAMPORT name="B" clock="ip_clk_wiz_lcos_pclk/inst/clk_out3" clockFreq="155.999980" readWidth="18" writeWidth="18" enableRate="0.080563" writeMode="WRITE_FIRST" writeRate="0.000001">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ip_clk_wiz_lcos_pclk/inst/clk_out3" count="80">
+					<GROUPSUMMARY>
+						<BRAM name="ip_clk_wiz_lcos_pclk/inst/clk_out3" hierName="top_with_ddr3/u_lcos_top" mode="RAMB18" toggleRate="0.062623" power="0.027604" sp="0.000052" vccbram="0.002459" vccint="0.025145">
+							<RAMPORT name="A" clock="ip_clk_wiz_lcos_pclk/inst/clk_out3" clockFreq="155.999980" readWidth="9" writeWidth="9" enableRate="0.250000" writeMode="WRITE_FIRST" writeRate="0.000000">
+							</RAMPORT>
+							<RAMPORT name="B" clock="ip_clk_wiz_lcos_pclk/inst/clk_out3" clockFreq="155.999980" readWidth="9" writeWidth="9" enableRate="0.005916" writeMode="WRITE_FIRST" writeRate="0.000003">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ip_clk_wiz_lcos_pclk/inst/clk_out3" count="1">
+					<GROUPSUMMARY>
+						<BRAM name="ip_clk_wiz_lcos_pclk/inst/clk_out3" hierName="top_with_ddr3/u_lcos_top" mode="RAMB18SDP" toggleRate="0.016155" power="0.002295" sp="0.000000" vccbram="0.000121" vccint="0.002173">
+							<RAMPORT name="A" clock="ip_clk_wiz_lcos_pclk/inst/clk_out3" clockFreq="155.999980" readWidth="36" writeWidth="0" enableRate="0.112241" writeMode="WRITE_FIRST" writeRate="0.000000">
+							</RAMPORT>
+							<RAMPORT name="B" clock="ip_clk_wiz_lcos_pclk/inst/clk_out3" clockFreq="155.999980" readWidth="0" writeWidth="36" enableRate="1.000000" writeMode="WRITE_FIRST" writeRate="1.000000">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ip_clk_wiz_lcos_pclk/inst/clk_out3" count="28">
+					<GROUPSUMMARY>
+						<BRAM name="ip_clk_wiz_lcos_pclk/inst/clk_out3" hierName="top_with_ddr3/u_lcos_top" mode="RAMB36" toggleRate="0.031072" power="0.039673" sp="0.000015" vccbram="0.003572" vccint="0.036101">
+							<RAMPORT name="A" clock="ip_clk_wiz_lcos_pclk/inst/clk_out3" clockFreq="155.999980" readWidth="18" writeWidth="18" enableRate="0.142857" writeMode="WRITE_FIRST" writeRate="0.000000">
+							</RAMPORT>
+							<RAMPORT name="B" clock="ip_clk_wiz_lcos_pclk/inst/clk_out3" clockFreq="155.999980" readWidth="18" writeWidth="18" enableRate="0.359678" writeMode="WRITE_FIRST" writeRate="0.000000">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ip_clk_wiz_lcos_pclk/inst/clk_out3" count="2">
+					<GROUPSUMMARY>
+						<BRAM name="ip_clk_wiz_lcos_pclk/inst/clk_out3" hierName="top_with_ddr3/u_lcos_top" mode="RAMB36" toggleRate="0.126761" power="0.008300" sp="0.000007" vccbram="0.000767" vccint="0.007534">
+							<RAMPORT name="A" clock="ip_clk_wiz_lcos_pclk/inst/clk_out3" clockFreq="155.999980" readWidth="36" writeWidth="36" enableRate="0.500000" writeMode="WRITE_FIRST" writeRate="0.000000">
+							</RAMPORT>
+							<RAMPORT name="B" clock="ip_clk_wiz_lcos_pclk/inst/clk_out3" clockFreq="155.999980" readWidth="36" writeWidth="36" enableRate="1.000000" writeMode="WRITE_FIRST" writeRate="0.000003">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ip_clk_wiz_lcos_pclk/inst/clk_out3_ip_clk_wiz_lcos_pclk/inst/clk_out1" count="2">
+					<GROUPSUMMARY>
+						<BRAM name="ip_clk_wiz_lcos_pclk/inst/clk_out3_ip_clk_wiz_lcos_pclk/inst/clk_out1" hierName="top_with_ddr3/u_lcos_top" mode="RAMB36" toggleRate="0.069456" power="0.000000" sp="0.000000" vccbram="0.000000" vccint="0.000000">
+							<RAMPORT name="A" clock="ip_clk_wiz_lcos_pclk/inst/clk_out3" clockFreq="155.999980" readWidth="36" writeWidth="18" enableRate="0.000000" writeMode="NO_CHANGE" writeRate="0.000000">
+							</RAMPORT>
+							<RAMPORT name="B" clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" readWidth="36" writeWidth="18" enableRate="0.000003" writeMode="NO_CHANGE" writeRate="0.000000">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ip_clk_wiz_lcos_pclk/inst/clk_out1" count="1">
+					<GROUPSUMMARY>
+						<BRAM name="ip_clk_wiz_lcos_pclk/inst/clk_out1" hierName="top_with_ddr3/u_sys_top_with_ddr3" mode="RAMB18SDP" toggleRate="0.028928" power="0.001148" sp="0.000001" vccbram="0.000061" vccint="0.001087">
+							<RAMPORT name="A" clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" readWidth="36" writeWidth="0" enableRate="0.112241" writeMode="WRITE_FIRST" writeRate="0.000000">
+							</RAMPORT>
+							<RAMPORT name="B" clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" readWidth="0" writeWidth="36" enableRate="1.000000" writeMode="WRITE_FIRST" writeRate="1.000000">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="MMCM">
+				<MMCM name="ip_clk_wiz_ddr3_clk/inst/mmcm_adv_inst" clock="ip_clk_wiz_ddr3_clk/inst/clk_in1_ip_clk_wiz_ddr3_clk" clockFreq="100.000001" phaseShift="None" interpolators="1" divCounter="1" multCounter="10.000000" clock0Div="10" clock1Div="5" clock2Div="0" clock3Div="0" clock4Div="0" clock5Div="0" clock6Div="0" powerDownRate="0.000000" Vccint="0.000837" Vccaux="0.105720">
+				</MMCM>
+				<MMCM name="ip_clk_wiz_lcos_pclk/inst/mmcm_adv_inst" clock="ip_clk_wiz_lcos_pclk/inst/clk_in1_ip_clk_wiz_lcos_pclk" clockFreq="20.000000" phaseShift="Fixed" interpolators="1" divCounter="1" multCounter="39.000000" clock0Div="10" clock1Div="20" clock2Div="5" clock3Div="10" clock4Div="5" clock5Div="0" clock6Div="0" powerDownRate="0.000000" Vccint="0.001102" Vccaux="0.093758">
+				</MMCM>
+				<MMCM name="ip_clk_wiz_lcos_sftcck/inst/mmcm_adv_inst" clock="ip_clk_wiz_lcos_sftcck/inst/clk_in1_ip_clk_wiz_lcos_sftcck" clockFreq="78.003124" phaseShift="None" interpolators="1" divCounter="3" multCounter="38.000000" clock0Div="10" clock1Div="10" clock2Div="0" clock3Div="0" clock4Div="0" clock5Div="0" clock6Div="0" powerDownRate="0.000000" Vccint="0.000468" Vccaux="0.104330">
+				</MMCM>
+				<MMCM name="u_phy_fmc/ip_clk_wiz_fmc_clk/inst/mmcm_adv_inst" clock="u_phy_fmc/ip_clk_wiz_fmc_clk/inst/clk_in1_ip_clk_wiz_fmc_clk" clockFreq="43.200275" phaseShift="None" interpolators="4" divCounter="1" multCounter="23.250000" clock0Div="11" clock1Div="0" clock2Div="0" clock3Div="0" clock4Div="0" clock5Div="0" clock6Div="0" powerDownRate="0.000000" Vccint="0.000271" Vccaux="0.121707">
+				</MMCM>
+				<MMCM name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i" clock="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/pll_clk3" clockFreq="81.249998" phaseShift="Dynamic" interpolators="1" divCounter="1" multCounter="8.000000" clock0Div="0" clock1Div="0" clock2Div="0" clock3Div="0" clock4Div="0" clock5Div="0" clock6Div="0" powerDownRate="0.000000" Vccint="0.000170" Vccaux="0.086725">
+				</MMCM>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="PLL">
+				<PLL name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_ddr3_infrastructure/plle2_i" clock="ip_clk_wiz_ddr3_clk/inst/clk_out1" clockFreq="100.000001" divCounter="1" multCounter="13" clock0Div="2" clock1Div="4" clock2Div="64" clock3Div="16" clock4Div="8" clock5Div="1" powerDownRate="0.000000" Vccint="0.005516" Vccaux="0.109029">
+				</PLL>
+				<PLL name="u_sys_top_with_ddr3/ip_clk_wiz_power_loader/inst/plle2_adv_inst" clock="u_sys_top_with_ddr3/ip_clk_wiz_power_loader/inst/clk_in1_ip_clk_wiz_power_loader" clockFreq="155.999980" divCounter="1" multCounter="6" clock0Div="3" clock1Div="1" clock2Div="1" clock3Div="1" clock4Div="1" clock5Div="1" powerDownRate="0.000000" Vccint="0.010760" Vccaux="0.095752">
+				</PLL>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="DSP">
+				<MODULE name="ip_clk_wiz_lcos_pclk/inst/clk_out1" count="2">
+					<GROUPSUMMARY>
+						<DSP48E1 name="ip_clk_wiz_lcos_pclk/inst/clk_out1" hierName="top_with_ddr3/u_lcos_top" clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" toggleRate="6.044068" clockFreq="78.000012" multUsed="Yes" mregUsed="No" preAdderUsed="No" power="0.000214">
+						</DSP48E1>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ip_clk_wiz_lcos_pclk/inst/clk_out3" count="34">
+					<GROUPSUMMARY>
+						<DSP48E1 name="ip_clk_wiz_lcos_pclk/inst/clk_out3" hierName="top_with_ddr3/u_lcos_top" clock="ip_clk_wiz_lcos_pclk/inst/clk_out3" toggleRate="0.336189" clockFreq="155.999980" multUsed="No" mregUsed="No" preAdderUsed="No" power="0.000269">
+						</DSP48E1>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ip_clk_wiz_lcos_pclk/inst/clk_out3" count="33">
+					<GROUPSUMMARY>
+						<DSP48E1 name="ip_clk_wiz_lcos_pclk/inst/clk_out3" hierName="top_with_ddr3/u_lcos_top" clock="ip_clk_wiz_lcos_pclk/inst/clk_out3" toggleRate="0.551299" clockFreq="155.999980" multUsed="Yes" mregUsed="Yes" preAdderUsed="No" power="0.000578">
+						</DSP48E1>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="asynchronous" count="64">
+					<GROUPSUMMARY>
+						<DSP48E1 name="asynchronous" hierName="top_with_ddr3/u_sys_top_with_ddr3" clock="" toggleRate="100.0" clockFreq="25.716461" multUsed="Yes" mregUsed="No" preAdderUsed="No" power="0.040891">
+						</DSP48E1>
+					</GROUPSUMMARY>
+				</MODULE>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="IO">
+				<MODULE name="ddr3_addr&lt;0:13&gt;" count="14">
+					<GROUPSUMMARY>
+						<IO name="ddr3_addr&lt;0:13&gt;" clock="oserdes_clk_1" clockFreq="325.000000" ioStandard="SSTL135" bidis="0" inputs="0" outputs="14" signalRate="0.835947" toggleRate="0.257214" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="14" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.002097" vccAux="0.000097" vcco="0.236279" vccoCurrent="0.175022" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_ba&lt;0:2&gt;" count="3">
+					<GROUPSUMMARY>
+						<IO name="ddr3_ba&lt;0:2&gt;" clock="oserdes_clk_1" clockFreq="325.000000" ioStandard="SSTL135" bidis="0" inputs="0" outputs="3" signalRate="0.093406" toggleRate="0.028740" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="3" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000448" vccAux="0.000002" vcco="0.050626" vccoCurrent="0.037501" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_cas_n" count="1">
+					<GROUPSUMMARY>
+						<IO name="ddr3_cas_n" clock="oserdes_clk_1" clockFreq="325.000000" ioStandard="SSTL135" bidis="0" inputs="0" outputs="1" signalRate="0.093400" toggleRate="0.028739" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000149" vccAux="0.000001" vcco="0.016875" vccoCurrent="0.012500" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_ck_p" count="1">
+					<GROUPSUMMARY>
+						<IO name="ddr3_ck_p" clock="oserdes_clk_2" clockFreq="325.000000" ioStandard="DIFF_SSTL135" bidis="0" inputs="0" outputs="1" signalRate="650.000000" toggleRate="100.000000" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="DDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000526" vccAux="0.010764" vcco="0.008407" vccoCurrent="0.006227" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_cke" count="1">
+					<GROUPSUMMARY>
+						<IO name="ddr3_cke" clock="oserdes_clk" clockFreq="325.000000" ioStandard="SSTL135" bidis="0" inputs="0" outputs="1" signalRate="0.000000" toggleRate="0.000000" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000149" vccAux="0.000000" vcco="0.016875" vccoCurrent="0.012500" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_cs_n" count="1">
+					<GROUPSUMMARY>
+						<IO name="ddr3_cs_n" clock="oserdes_clk" clockFreq="325.000000" ioStandard="SSTL135" bidis="0" inputs="0" outputs="1" signalRate="0.093269" toggleRate="0.028698" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000149" vccAux="0.000001" vcco="0.016875" vccoCurrent="0.012500" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_dm&lt;0:1&gt;" count="2">
+					<GROUPSUMMARY>
+						<IO name="ddr3_dm&lt;0:1&gt;" clock="oserdes_clk_3" clockFreq="325.000000" ioStandard="SSTL135" bidis="0" inputs="0" outputs="2" signalRate="0.000000" toggleRate="0.000000" outputEnableRate="0.500000" outputLoad="0.000000" dataRate="DDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="2" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000298" vccAux="0.000000" vcco="0.016875" vccoCurrent="0.012500" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_dq&lt;0:15&gt;" count="16">
+					<GROUPSUMMARY>
+						<IO name="ddr3_dq&lt;0:15&gt;" clock="u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk" clockFreq="324.999939" ioStandard="SSTL135" bidis="16" inputs="0" outputs="0" signalRate="1.417861" toggleRate="0.436265" outputEnableRate="0.500000" outputLoad="0.000000" dataRate="DDR" serdes="DDR3" preEmphasis="No" ioDelay="High_Perform" ibufLowPower="No" inTerm="RTT_NONE" outTerm="RDRV_NONE_NONE" numHR="16" ibufDisable="0.999912" dcitermDisable="0.000000" vccInt="0.002392" vccAux="0.060675" vcco="0.135057" vccoCurrent="0.100042" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_dqs_n&lt;0:1&gt;" count="2">
+					<GROUPSUMMARY>
+						<IO name="ddr3_dqs_n&lt;0:1&gt;" clock="oserdes_clk_3" clockFreq="325.000000" ioStandard="" bidis="0" inputs="0" outputs="0" signalRate="0.000000" toggleRate="0.000000" dataRate="DDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="NONE" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000227" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_dqs_p&lt;0:1&gt;" count="2">
+					<GROUPSUMMARY>
+						<IO name="ddr3_dqs_p&lt;0:1&gt;" clock="oserdes_clk_3" clockFreq="325.000000" ioStandard="DIFF_SSTL135" bidis="2" inputs="0" outputs="0" signalRate="162.500000" toggleRate="50.000000" outputEnableRate="0.500000" outputLoad="0.000000" dataRate="DDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="RDRV_NONE_NONE" numHR="2" ibufDisable="0.999912" dcitermDisable="0.000000" vccInt="0.000526" vccAux="0.005382" vcco="0.006775" vccoCurrent="0.005019" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_odt" count="1">
+					<GROUPSUMMARY>
+						<IO name="ddr3_odt" clock="oserdes_clk_1" clockFreq="325.000000" ioStandard="SSTL135" bidis="0" inputs="0" outputs="1" signalRate="0.366521" toggleRate="0.112776" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000149" vccAux="0.000003" vcco="0.016876" vccoCurrent="0.012501" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_ras_n" count="1">
+					<GROUPSUMMARY>
+						<IO name="ddr3_ras_n" clock="oserdes_clk_1" clockFreq="325.000000" ioStandard="SSTL135" bidis="0" inputs="0" outputs="1" signalRate="0.093261" toggleRate="0.028696" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000149" vccAux="0.000001" vcco="0.016875" vccoCurrent="0.012500" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_reset_n" count="1">
+					<GROUPSUMMARY>
+						<IO name="ddr3_reset_n" clock="clk_pll_i" clockFreq="81.249998" ioStandard="SSTL135" bidis="0" inputs="0" outputs="1" signalRate="0.000000" toggleRate="0.000000" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.016875" vccoCurrent="0.012500" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_we_n" count="1">
+					<GROUPSUMMARY>
+						<IO name="ddr3_we_n" clock="oserdes_clk_1" clockFreq="325.000000" ioStandard="SSTL135" bidis="0" inputs="0" outputs="1" signalRate="0.093301" toggleRate="0.028708" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000149" vccAux="0.000001" vcco="0.016875" vccoCurrent="0.012500" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_i_clk_100m" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_i_clk_100m" clock="pin_i_clk_100m" clockFreq="100.000001" ioStandard="LVCMOS33" bidis="0" inputs="1" outputs="0" signalRate="200.000000" toggleRate="200.000000" dataRate="Clock" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="Yes" inTerm="RTT_NONE" outTerm="NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000064" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_i_clk_20m" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_i_clk_20m" clock="pin_i_clk_20m" clockFreq="20.000000" ioStandard="LVCMOS33" bidis="0" inputs="1" outputs="0" signalRate="40.000000" toggleRate="200.000000" dataRate="Clock" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="Yes" inTerm="RTT_NONE" outTerm="NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000013" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_i_clk_78m" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_i_clk_78m" clock="pin_i_clk_78m" clockFreq="78.003124" ioStandard="LVCMOS18" bidis="0" inputs="1" outputs="0" signalRate="156.006256" toggleRate="200.000000" dataRate="Clock" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="Yes" inTerm="RTT_NONE" outTerm="NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000050" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_i_fmc_addr&lt;0:15&gt;" count="16">
+					<GROUPSUMMARY>
+						<IO name="pin_i_fmc_addr&lt;0:15&gt;" clock="clk_out1_ip_clk_wiz_fmc_clk" clockFreq="86.400550" ioStandard="LVCMOS33" bidis="0" inputs="16" outputs="0" signalRate="10.800069" toggleRate="12.500000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" numHR="16" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000055" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_i_fmc_adv_n" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_i_fmc_adv_n" clock="clk_out1_ip_clk_wiz_fmc_clk" clockFreq="86.400550" ioStandard="LVCMOS33" bidis="0" inputs="1" outputs="0" signalRate="0.864006" toggleRate="1.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_i_fmc_clk" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_i_fmc_clk" clock="pin_i_fmc_clk" clockFreq="43.200275" ioStandard="LVCMOS33" bidis="0" inputs="1" outputs="0" signalRate="86.400551" toggleRate="200.000000" dataRate="Clock" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="Yes" inTerm="RTT_NONE" outTerm="NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000028" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_i_fmc_cs1_n" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_i_fmc_cs1_n" clock="clk_out1_ip_clk_wiz_fmc_clk" clockFreq="86.400550" ioStandard="LVCMOS33" bidis="0" inputs="1" outputs="0" signalRate="10.800069" toggleRate="12.500000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000003" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_i_fmc_oe_n" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_i_fmc_oe_n" clock="clk_out1_ip_clk_wiz_fmc_clk" clockFreq="86.400550" ioStandard="LVCMOS33" bidis="0" inputs="1" outputs="0" signalRate="10.800069" toggleRate="12.500000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000003" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_i_fmc_we_n" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_i_fmc_we_n" clock="clk_out1_ip_clk_wiz_fmc_clk" clockFreq="86.400550" ioStandard="LVCMOS33" bidis="0" inputs="1" outputs="0" signalRate="10.800069" toggleRate="12.500000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000003" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_i_fpga_parts_version&lt;0:2&gt;" count="3">
+					<GROUPSUMMARY>
+						<IO name="pin_i_fpga_parts_version&lt;0:2&gt;" clock="clk_out1_ip_clk_wiz_lcos_pclk" clockFreq="78.000012" ioStandard="LVCMOS33" bidis="0" inputs="3" outputs="0" signalRate="9.750002" toggleRate="12.500000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" numHR="3" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000009" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_i_wss_rst_n" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_i_wss_rst_n" clock="clk_out1_ip_clk_wiz_lcos_pclk" clockFreq="78.000012" ioStandard="LVCMOS33" bidis="0" inputs="1" outputs="0" signalRate="0.000000" toggleRate="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_io_fmc_data&lt;0:31&gt;" count="32">
+					<GROUPSUMMARY>
+						<IO name="pin_io_fmc_data&lt;0:31&gt;" clock="clk_out1_ip_clk_wiz_fmc_clk" clockFreq="86.400550" ioStandard="LVCMOS33_12_SLOW" bidis="32" inputs="0" outputs="0" signalRate="0.067105" toggleRate="0.077668" outputEnableRate="0.250000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="RDRV_NONE_NONE" numHR="32" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000001" vccAux="0.000008" vcco="0.000117" vccoCurrent="0.000035" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_clk_78m" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_clk_78m" clock="clk_out4_ip_clk_wiz_lcos_pclk" clockFreq="78.000015" ioStandard="LVCMOS18_12_FAST" bidis="0" inputs="0" outputs="1" signalRate="156.000031" toggleRate="100.000000" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="DDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000090" vccAux="0.000437" vcco="0.002527" vccoCurrent="0.001404" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_cpu_con0" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_cpu_con0" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS33_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="0.000000" toggleRate="0.000000" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_cpu_con1" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_cpu_con1" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS33_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="0.000000" toggleRate="0.000000" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_cpu_con2" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_cpu_con2" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS33_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="0.000000" toggleRate="0.000000" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_cpu_con3" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_cpu_con3" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS33_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="0.000000" toggleRate="0.000000" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_heater" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_heater" clock="clk_out1_ip_clk_wiz_lcos_pclk" clockFreq="78.000012" ioStandard="LVCMOS33_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="0.000000" toggleRate="0.000000" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_dac_clk_a" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_dac_clk_a" clock="clk_out2_ip_clk_wiz_lcos_sftcck" clockFreq="98.803955" ioStandard="LVCMOS33_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="2.112019" toggleRate="2.137585" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="DDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000046" vccAux="0.000008" vcco="0.000115" vccoCurrent="0.000035" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_dac_clk_b" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_dac_clk_b" clock="clk_out2_ip_clk_wiz_lcos_sftcck" clockFreq="98.803955" ioStandard="LVCMOS33_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="2.112019" toggleRate="2.137585" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="DDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000046" vccAux="0.000008" vcco="0.000115" vccoCurrent="0.000035" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_dac_data_a&lt;0:11&gt;" count="12">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_dac_data_a&lt;0:11&gt;" clock="clk_out2_ip_clk_wiz_lcos_sftcck" clockFreq="98.803954" ioStandard="LVCMOS33_12_SLOW" bidis="0" inputs="0" outputs="12" signalRate="49.324005" toggleRate="49.921082" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="12" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.002276" vcco="0.032228" vccoCurrent="0.009766" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_dac_data_b&lt;0:11&gt;" count="12">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_dac_data_b&lt;0:11&gt;" clock="clk_out2_ip_clk_wiz_lcos_sftcck" clockFreq="98.803954" ioStandard="LVCMOS33_12_SLOW" bidis="0" inputs="0" outputs="12" signalRate="49.324005" toggleRate="49.921082" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="12" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.002276" vcco="0.032228" vccoCurrent="0.009766" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_ito_ctl_m" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_ito_ctl_m" clock="clk_out1_ip_clk_wiz_lcos_pclkclk_out1_ip_clk_wiz_lcos_sftcck" clockFreq="98.803954" ioStandard="LVCMOS33_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="0.072374" toggleRate="0.073250" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000004" vccoCurrent="0.000001" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_ito_ctl_p" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_ito_ctl_p" clock="clk_out1_ip_clk_wiz_lcos_pclkclk_out1_ip_clk_wiz_lcos_sftcck" clockFreq="98.803954" ioStandard="LVCMOS33_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="0.015085" toggleRate="0.015267" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000001" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_cck" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_cck" clock="clk_out2_ip_clk_wiz_lcos_sftcck" clockFreq="98.803955" ioStandard="SSTL18_I" bidis="0" inputs="0" outputs="1" signalRate="28.367542" toggleRate="14.355469" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="DDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000055" vccAux="0.000235" vcco="0.003189" vccoCurrent="0.001772" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_cck_en" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_cck_en" clock="clk_out2_ip_clk_wiz_lcos_sftcck" clockFreq="98.803954" ioStandard="LVCMOS18_12_FAST" bidis="0" inputs="0" outputs="1" signalRate="0.032445" toggleRate="0.032838" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000001" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_cnt_rst" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_cnt_rst" clock="clk_out2_ip_clk_wiz_lcos_sftcck" clockFreq="98.803954" ioStandard="LVCMOS18_12_FAST" bidis="0" inputs="0" outputs="1" signalRate="0.021095" toggleRate="0.021350" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_hck" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_hck" clock="clk_out2_ip_clk_wiz_lcos_pclk" clockFreq="38.999996" ioStandard="SSTL18_I" bidis="0" inputs="0" outputs="1" signalRate="11.197265" toggleRate="14.355469" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="DDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000022" vccAux="0.000093" vcco="0.003006" vccoCurrent="0.001670" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_hck_en" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_hck_en" clock="clk_out2_ip_clk_wiz_lcos_pclk" clockFreq="38.999998" ioStandard="LVCMOS18_12_FAST" bidis="0" inputs="0" outputs="1" signalRate="0.011857" toggleRate="0.030403" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_k2_en" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_k2_en" clock="clk_out1_ip_clk_wiz_lcos_sftcck" clockFreq="98.803954" ioStandard="LVCMOS18_12_FAST" bidis="0" inputs="0" outputs="1" signalRate="0.070821" toggleRate="0.071678" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000001" vccoCurrent="0.000001" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_k2_sck" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_k2_sck" clock="clk_out1_ip_clk_wiz_lcos_sftcck" clockFreq="98.803955" ioStandard="LVCMOS18_12_FAST" bidis="0" inputs="0" outputs="1" signalRate="28.367542" toggleRate="14.355469" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="DDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000055" vccAux="0.000079" vcco="0.000460" vccoCurrent="0.000255" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_k2m" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_k2m" clock="clk_out1_ip_clk_wiz_lcos_sftcck" clockFreq="98.803954" ioStandard="LVCMOS18_12_FAST" bidis="0" inputs="0" outputs="1" signalRate="0.024880" toggleRate="0.025181" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_k2p" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_k2p" clock="clk_out1_ip_clk_wiz_lcos_sftcck" clockFreq="98.803954" ioStandard="LVCMOS18_12_FAST" bidis="0" inputs="0" outputs="1" signalRate="0.102577" toggleRate="0.103819" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000002" vccoCurrent="0.000001" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_latch" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_latch" clock="clk_out1_ip_clk_wiz_lcos_pclk" clockFreq="78.000012" ioStandard="LVCMOS18_12_FAST" bidis="0" inputs="0" outputs="1" signalRate="0.032066" toggleRate="0.041111" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000001" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_mode" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_mode" clock="clk_out1_ip_clk_wiz_lcos_pclk" clockFreq="78.000012" ioStandard="LVCMOS18_12_FAST" bidis="0" inputs="0" outputs="1" signalRate="0.729670" toggleRate="0.935474" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000002" vcco="0.000012" vccoCurrent="0.000007" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_pde&lt;0:9&gt;" count="10">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_pde&lt;0:9&gt;" clock="clk_out1_ip_clk_wiz_lcos_pclk" clockFreq="78.000012" ioStandard="SSTL18_I" bidis="0" inputs="0" outputs="10" signalRate="1.467315" toggleRate="1.881173" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="10" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000121" vcco="0.029028" vccoCurrent="0.016126" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_pdo&lt;0:9&gt;" count="10">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_pdo&lt;0:9&gt;" clock="clk_out1_ip_clk_wiz_lcos_pclk" clockFreq="78.000012" ioStandard="SSTL18_I" bidis="0" inputs="0" outputs="10" signalRate="0.911202" toggleRate="1.168208" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="10" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000075" vcco="0.028968" vccoCurrent="0.016094" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_r2k" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_r2k" clock="clk_out1_ip_clk_wiz_lcos_sftcck" clockFreq="98.803954" ioStandard="LVCMOS18_12_FAST" bidis="0" inputs="0" outputs="1" signalRate="0.094161" toggleRate="0.095301" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000002" vccoCurrent="0.000001" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_regp" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_regp" clock="clk_out1_ip_clk_wiz_lcos_pclk" clockFreq="78.000012" ioStandard="LVCMOS18_12_FAST" bidis="0" inputs="0" outputs="1" signalRate="0.961362" toggleRate="1.232515" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000003" vcco="0.000016" vccoCurrent="0.000009" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_test" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_test" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18_12_FAST" bidis="0" inputs="0" outputs="1" signalRate="0.000000" toggleRate="0.000000" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_vck1" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_vck1" clock="clk_out1_ip_clk_wiz_lcos_pclk" clockFreq="78.000012" ioStandard="LVCMOS18_12_FAST" bidis="0" inputs="0" outputs="1" signalRate="0.032066" toggleRate="0.041111" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000001" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_vck2" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_vck2" clock="clk_out1_ip_clk_wiz_lcos_pclk" clockFreq="78.000012" ioStandard="LVCMOS18_12_FAST" bidis="0" inputs="0" outputs="1" signalRate="0.032066" toggleRate="0.041111" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000001" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_vpg_img" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_vpg_img" clock="clk_out2_ip_clk_wiz_lcos_sftcck" clockFreq="98.803954" ioStandard="LVCMOS18_12_FAST" bidis="0" inputs="0" outputs="1" signalRate="0.000000" toggleRate="0.000000" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_vst_img" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_vst_img" clock="clk_out1_ip_clk_wiz_lcos_pclk" clockFreq="78.000012" ioStandard="LVCMOS18_12_FAST" bidis="0" inputs="0" outputs="1" signalRate="0.016341" toggleRate="0.020950" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_panel_vsw_stt" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_panel_vsw_stt" clock="clk_out1_ip_clk_wiz_lcos_pclk" clockFreq="78.000012" ioStandard="LVCMOS18_12_FAST" bidis="0" inputs="0" outputs="1" signalRate="0.032305" toggleRate="0.041417" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000001" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_pow_analog_en" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_pow_analog_en" clock="clk_out1_ip_clk_wiz_lcos_pclk" clockFreq="78.000012" ioStandard="LVCMOS33_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="0.458662" toggleRate="0.588028" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000002" vcco="0.000025" vccoCurrent="0.000008" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_lcos_pow_digital_en" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_lcos_pow_digital_en" clock="clk_out1_ip_clk_wiz_lcos_pclk" clockFreq="78.000012" ioStandard="LVCMOS33_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="0.458662" toggleRate="0.588028" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000002" vcco="0.000025" vccoCurrent="0.000008" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="pin_o_tp0" count="1">
+					<GROUPSUMMARY>
+						<IO name="pin_o_tp0" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS33_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="0.000000" toggleRate="0.000000" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="PHASER">
+				<PHASER name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/phaser_ref_i" phaserIn="2" phaserOut="2" inFifo="2" outFifo="2" fifoClk="121.874997" memClk="379.166641" vccint="0.017536" vccaux="0.062280">
+				</PHASER>
+				<PHASER name="u_ddr3_top/u_ip_mig_ddr3/u_ip_mig_ddr3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/phaser_ref_i" phaserIn="0" phaserOut="3" inFifo="0" outFifo="3" fifoClk="81.249998" memClk="389.999971" vccint="0.012641" vccaux="0.076320">
+				</PHASER>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="XADC">
+				<XADC name="u_sys_top_with_ddr3/u_sys_fpga_monitor/ip_xadc_wiz/inst" clock="ip_clk_wiz_lcos_pclk/inst/clk_out1" clockFreq="78.000012" power="0.002059" vccInt="0.000936" vccAux="0.001123">
+				</XADC>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="IOBANK">
+				<IOBANK numInternalVref="0" numDelayControl="1" numLVDSBanks="0">
+				</IOBANK>
+			</BLOCKTYPE>
+		</BYTYPE>
+	</BLOCKDETAILS>
+</POWERDATA>
+

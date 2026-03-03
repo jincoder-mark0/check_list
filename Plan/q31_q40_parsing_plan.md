@@ -449,11 +449,11 @@ def judge_q38(data, criteria):
 
 - **답변 유형**: `AUTO` ✅
 
-📄 **`CDC_Report.rpt`** + **`CDC_Critical.rpt`** + **`CDC_Unsafe.rpt`** + **`CDC_Interaction.rpt`** + **`Timing_Exceptions.rpt`**
+📄 **`CDC_Report.rpt`** + **`CDC_Critical.rpt`** + **`CDC_Interaction.rpt`** + **`Timing_Exceptions.rpt`**
 
 🔍 **주요 파싱 위치**
 
-- `CDC_Report.rpt`, `CDC_Critical.rpt`, `CDC_Unsafe.rpt`: 비동기 클럭 교차(CDC) 유형 요약 및 안전하지/위험도 높은 CDC 식별
+- `CDC_Report.rpt`, `CDC_Critical.rpt`, : 비동기 클럭 교차(CDC) 유형 요약 및 안전하지/위험도 높은 CDC 식별
 - `CDC_Interaction.rpt`: 도메인별 결합 상태 파악
 - 각 CDC 유형별 건수 및 Waived 건수
 - `Timing_Exceptions.rpt`: `set_clock_groups`, `set_false_path` 등 예외 적용 상황
@@ -524,12 +524,12 @@ def judge_q39(cdc_data):
 
 - **답변 유형**: `SEMI`
 
-📄 **`CDC_Report.rpt`** + **`CDC_Critical.rpt`** + **`CDC_Unsafe.rpt`** + **`CDC_Interaction.rpt`** + **`Timing_Exceptions.rpt`**
+📄 **`CDC_Report.rpt`** + **`CDC_Critical.rpt`** + **`CDC_Interaction.rpt`** + **`Timing_Exceptions.rpt`**
 
 🔍 **주요 CDC 분석 포인트**
 
 - `CDC_Report`에서 다중 비트 동기화(Multi-bit), FIFO 기반 비동기 교차 식별 건 파악
-- `Timing_Exceptions` 및 `CDC_Unsafe`를 활용, 비동기 메모리(RAM/FIFO) 포인터 간 타이밍 제약 위반 여부 확인
+- `Timing_Exceptions` 및 `CDC_Critical`를 활용, 비동기 메모리(RAM/FIFO) 포인터 간 타이밍 제약 위반 여부 확인
 
 📊 **추출 결과(예시)**
 
@@ -559,8 +559,8 @@ def judge_q40(cdc_data):
 | ⬆️ 높음 | Q32 | AUTO | `clock_parser.py` | Clock_Networks, Check_Timing |
 | ⬆️ 높음 | Q34 | AUTO | 재사용 | Check_Timing, Clock_Networks |
 | ⬆️ 높음 | Q37 | SEMI | `exception_parser.py` 등 | Clock_Utilization, Timing_Exceptions, Clock_Networks |
-| ⬆️ 높음 | Q39 | AUTO | `cdc_parser.py` 등 | CDC_Report, CDC_Critical, CDC_Unsafe, CDC_Interaction, Timing_Exceptions |
-| ⬆️ 높음 | Q40 | SEMI | `cdc_parser.py` 등 | CDC_Report, CDC_Critical, CDC_Unsafe, CDC_Interaction, Timing_Exceptions |
+| ⬆️ 높음 | Q39 | AUTO | `cdc_parser.py` 등 | CDC_Report, CDC_Critical, CDC_Interaction, Timing_Exceptions |
+| ⬆️ 높음 | Q40 | SEMI | `cdc_parser.py` 등 | CDC_Report, CDC_Critical, CDC_Interaction, Timing_Exceptions |
 | 🔹 중간 | Q31 | SEMI | `clock_parser.py` 재사용 | Property_Check, Clock_Utilization |
 | 🔹 중간 | Q33 | SEMI | `cdc_parser.py` 확장 | CDC_Report, Clock_Networks |
 | 🔹 중간 | Q35 | SEMI | `timing_parser.py` 재사용 | Check_Timing, Pulse_Width |

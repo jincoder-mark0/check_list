@@ -19,7 +19,7 @@
 
 - **답변 유형**: `AUTO` ✅
 
-📄 **`Timing_Summary.rpt`** + **`Check_Timing.rpt`** + **`CDC_Report.rpt`** + **`CDC_Critical.rpt`** + **`CDC_Unsafe.rpt`** + **`CDC_Interaction.rpt`** + **`Timing_Exceptions.rpt`**
+📄 **`Timing_Summary.rpt`** + **`Check_Timing.rpt`** + **`CDC_Report.rpt`** + **`CDC_Critical.rpt`** + **`CDC_Interaction.rpt`** + **`Timing_Exceptions.rpt`**
 
 🔍 **파싱 위치**
 
@@ -600,7 +600,7 @@ def judge_q69(data, criteria):
 | ⬆️ 높음 | Q66 | AUTO | `methodology_parser.py` 등| Check_Timing, Methodology, DRC_Report |
 | 🔹 중간 | Q67 | AUTO | `methodology_parser.py` 등| Check_Timing, Methodology, DRC_Report |
 | 🔹 중간 | Q68 | SEMI | `waiver_parser.py` 등 | Check_Timing, Methodology, Waiver, Timing_Exceptions |
-| 🔹 중간 | Q69 | AUTO | `env_parser.py` | Environment, IP_Status |
+| 🔹 중간 | Q69 | AUTO | `environment_parser.py` | Environment, IP_Status |
 
 ## 주요 발견 사항
 

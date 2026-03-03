@@ -1,8 +1,8 @@
 .git
 .idea
 __pycache__
-_redacted_test
-_redacted_verification
+
+_redacted
 
 # Plan folder specific exclusions
 plan/task.md

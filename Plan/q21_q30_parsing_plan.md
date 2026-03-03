@@ -552,7 +552,7 @@ def judge_q30(io_data):
 | 🔹 중간 | Q24 | SEMI | `io_parser.py` 재사용 | Datasheet, IO_Report |
 | 🔹 중간 | Q25 | SEMI | `power_parser.py` 등 | Power_Data, Power_Report, Datasheet, Operating_Cond |
 | 🔹 중간 | Q26 | SEMI | `pr_parser.py` 등 | PR_Verify_Report, Partial_Bit_Config_Summary |
-| 🔹 중간 | Q28 | SEMI | `env_parser.py` 등 | Config_Impl, Partial_Bit_Config_Summary |
+| 🔹 중간 | Q28 | SEMI | `environment_parser.py` 등 | Config_Impl, Partial_Bit_Config_Summary |
 | 🔹 중간 | Q30 | SEMI | `io_parser.py` 재사용 | IO_Report |
 | ⬇️ 낮음 | Q29 | EVIDENCE_NEEDED | 없음 (Waiver 참고) | Waiver, CDC_Report, DRC_Report |
 | ⬇️ 낮음 | Q23 | EVIDENCE_NEEDED | 없음 | — |
